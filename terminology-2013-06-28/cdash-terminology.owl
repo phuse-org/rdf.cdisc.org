@@ -1,0 +1,1765 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:mms="http://rdf.cdisc.org/mms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://rdf.cdisc.org/cdash-terminology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cts="http://rdf.cdisc.org/ct/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://rdf.cdisc.org/cdash-terminology">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/ct/schema"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <mms:PermissibleValue rdf:ID="C78417.C48155">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78417">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Concomitant Medication Dose Units codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Concomitant Medication Dose Units Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78417</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Dose Units</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CMDOSU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Dose Units</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48155</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A metric unit of mass equal to one one thousandth of a kilogram. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >g</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C83004.C70543">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C83004">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Never/Current/Former Classification codelist created for CDASH Substance Use Never/Current/Former Classification codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Substance Use Never/Current/Former Classification Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C83004</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Substance Use Never/Current/Former Classification</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >SUNCF</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Substance Use Never/Current/Former Classification</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Never</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C70543</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Not ever; at no time in the past.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NEVER</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38295">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78425">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Route codelist created for CDASH Exposure Route of Administration codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Exposure Route of Administration Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78425</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exposure Route of Administration</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXROUTE</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exposure Route of Administration</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Rectal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38295</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to the rectum.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RECTAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48477">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78421">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit of Drug Dispensed or Returned codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Unit of Drug Dispensed or Returned Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78421</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Unit of Drug Dispensed or Returned</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >DAORRESU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Unit of Drug Dispensed or Returned</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bottle Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48477</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the bottle unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bottle Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BOTTLE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42972">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78418">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Pharmaceutical Dosage Form codelist created for CDASH Concomitant Medication Dose Form codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Concomitant Medication Dose Form Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78418</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Dose Form</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CMDOSFRM</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Dose Form</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Powder Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42972</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An intimate mixture of dry, finely divided drugs and/or chemicals that may be intended for internal or external use. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >POWDER</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C28253">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78423">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Units for Exposure codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Units for Exposure Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78423</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Units for Exposure</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXDOSU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Units for Exposure</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28253</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mg</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78429.C64777">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78429">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit of Measure for Flow Rate codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Unit of Measure for Flow Rate Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78429</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Unit of Measure for Flow Rate</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXFLRTU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Unit of Measure for Flow Rate</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milliliter per Minute</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64777</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A metric unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one minute.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milliliters per Minute</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mL/min</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42934">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78426">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Pharmaceutical Dosage Form codelist created for CDASH Exposure Dose Form codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Exposure Dose Form Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78426</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exposure Dose Form</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXDOSFRM</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exposure Dose Form</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gel Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42934</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A semisolid (1) dosage form that contains a gelling agent to provide stiffness to a solution or a colloidal dispersion (2). A gel may contain suspended particles. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: A colloidal dispersion is a system in which particles of colloidal dimension (i.e., typically between 1 nm and 1 micrometer) are distributed uniformly throughout a liquid.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GEL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78422.C49673">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78422">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH ECG Original Units codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH ECG Original Units Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78422</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >ECG Original Units</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EGORRESU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >ECG Original Units</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Beats per Minute</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C49673</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The number of heartbeats measured per minute time. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Beats per Minute</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BEATS/MIN</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C64498">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78419">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Frequency codelist created for CDASH Concomitant Medication Dosing Frequency per Interval codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Concomitant Medication Dosing Frequency per Interval Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78419</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Dosing Frequency per Interval</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CMDOSFRQ</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Dosing Frequency per Interval</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Monthly</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64498</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every month. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every Month</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QM</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38284">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Nasal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38284</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to the nose; administered by way of the nose.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intranasal Route of Administration</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NASAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38305">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78420">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Route codelist created for CDASH Concomitant Medication Route of Administration codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Concomitant Medication Route of Administration Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78420</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Route of Administration</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CMROUTE</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Concomitant Medication Route of Administration</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transdermal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38305</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration through the dermal layer of the skin to the systemic circulation by diffusion.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TRANSDERMAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38255">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intraocular Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38255</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within the eye.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRAOCULAR</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48524">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Patch Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48524</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the patch unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Patch Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PATCH</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78422.C41140">
+    <mms:inValueDomain rdf:resource="#C78422"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Millisecond</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C41140</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of time, which is equal to one thousandth of a second.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Millisecond</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >msec</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C28161">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intramuscular Route of Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28161</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within a muscle.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRAMUSCULAR</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38295">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Rectal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38295</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to the rectum.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RECTAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C64527">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Three Times Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64527</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Three times per day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >3 times per day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TID</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C17998">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Unknown</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C17998</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Not known, not observed, not recorded, or refused. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >U; Unknown</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >UNKNOWN</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78429.C67406">
+    <mms:inValueDomain rdf:resource="#C78429"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Micromole per 24 Hours</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C67406</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of amount of substance flow rate equivalent to the rate at which one millionth of a mole of substance travels to a given object or space over a period of time equal to 24 hours.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mcmol/day; Micromoles per Day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >umol/day</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C28254">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78430">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Units for Planned Exposure codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Units for Planned Exposure Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78430</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Units for Planned Exposure</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXPDOSEU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Units for Planned Exposure</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28254</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cm3; Milliliter</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42968">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Patch Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42968</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A drug delivery system that often contains an adhesive backing that is usually applied to an external site on the body. Its ingredients either passively diffuse from, or are actively transported from, some portion of the patch. Depending upon the patch, the ingredients are either delivered to the outer surface of the body or into the body. A patch is sometimes synonymous with the terms Extended Release Film and System.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PATCH</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48478">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Box Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48478</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the box unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Box Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BOX</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C28944">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cream Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28944</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CREAM</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78427.C25529">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78427">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit for Duration of Treatment Interruption codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Unit for Duration of Treatment Interruption Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78427</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Unit for the Duration of Treatment Interruption</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXINTPU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Unit for the Duration of Treatment Interruption</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hour</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25529</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit measure of time equal to 3,600 seconds or 60 minutes. It is approximately 1/24 of a median day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hour; hr</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HOURS</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38313">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vaginal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38313</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration into the vagina.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VAGINAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42887">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Aerosol Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42887</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A product that is packaged under pressure and contains therapeutically active ingredients that are released upon activation of an appropriate valve system; it is intended for topical application to the skin as well as local application into the nose (nasal aerosols), mouth (lingual aerosols), or lungs (inhalation aerosols).</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aer</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AEROSOL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C64498">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78745">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Frequency codelist created for CDASH Exposure Dosing Frequency per Interval codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Exposure Dosing Frequency per Interval Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78745</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exposure Dosing Frequency per Interval</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXDOSFRQ</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exposure Dosing Frequency per Interval</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Monthly</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64498</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every month. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every Month</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QM</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C48480">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48480</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the capsule unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit; cap</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CAPSULE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C64499">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As Necessary</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64499</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As needed. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As Needed</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PRN</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38255">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intraocular Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38255</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within the eye.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRAOCULAR</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C28254">
+    <mms:inValueDomain rdf:resource="#C78423"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milliliter</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28254</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cm3; Milliliter</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C64527">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Three Times Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64527</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Three times per day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >3 times per day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TID</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C48155">
+    <mms:inValueDomain rdf:resource="#C78423"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48155</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A metric unit of mass equal to one one thousandth of a kilogram. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >g</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C48480">
+    <mms:inValueDomain rdf:resource="#C78423"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48480</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the capsule unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit; cap</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CAPSULE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C65060">
+    <mms:inValueDomain rdf:resource="#C78423"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Puff Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C65060</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Puff</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PUFF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C64530">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Four Times Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64530</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Four times per day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >4 times per day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QID</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C64530">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Four Times Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64530</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Four times per day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >4 times per day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QID</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48542">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48542</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the tablet unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit; tab</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TABLET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C28253">
+    <mms:inValueDomain rdf:resource="#C78430"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milliliter</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28253</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mg</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C65060">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Puff Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C65060</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Puff</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PUFF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78428.C48152">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78428">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Unit codelist created for CDASH Total Volume Administration Unit codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Total Volume Administration Unit Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78428</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Total Volume Administration Unit</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >EXVOLTU</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Total Volume Administration Unit</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48152</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram; mcg</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ug</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38250">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intralesional Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38250</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within or introduced directly into a localized lesion.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRALESIONAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C48480">
+    <mms:inValueDomain rdf:resource="#C78430"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48480</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the capsule unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit; cap</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CAPSULE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C28253">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28253</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mg</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38288">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Oral Route of Drug administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38288</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to or by way of the mouth.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PO; Intraoral Route of Administration</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ORAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C48155">
+    <mms:inValueDomain rdf:resource="#C78430"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48155</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A metric unit of mass equal to one one thousandth of a kilogram. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >g</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42994">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Suspension Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42994</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A liquid dosage form that contains solid particles dispersed in a liquid vehicle. Note: A liquid is pourable; it flows and conforms to its container at room temperature. It displays Newtonian or pseudoplastic flow behavior. (FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >susp</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUSPENSION</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C48542">
+    <mms:inValueDomain rdf:resource="#C78430"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48542</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the tablet unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit; tab</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TABLET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C64525">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every Other Day</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64525</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every other day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every other day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QOD</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48484">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Container Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48484</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the container unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Container Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CONTAINER</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C65060">
+    <mms:inValueDomain rdf:resource="#C78430"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Puff Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C65060</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Puff</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PUFF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78431.C62166">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C78431">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A terminology subset of the CDISC SDTM Position codelist created for CDASH Vital Signs Position of Subject codelist. (NCI)</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC CDASH Vital Signs Position of Subject Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C78431</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Vital Signs Position of Subject</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >VSPOS</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Vital Signs Position of Subject</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Standing</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C62166</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The act of assuming or maintaining an erect upright position. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Standing</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >STANDING</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C64496">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Twice Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64496</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Two times per day, at unspecified times. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Twice per day; BD</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BID</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42994">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Suspension Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42994</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A liquid dosage form that contains solid particles dispersed in a liquid vehicle. Note: A liquid is pourable; it flows and conforms to its container at room temperature. It displays Newtonian or pseudoplastic flow behavior. (FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >susp</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUSPENSION</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C28944">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cream Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28944</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CREAM</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C48579">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >International Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48579</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unitage assigned by the WHO (World Health Organization) to International Biological Standards - substances, classed as biological according to the criteria provided by WHO Expert Committee on Biological Standardization (e.g. hormones, enzymes, and vaccines), to enable the results of biological and immunological assay procedures to be expressed in the same way throughout the world. The definition of an international unit is generally arbitrary and technical, and has to be officially approved by the International Conference for Unification of Formulae.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >International Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IU</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C83004.C25627">
+    <mms:inValueDomain rdf:resource="#C83004"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Previous</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25627</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Occurring prior to something else. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Previous</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >FORMER</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38305">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transdermal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38305</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration through the dermal layer of the skin to the systemic circulation by diffusion.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TRANSDERMAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C64496">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Twice Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64496</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Two times per day, at unspecified times. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BD; Twice per Day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BID</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C17998">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Unknown</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C17998</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Not known, not observed, not recorded, or refused. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >U; Unknown</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >UNKNOWN</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C83004.C25471">
+    <mms:inValueDomain rdf:resource="#C83004"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Current</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25471</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Occurring in or belonging to the present time. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CURRENT</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C64525">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every Other Day</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64525</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every other day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Every other day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QOD</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C25158">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25158</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cap</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CAPSULE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42993">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Suppository Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42993</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A solid body of various weights and shapes, adapted for introduction into the rectal orifice of the human body; they usually melt, soften, or dissolve at body temperature.</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >supp</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUPPOSITORY</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C48542">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48542</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the tablet unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit; tab</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TABLET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38258">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intraperitoneal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38258</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within the peritoneal cavity.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRAPERITONEAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38299">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Subcutaneous Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38299</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SC</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUBCUTANEOUS</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38288">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Oral Route of Drug administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38288</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to or by way of the mouth.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PO; Intraoral Route of Administration</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ORAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38250">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intralesional Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38250</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within or introduced directly into a localized lesion.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRALESIONAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48520">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Package Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48520</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the package unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pack Dosing Unit; Package Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PACKAGE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78428.C28253">
+    <mms:inValueDomain rdf:resource="#C78428"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28253</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milligram</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mg</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38299">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Subcutaneous Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38299</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SC</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUBCUTANEOUS</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38304">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Topical Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38304</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TOP</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TOPICAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42933">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gas Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42933</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any elastic aeriform fluid in which the molecules are separated from one another and have free paths. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GAS</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42972">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Powder Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42972</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An intimate mixture of dry, finely divided drugs and/or chemicals that may be intended for internal or external use. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >POWDER</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42989">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Spray Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42989</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A liquid minutely divided as by a jet of air or steam. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SPRAY</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C28254">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milliliter</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28254</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cm3; Milliliter</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42993">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Suppository Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42993</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A solid body of various weights and shapes, adapted for introduction into the rectal orifice of the human body; they usually melt, soften, or dissolve at body temperature.</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >supp</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUPPOSITORY</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48549">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tube Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48549</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the tube unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tube Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TUBE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78427.C42535">
+    <mms:inValueDomain rdf:resource="#C78427"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Second</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42535</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The second is a unit of time with a duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour. Abbreviation Sec. is acceptable in non-scientific usage only.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Second</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >sec</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42968">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Patch Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42968</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A drug delivery system that often contains an adhesive backing that is usually applied to an external site on the body. Its ingredients either passively diffuse from, or are actively transported from, some portion of the patch. Depending upon the patch, the ingredients are either delivered to the outer surface of the body or into the body. A patch is sometimes synonymous with the terms Extended Release Film and System.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PATCH</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78431.C62167">
+    <mms:inValueDomain rdf:resource="#C78431"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Supine Position</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C62167</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A posterior recumbent body position whereby the person lies on its back and faces upward. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Supine</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUPINE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48474">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bag Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48474</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the bag unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bag Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BAG</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78431.C62122">
+    <mms:inValueDomain rdf:resource="#C78431"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sitting</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C62122</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The state or act of one who sits; the posture of one who occupies a seat. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sitting</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SITTING</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78417.C48152">
+    <mms:inValueDomain rdf:resource="#C78417"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48152</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram; mcg</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ug</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48521">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Packet Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48521</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the packet unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Packet Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PACKET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78419.C25473">
+    <mms:inValueDomain rdf:resource="#C78419"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25473</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Occurring or done each day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Daily</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QD</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48551">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vial Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48551</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the vial unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vial Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VIAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78428.C28254">
+    <mms:inValueDomain rdf:resource="#C78428"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Milliliter</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28254</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cm3; Milliliter</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42998">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42998</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tab</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TABLET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42934">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gel Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42934</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A semisolid (1) dosage form that contains a gelling agent to provide stiffness to a solution or a colloidal dispersion (2). A gel may contain suspended particles. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: A colloidal dispersion is a system in which particles of colloidal dimension (i.e., typically between 1 nm and 1 micrometer) are distributed uniformly throughout a liquid.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GEL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38258">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intraperitoneal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38258</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within the peritoneal cavity.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRAPERITONEAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42989">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Spray Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42989</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A liquid minutely divided as by a jet of air or steam. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SPRAY</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38284">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Nasal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38284</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to the nose; administered by way of the nose.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intranasal Route of Administration</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NASAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C28161">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intramuscular Route of Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C28161</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within a muscle.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTRAMUSCULAR</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78422.C42535">
+    <mms:inValueDomain rdf:resource="#C78422"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Second</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42535</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The second is a unit of time with a duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour. Abbreviation Sec. is acceptable in non-scientific usage only.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Second</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >sec</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78429.C67420">
+    <mms:inValueDomain rdf:resource="#C78429"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Millimole per 24 Hours</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C67420</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of amount of substance flow rate equivalent to the rate at which one thousandth of a mole of substance travels or is delivered to a given object or space over a period of time equal to 24 hours.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Millimole per 24 Hours</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mmol/day</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38216">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inhalation Route of Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38216</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RESPIRATORY (INHALATION)</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48480">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48480</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the capsule unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosing Unit; cap</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CAPSULE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C48152">
+    <mms:inValueDomain rdf:resource="#C78423"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48152</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram; mcg</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ug</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38304">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Topical Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38304</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TOP</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TOPICAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78421.C48490">
+    <mms:inValueDomain rdf:resource="#C78421"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Disk Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48490</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the disk unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Disk Dosing Unit</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DISK</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78429.C71211">
+    <mms:inValueDomain rdf:resource="#C78429"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram per Minute</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C71211</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of mass flow rate equivalent to the rate at which one millionth of a gram of matter travels to a given object or space over a period of time equal to one minute. Microgram per minute is also a dose administration rate unit equal to the rate at which one millionth of a gram of a product is administered per unit of time equal to one minute.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Micrograms per Minute; mcg/min</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ug/min</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78427.C48154">
+    <mms:inValueDomain rdf:resource="#C78427"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Minute</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48154</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit measure of time equal to 60 seconds.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Minute Unit of Time</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >min</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78425.C38216">
+    <mms:inValueDomain rdf:resource="#C78425"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inhalation Route of Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38216</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RESPIRATORY (INHALATION)</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42998">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42998</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tab</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TABLET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42966">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ointment Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42966</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A suspension or emulsion, semisolid (1) dosage form, usually containing &lt; 20% water and volatiles (2) and &gt; 50% hydrocarbons, waxes, or polyols as the vehicle. This dosage form is generally for external application to the skin or mucous membranes. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: Percent water and volatiles are measured by a loss on drying test in which the sample is heated at 105 degrees C until constant weight is achieved.</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >oint</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OINTMENT</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78430.C48152">
+    <mms:inValueDomain rdf:resource="#C78430"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48152</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram; mcg</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ug</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78423.C48542">
+    <mms:inValueDomain rdf:resource="#C78423"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C48542</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dosing measurement based on the tablet unit.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tablet Dosing Unit; tab</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TABLET</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78420.C38313">
+    <mms:inValueDomain rdf:resource="#C78420"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vaginal Route of Drug Administration</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38313</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administration into the vagina.(FDA)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VAGINAL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C42966">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ointment Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42966</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A suspension or emulsion, semisolid (1) dosage form, usually containing &lt; 20% water and volatiles (2) and &gt; 50% hydrocarbons, waxes, or polyols as the vehicle. This dosage form is generally for external application to the skin or mucous membranes. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: Percent water and volatiles are measured by a loss on drying test in which the sample is heated at 105 degrees C until constant weight is achieved.</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >oint</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OINTMENT</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42887">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Aerosol Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42887</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A product that is packaged under pressure and contains therapeutically active ingredients that are released upon activation of an appropriate valve system; it is intended for topical application to the skin as well as local application into the nose (nasal aerosols), mouth (lingual aerosols), or lungs (inhalation aerosols).</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aer</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AEROSOL</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78426.C42933">
+    <mms:inValueDomain rdf:resource="#C78426"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gas Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C42933</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any elastic aeriform fluid in which the molecules are separated from one another and have free paths. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GAS</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C25473">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Daily</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25473</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Occurring or done each day. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Daily</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QD</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78745.C64499">
+    <mms:inValueDomain rdf:resource="#C78745"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As Necessary</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C64499</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As needed. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >As Needed</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PRN</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78429.C71205">
+    <mms:inValueDomain rdf:resource="#C78429"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram per Day</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C71205</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A unit of mass flow rate equivalent to the rate at which one millionth of a gram of matter travels to a given object or space over a period of time equal to twenty four hours. Microgram per day is also a dose administration rate unit equal to the rate at which one millionth of a gram of a product is administered per unit of time equal to twenty four hours.(NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microgram per Day; mcg/day</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ug/day</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C78418.C25158">
+    <mms:inValueDomain rdf:resource="#C78418"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capsule Dosage Form</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25158</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)</cts:cdiscDefinition>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cap</cts:cdiscSynonyms>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CAPSULE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

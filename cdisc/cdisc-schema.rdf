@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:mms="http://rdf.cdisc.org/mms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cts="http://rdf.cdisc.org/ct/schema#"
+    xmlns:cdiscs="http://rdf.cdisc.org/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://rdf.cdisc.org/schema">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://rdf.cdisc.org/ct/schema"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="DocumentationSection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Documentation Section</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A section that contains a set of assumptions about an administered item specified by the CDISC documentation.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="Assumption">
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assumption</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An assumption about an administered item specified by the CDISC documentation.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="DataElementType">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The CDISC designated data type of a data element, character or numeric.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Type</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DataElementCompliance">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The compliance level of a data element, e.g. required, permissible etc.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Compliance</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="about">
+    <rdfs:domain rdf:resource="#Assumption"/>
+    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="documents">
+    <rdfs:domain rdf:resource="#DocumentationSection"/>
+    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="partOfSection">
+    <rdfs:domain rdf:resource="#Assumption"/>
+    <rdfs:range rdf:resource="#DocumentationSection"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="sectionLabel">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#DocumentationSection"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="assumptionText">
+    <rdfs:domain rdf:resource="#Assumption"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

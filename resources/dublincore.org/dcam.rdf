@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dcam="http://purl.org/dc/dcam/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://purl.org/dc/dcam/">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <dcterms:modified>2008-01-14</dcterms:modified>
+    <dcterms:publisher xml:lang="en-US">The Dublin Core Metadata Initiative</dcterms:publisher>
+    <rdfs:comment>To comment on this schema, please contact dcmifb@dublincore.org.</rdfs:comment>
+    <dcterms:title xml:lang="en-US">DCMI Namespace for metadata terms related to the DCMI Abstract Model</dcterms:title>
+  </owl:Ontology>
+  <rdfs:Class rdf:about="http://purl.org/dc/dcam/VocabularyEncodingScheme">
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/2007/06/04/abstract-model/"/>
+    <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#VocabularyEncodingScheme-001"/>
+    <dcterms:issued>2008-01-14</dcterms:issued>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="en-US">An enumerated set of resources.</rdfs:comment>
+    <rdfs:label xml:lang="en-US">Vocabulary Encoding Scheme</rdfs:label>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://purl.org/dc/dcam/memberOf">
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/2007/06/04/abstract-model/"/>
+    <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#memberOf-001"/>
+    <dcterms:issued>2008-01-14</dcterms:issued>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:comment xml:lang="en-US">A relationship between a resource and a vocabulary encoding scheme which indicates that the resource is a member of a set.</rdfs:comment>
+    <rdfs:label xml:lang="en-US">Member Of</rdfs:label>
+  </rdf:Property>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

@@ -1,0 +1,114 @@
+# baseURI: http://rdf.cdisc.org/cdash-1-1/schema
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://purl.org/dc/terms/
+# imports: http://rdf.cdisc.org/schema
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix :        <http://rdf.cdisc.org/cdash-1-1/schema#> .
+@prefix mms:     <http://rdf.cdisc.org/mms#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rdf.cdisc.org/cdash-1-1/schema>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.w3.org/2004/02/skos/core> , <http://purl.org/dc/terms/> , <http://purl.org/dc/elements/1.1/> , <http://rdf.cdisc.org/schema> ;
+      owl:versionInfo "1.1"^^xsd:string .
+
+<http://rdf.cdisc.org/cdash-1-1/schema#Classifier.HighlyRecommendedDataCollectionField>
+      rdf:type :DataCollectionFieldCompliance ;
+      rdfs:label "Highly Recommended Data Collection Field"^^xsd:string ;
+      skos:definition "Highly Recommended (HR): A data collection field that should be on the CRF (e.g., a regulatory requirement)."^^xsd:string ;
+      skos:prefLabel "Highly Recommended Data Collection Field"^^xsd:string .
+
+<http://rdf.cdisc.org/cdash-1-1/schema#Classifier.OptionalDataCollectionField>
+      rdf:type :DataCollectionFieldCompliance ;
+      rdfs:label "Classifier.Optional data collection field"^^xsd:string ;
+      skos:definition "Optional (O): A data collection field that is available for use."^^xsd:string ;
+      skos:prefLabel "Classifier.Optional data collection field"^^xsd:string .
+
+<http://rdf.cdisc.org/cdash-1-1/schema#Classifier.RecommendedOrConditionalDataCollectionField>
+      rdf:type :DataCollectionFieldCompliance ;
+      rdfs:label "Recommended or Conditional Data Collection Field"^^xsd:string ;
+      skos:definition "Recommended/Conditional (R/C): A data collection field that should be on a CRF based on certain conditions (e.g., complete date of birth is preferred, but may not be allowed in some regions; AE time should only be captured if there is another data point with which to compare it). In the absence of this data point other data points would be less meaningful."^^xsd:string ;
+      skos:prefLabel "Recommended or Conditional Data Collection Field"^^xsd:string .
+
+:DataCollectionField
+      rdf:type owl:Class ;
+      rdfs:label "Data Collection Field"^^xsd:string ;
+      rdfs:subClassOf mms:DataElement ;
+      skos:definition "A Data Collection Field is a DataElement used in the collection of Data within a CRF."^^xsd:string ;
+      skos:prefLabel "Data Collection Field"^^xsd:string .
+
+:DataCollectionFieldCompliance
+      rdf:type owl:Class ;
+      rdfs:label "CDASH Data Collection Field Compliance"^^xsd:string ;
+      rdfs:subClassOf mms:Classifier ;
+      skos:definition "The compliance level of an CDASH variable."^^xsd:string ;
+      skos:prefLabel "CDASH Data Collection Field Compliance"^^xsd:string .
+
+:DataCollectionForm
+      rdf:type owl:Class ;
+      rdfs:label "Data Collection Form"^^xsd:string ;
+      rdfs:subClassOf mms:VariableGrouping ;
+      skos:definition "A Data Collection Form is a instance that groups DataElements that represent a recommendation for a Case Report Form using the CDASH Data Elements"^^xsd:string ;
+      skos:prefLabel "Data Collection Form"^^xsd:string .
+
+:Recommendation
+      rdf:type owl:Class ;
+      rdfs:label "Recommendation"^^xsd:string ;
+      rdfs:subClassOf mms:AdministeredItem ;
+      skos:definition "Recommendation for implemention of Case Report Forms using CDASH standards"^^xsd:string ;
+      skos:prefLabel "Recommendations"^^xsd:string .
+
+:controlledTermsOrFormat
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain mms:DataElement ;
+      rdfs:label "CDASH Controlled Terminology or Format"^^xsd:string ;
+      rdfs:range xsd:string ;
+      skos:prefLabel "CDASH Controlled Terminology or Format"^^xsd:string .
+
+:crfCompletionInstructions
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain mms:DataElement ;
+      rdfs:label "CDASH CRF Completion Instructions"^^xsd:string ;
+      rdfs:range xsd:string ;
+      skos:prefLabel "CDASH CRF Completion Instructions"^^xsd:string .
+
+:dataCollectionFieldCompliance
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :DataCollectionField ;
+      rdfs:label "data collection field compliance"^^xsd:string ;
+      rdfs:range :DataCollectionFieldCompliance ;
+      skos:prefLabel "data collection field compliance"^^xsd:string .
+
+:hasDataElement
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :DataCollectionForm ;
+      rdfs:label "Has Data Element"^^xsd:string ;
+      rdfs:range mms:DataElement ;
+      skos:prefLabel "Has Data Element"^^xsd:string .
+
+:prompt
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain mms:DataElement ;
+      rdfs:label "CDASH Data Element Prompt"^^xsd:string ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf mms:dataElementLabel ;
+      skos:prefLabel "CDASH Data Element Prompt"^^xsd:string .
+
+:questionText
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain mms:DataElement ;
+      rdfs:label "CDASH Data Element Question Text"^^xsd:string ;
+      rdfs:range xsd:string ;
+      skos:prefLabel "CDASH Data Element Question Text"^^xsd:string .
+
+:recommendationText
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Recommendation ;
+      rdfs:label "recommendation text"^^xsd:string ;
+      rdfs:range xsd:string ;
+      skos:prefLabel "recommendation text"^^xsd:string .
