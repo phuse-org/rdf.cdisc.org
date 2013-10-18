@@ -1,24 +1,26 @@
 # baseURI: http://rdf.cdisc.org/cdash-1-1/std
 # imports: http://rdf.cdisc.org/cdash-1-1/schema
-# imports: http://rdf.cdisc.org/cdash/ct
-# imports: http://rdf.cdisc.org/sdtm/ct
+# imports: http://rdf.cdisc.org/cdash-terminology
+# imports: http://rdf.cdisc.org/sdtm-terminology
 
 # c14n-version: 3
 @prefix : <http://rdf.cdisc.org/cdash-1-1/std#> .
 @prefix cdashct: <http://rdf.cdisc.org/cdash/ct#> .
 @prefix cdashs: <http://rdf.cdisc.org/cdash-1-1/schema#> .
+@prefix cdasht: <http://rdf.cdisc.org/cdash-terminology#> .
 @prefix cdiscs: <http://rdf.cdisc.org/schema#> .
 @prefix mms: <http://rdf.cdisc.org/mms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdtm-terminology: <http://rdf.cdisc.org/sdtm-terminology#> .
 @prefix sdtmct: <http://rdf.cdisc.org/sdtm/ct#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://rdf.cdisc.org/cdash-1-1/std>
   rdf:type owl:Ontology ;
   owl:imports <http://rdf.cdisc.org/cdash-1-1/schema> ;
-  owl:imports <http://rdf.cdisc.org/cdash/ct> ;
-  owl:imports <http://rdf.cdisc.org/sdtm/ct> ;
+  owl:imports <http://rdf.cdisc.org/cdash-terminology> ;
+  owl:imports <http://rdf.cdisc.org/sdtm-terminology> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Classifier.HighlyRecommendedDataCollectionField>
@@ -37,7 +39,6 @@
   cdashs:prompt "Action Taken with Study Treatment"^^xsd:string ;
   cdashs:questionText "What action was taken with study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Changes made to the study treatment in response to the adverse event. {ACN}"^^xsd:string ;
   mms:dataElementDescription "Changes made to the study treatment in response to the adverse event."^^xsd:string ;
   mms:dataElementLabel "Action Taken with Study Treatment"^^xsd:string ;
   mms:dataElementName "AEACN"^^xsd:string ;
@@ -64,7 +65,6 @@
   cdashs:prompt "Caused Study Discontinuation"^^xsd:string ;
   cdashs:questionText "Did the adverse event cause the subject to be discontinued from the study?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indication of whether the adverse event caused the subject to discontinue from the study. {NY}"^^xsd:string ;
   mms:dataElementDescription "Indication of whether the adverse event caused the subject to discontinue from the study."^^xsd:string ;
   mms:dataElementLabel "Caused Study Discontinuation"^^xsd:string ;
   mms:dataElementName "AEDIS"^^xsd:string ;
@@ -74,7 +74,7 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.AE.AEENDAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the date that the AE resolved using this format (DD-MON-YYYY). If the AE is ongoing, leave the field blank. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the date that the AE resolved using this format (DD-MON-YYYY). If the AE is ongoing, leave the field blank."^^xsd:string ;
   cdashs:prompt "End Date"^^xsd:string ;
   cdashs:questionText "What date did the adverse event end?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
@@ -86,7 +86,7 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.AE.AEENTIM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "If appropriate, record the time (as complete as possible) that the AE resolved. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If appropriate, record the time (as complete as possible) that the AE resolved."^^xsd:string ;
   cdashs:prompt "End Time"^^xsd:string ;
   cdashs:questionText "At what time did the adverse event end?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
@@ -103,7 +103,6 @@
   cdashs:prompt "<specific adverse event> Example: High blood pressure"^^xsd:string ;
   cdashs:questionText "Does the subject have <specific adverse event>? Example: Does the subject have high blood pressure?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Used when the occurrence of a specific adverse event is solicited to indicate whether or not (N/Y) the event (AETERM) occurred. {NY}"^^xsd:string ;
   mms:dataElementDescription "Used when the occurrence of a specific adverse event is solicited to indicate whether or not (N/Y) the event (AETERM) occurred."^^xsd:string ;
   mms:dataElementLabel "<specific adverse event> Example: High blood pressure"^^xsd:string ;
   mms:dataElementName "AEOCCUR"^^xsd:string ;
@@ -118,7 +117,6 @@
   cdashs:prompt "Ongoing?"^^xsd:string ;
   cdashs:questionText "Is the adverse event still ongoing?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates AE is ongoing when no End Date is provided. {NY}"^^xsd:string ;
   mms:dataElementDescription "Indicates AE is ongoing when no End Date is provided."^^xsd:string ;
   mms:dataElementLabel "Ongoing?"^^xsd:string ;
   mms:dataElementName "AEONGO"^^xsd:string ;
@@ -129,12 +127,11 @@
 <http://rdf.cdisc.org/cdash-1-1/std#Column.AE.AEOUT>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "OUT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the appropriate outcome of the event in relation to the subject�s status."^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the appropriate outcome of the event in relation to the subject's status."^^xsd:string ;
   cdashs:prompt "Outcome"^^xsd:string ;
   cdashs:questionText "What was the outcome of this adverse event?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Description of the subject�s status associated with an event. {OUT}"^^xsd:string ;
-  mms:dataElementDescription "Description of the subject�s status associated with an event."^^xsd:string ;
+  mms:dataElementDescription "Description of the subject's status associated with an event."^^xsd:string ;
   mms:dataElementLabel "Outcome"^^xsd:string ;
   mms:dataElementName "AEOUT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -143,11 +140,11 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.AE.AEREL>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Indicate if the cause of the adverse event is related to the study treatment and cannot be reasonably explained by other factors (e.g., subject�s clinical state, concomitant therapy, and/or other interventions). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Indicate if the cause of the adverse event is related to the study treatment and cannot be reasonably explained by other factors (e.g., subject's clinical state, concomitant therapy, and/or other interventions). "^^xsd:string ;
   cdashs:prompt "Relationship to Study Treatment"^^xsd:string ;
   cdashs:questionText "Is this event related to study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indication of whether the study treatment had a causal effect on the adverse event, as determined by the clinician/investigator. "^^xsd:string ;
+  mms:dataElementDescription "Indication of whether the study treatment had a causal effect on the adverse event, as determined by the clinician/investigator."^^xsd:string ;
   mms:dataElementLabel "Relationship to Study Treatment"^^xsd:string ;
   mms:dataElementName "AEREL"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -160,7 +157,6 @@
   cdashs:prompt "Congenital Anomaly or Birth Defect"^^xsd:string ;
   cdashs:questionText "Is the adverse event associated with a congenital anomaly or birth defect?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates if a \"serious\" adverse event was associated with a congenital anomaly or birth defect. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates if a \"serious\" adverse event was associated with a congenital anomaly or birth defect."^^xsd:string ;
   mms:dataElementLabel "Congenital Anomaly or Birth Defect"^^xsd:string ;
   mms:dataElementName "AESCONG"^^xsd:string ;
@@ -175,7 +171,6 @@
   cdashs:prompt "Significant Disability"^^xsd:string ;
   cdashs:questionText "Did the adverse event result in Persistent or significant disability or incapacity?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates if a \"serious\" adverse event was associated with a persistent or significant disability or incapacity. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates if a \"serious\" adverse event was associated with a persistent or significant disability or incapacity."^^xsd:string ;
   mms:dataElementLabel "Significant Disability"^^xsd:string ;
   mms:dataElementName "AESDISAB"^^xsd:string ;
@@ -186,11 +181,10 @@
 <http://rdf.cdisc.org/cdash-1-1/std#Column.AE.AESDTH>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record whether the \"serious\" adverse event resulted in death. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record whether the \"serious\" adverse event resulted in death."^^xsd:string ;
   cdashs:prompt "Death"^^xsd:string ;
   cdashs:questionText "Did the adverse event result in death?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates if a \"serious\" adverse event resulted in death. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates if a \"serious\" adverse event resulted in death."^^xsd:string ;
   mms:dataElementLabel "Death"^^xsd:string ;
   mms:dataElementName "AESDTH"^^xsd:string ;
@@ -205,7 +199,6 @@
   cdashs:prompt "Serious"^^xsd:string ;
   cdashs:questionText "Is the adverse event serious?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates whether or not the adverse event is determined to be \"serious\" based on what is defined in the protocol. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates whether or not the adverse event is determined to be \"serious\" based on what is defined in the protocol."^^xsd:string ;
   mms:dataElementLabel "Serious"^^xsd:string ;
   mms:dataElementName "AESER"^^xsd:string ;
@@ -220,7 +213,6 @@
   cdashs:prompt "Severity"^^xsd:string ;
   cdashs:questionText "What was the severity of the adverse event?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Description of the severity of the adverse event. {AESEV}"^^xsd:string ;
   mms:dataElementDescription "Description of the severity of the adverse event."^^xsd:string ;
   mms:dataElementLabel "Severity"^^xsd:string ;
   mms:dataElementName "AESEV"^^xsd:string ;
@@ -235,7 +227,6 @@
   cdashs:prompt "Hospitalization"^^xsd:string ;
   cdashs:questionText "Did the adverse event result in initial or prolonged hospitalization for the subject?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates if a \"serious\" adverse event resulted in an initial or prolonged hospitalization. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates if a \"serious\" adverse event resulted in an initial or prolonged hospitalization."^^xsd:string ;
   mms:dataElementLabel "Hospitalization"^^xsd:string ;
   mms:dataElementName "AESHOSP"^^xsd:string ;
@@ -250,7 +241,6 @@
   cdashs:prompt "Life threatening"^^xsd:string ;
   cdashs:questionText "Is the adverse event Life Threatening?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates if a \"serious\" adverse event was life threatening. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates if a \"serious\" adverse event was life threatening."^^xsd:string ;
   mms:dataElementLabel "Life threatening"^^xsd:string ;
   mms:dataElementName "AESLIFE"^^xsd:string ;
@@ -265,7 +255,6 @@
   cdashs:prompt "Other Medically Important Event"^^xsd:string ;
   cdashs:questionText "Is the adverse event a medically important event not covered by ther \"serious\" criteria?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Indicates if a \"serious\" adverse event is associated with other serious or important medical events. {NY} "^^xsd:string ;
   mms:dataElementDescription "Indicates if a \"serious\" adverse event is associated with other serious or important medical events."^^xsd:string ;
   mms:dataElementLabel "Other Medically Important Event"^^xsd:string ;
   mms:dataElementName "AESMIE"^^xsd:string ;
@@ -328,7 +317,6 @@
   cdashs:prompt "Toxicity Grade"^^xsd:string ;
   cdashs:questionText "What is the toxicity grade of the adverse event?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.AE> ;
-  mms:dataElementDescription "Description of the toxicity grade of the adverse event. {TOXGR}"^^xsd:string ;
   mms:dataElementDescription "Description of the toxicity grade of the adverse event."^^xsd:string ;
   mms:dataElementLabel "Toxicity Grade"^^xsd:string ;
   mms:dataElementName "AETOXGR"^^xsd:string ;
@@ -365,11 +353,10 @@
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMDOSFRM>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "FRM"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the pharmaceutical dosage form (e.g., TABLET CAPSULE, SYRUP) of delivery for the medication taken. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the pharmaceutical dosage form (e.g., TABLET CAPSULE, SYRUP) of delivery for the medication taken."^^xsd:string ;
   cdashs:prompt "Dose Form"^^xsd:string ;
   cdashs:questionText "What was the dose form of the medication/ therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "Name of the pharmaceutical dosage form (e.g., TABLET CAPSULE, SYRUP) of delivery for the drug. {FRM}  "^^xsd:string ;
   mms:dataElementDescription "Name of the pharmaceutical dosage form (e.g., TABLET CAPSULE, SYRUP) of delivery for the drug."^^xsd:string ;
   mms:dataElementLabel "Dose Form"^^xsd:string ;
   mms:dataElementName "CMDOSFRM"^^xsd:string ;
@@ -380,11 +367,10 @@
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMDOSFRQ>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "FREQ"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record how often the medication or therapy was taken.  (e.g., BID, PRN). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record how often the medication or therapy was taken.  (e.g., BID, PRN)."^^xsd:string ;
   cdashs:prompt "Frequency"^^xsd:string ;
   cdashs:questionText "What was the frequency of the medication /therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "How often the medication was taken (e.g., BID, PRN). {FREQ}  "^^xsd:string ;
   mms:dataElementDescription "How often the medication was taken (e.g., BID, PRN)."^^xsd:string ;
   mms:dataElementLabel "Frequency"^^xsd:string ;
   mms:dataElementName "CMDOSFRQ"^^xsd:string ;
@@ -396,7 +382,7 @@
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the total dose of medication taken daily."^^xsd:string ;
   cdashs:prompt "Total Daily Dose"^^xsd:string ;
-  cdashs:questionText "What was the total daily dose of the medication/ therapy?"^^xsd:string ;
+  cdashs:questionText "What was the total daily dose of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "Total daily dose taken."^^xsd:string ;
   mms:dataElementLabel "Total Daily Dose"^^xsd:string ;
@@ -407,11 +393,10 @@
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMDOSU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the dose unit of the dose of medication taken (e.g., mg.). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the dose unit of the dose of medication taken (e.g., mg.)."^^xsd:string ;
   cdashs:prompt "Dose Unit"^^xsd:string ;
-  cdashs:questionText "What was the unit of the medication/ therapy?"^^xsd:string ;
+  cdashs:questionText "What was the unit of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "The unit associated with the medication taken (e.g., mg in \"2mg three times per day\"). {UNIT}  "^^xsd:string ;
   mms:dataElementDescription "The unit associated with the medication taken (e.g., mg in \"2mg three times per day\")."^^xsd:string ;
   mms:dataElementLabel "Dose Unit"^^xsd:string ;
   mms:dataElementName "CMDOSU"^^xsd:string ;
@@ -421,9 +406,9 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMDSTXT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the dose of medication taken per administration (e.g., 200). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the dose of medication taken per administration (e.g., 200)."^^xsd:string ;
   cdashs:prompt "Dose"^^xsd:string ;
-  cdashs:questionText "What was the individual dose of the medication/ therapy?"^^xsd:string ;
+  cdashs:questionText "What was the individual dose of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "The dose of medication taken per administration."^^xsd:string ;
   mms:dataElementLabel "Dose"^^xsd:string ;
@@ -435,7 +420,7 @@
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the date the subject stopped taking the medication or therapy using this format (DD- MON-YYYY). If the subject has not stopped taking the medication leave this field blank."^^xsd:string ;
   cdashs:prompt "End Date"^^xsd:string ;
-  cdashs:questionText "What was the end date of the medication/ther apy?"^^xsd:string ;
+  cdashs:questionText "What was the end date of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "Date that the subject stopped taking the medication or therapy."^^xsd:string ;
   mms:dataElementLabel "End Date"^^xsd:string ;
@@ -447,7 +432,7 @@
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the time (as complete as possible) that the medication or therapy was stopped."^^xsd:string ;
   cdashs:prompt "End Time"^^xsd:string ;
-  cdashs:questionText "What was the end time of the medication /therapy?"^^xsd:string ;
+  cdashs:questionText "What was the end time of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "Time when the subject stopped taking the medication or therapy."^^xsd:string ;
   mms:dataElementLabel "End Time"^^xsd:string ;
@@ -457,11 +442,11 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMINDC>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the reason the medication was taken based on clinical investigator�s evaluation. If taken to treat a condition, and a diagnosis was made, the indication should be the diagnosis. If taken to treat a condition, and no diagnosis was made, the indication should be the signs and symptoms. If taken as prophylaxis, report as \"Prophylaxis for�\" "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the reason the medication was taken based on clinical investigator's evaluation. If taken to treat a condition, and a diagnosis was made, the indication should be the diagnosis. If taken to treat a condition, and no diagnosis was made, the indication should be the signs and symptoms. If taken as prophylaxis, report as \"Prophylaxis for...\""^^xsd:string ;
   cdashs:prompt "Indication"^^xsd:string ;
   cdashs:questionText "For what indication was the medication/ therapy taken?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "The reason for administration of a concomitant (non-study) medication.  (e.g., Nausea, Hypertension) This is not the pharmacological/ therapeutic classification of an agent (e.g., antibiotic, analgesic, etc.), but the reason for its administration to the subject. "^^xsd:string ;
+  mms:dataElementDescription "The reason for administration of a concomitant (non-study) medication.  (e.g., Nausea, Hypertension) This is not the pharmacological/therapeutic classification of an agent (e.g., antibiotic, analgesic, etc.), but the reason for its administration to the subject."^^xsd:string ;
   mms:dataElementLabel "Indication"^^xsd:string ;
   mms:dataElementName "CMINDC"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -469,7 +454,7 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMINGRD>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Prior to a subject�s clinical visit, remind all subjects to bring all medications bottles, packs etc. they are taking with them to their clinical visit. Record all active ingredient(s) off the medication label and separate each ingredient with a comma for the name of drug medication or therapy taken. For example, the medication Dolmen, if manufactured in Spain, the active ingredients should be collected as noted below: Active Ingredient: Acetylsalicylic Acid, Ascorbic acid, codeine phosphate "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Prior to a subject's clinical visit, remind all subjects to bring all medications bottles, packs etc. they are taking with them to their clinical visit. Record all active ingredient(s) off the medication label and separate each ingredient with a comma for the name of drug medication or therapy taken. For example, the medication Dolmen, if manufactured in Spain, the active ingredients should be collected as noted below: Active Ingredient: Acetylsalicylic Acid, Ascorbic acid, codeine phosphate."^^xsd:string ;
   cdashs:prompt "Active Ingredients"^^xsd:string ;
   cdashs:questionText "What were the active ingredients?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
@@ -494,13 +479,12 @@
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMOCCUR>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Please indicate if < specific medication/treatment > was taken by checking \"Yes\" or \"No\". "^^xsd:string ;
-  cdashs:prompt "< specific medication/treat ment >"^^xsd:string ;
-  cdashs:questionText "Did the subject take < specific medication/ treatment >? or Has the subject taken < specific medication/ treatment >?"^^xsd:string ;
+  cdashs:crfCompletionInstructions "Please indicate if <specific medication/treatment> was taken by checking \"Yes\" or \"No\"."^^xsd:string ;
+  cdashs:prompt "<specific medication/treatment>"^^xsd:string ;
+  cdashs:questionText "Did the subject take <specific medication/treatment>? or Has the subject taken <specific medication/treatment >?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "Used when the occurrence of a specific medication or treatment is solicited to indicate whether or not (N/Y) the treatment or medication (CMTRT) was taken or given. This field can be used for either prior or concomitant medication/treatments. {NY}"^^xsd:string ;
   mms:dataElementDescription "Used when the occurrence of a specific medication or treatment is solicited to indicate whether or not (N/Y) the treatment or medication (CMTRT) was taken or given. This field can be used for either prior or concomitant medication/treatments."^^xsd:string ;
-  mms:dataElementLabel "< specific medication/treat ment >"^^xsd:string ;
+  mms:dataElementLabel "<specific medication/treatment>"^^xsd:string ;
   mms:dataElementName "CMOCCUR"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:dataElementValueDomain cdashct:C71620 ;
@@ -514,7 +498,6 @@
   cdashs:questionText "Is the medication /therapy still ongoing?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "Indicates medication or therapy is ongoing when no End Date is provided.  (See Section 2.2)"^^xsd:string ;
-  mms:dataElementDescription "Indicates medication or therapy is ongoing when no End Date is provided. {NY} (See Section 2.2)"^^xsd:string ;
   mms:dataElementLabel "Ongoing"^^xsd:string ;
   mms:dataElementName "CMONGO"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -526,9 +509,8 @@
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
   cdashs:crfCompletionInstructions "Check if the medication or therapy was started before the study."^^xsd:string ;
   cdashs:prompt "Taken Prior to Study?"^^xsd:string ;
-  cdashs:questionText "Was the medication/ therapy taken prior to the study?"^^xsd:string ;
+  cdashs:questionText "Was the medication/therapy taken prior to the study?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "To determine if medications were taken prior to study start. {NY}"^^xsd:string ;
   mms:dataElementDescription "To determine if medications were taken prior to study start."^^xsd:string ;
   mms:dataElementLabel "Taken Prior to Study?"^^xsd:string ;
   mms:dataElementName "CMPRIOR"^^xsd:string ;
@@ -541,9 +523,8 @@
   cdashs:controlledTermsOrFormat "ROUTE"^^xsd:string ;
   cdashs:crfCompletionInstructions "Provide the route of administration for the drug."^^xsd:string ;
   cdashs:prompt "Route"^^xsd:string ;
-  cdashs:questionText "What was the route of administration of the medication /therapy?"^^xsd:string ;
+  cdashs:questionText "What was the route of administration of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "Identifies the route of administration of the drug. {ROUTE}"^^xsd:string ;
   mms:dataElementDescription "Identifies the route of administration of the drug."^^xsd:string ;
   mms:dataElementLabel "Route"^^xsd:string ;
   mms:dataElementName "CMROUTE"^^xsd:string ;
@@ -565,9 +546,9 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.CM.CMSTDAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the date the medication or therapy was first taken using this format (DD-MON- YYYY). If the subject has been taking the medication for a considerable amount of time prior to the start of the study, it is acceptable to have an incomplete date.  Medications taken during the study are expected to have a complete start date. Prior medications that are exclusionary should have both a start and end date "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the date the medication or therapy was first taken using this format (DD-MON- YYYY). If the subject has been taking the medication for a considerable amount of time prior to the start of the study, it is acceptable to have an incomplete date.  Medications taken during the study are expected to have a complete start date. Prior medications that are exclusionary should have both a start and end date."^^xsd:string ;
   cdashs:prompt "Start Date"^^xsd:string ;
-  cdashs:questionText "What was the start date of the medication /therapy?"^^xsd:string ;
+  cdashs:questionText "What was the start date of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "Date when the medication was first taken."^^xsd:string ;
   mms:dataElementLabel "Start Date"^^xsd:string ;
@@ -579,7 +560,7 @@
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the time (as complete as possible) that the medication or therapy was started."^^xsd:string ;
   cdashs:prompt "Start Time"^^xsd:string ;
-  cdashs:questionText "What was the start time of the medication/ therapy?"^^xsd:string ;
+  cdashs:questionText "What was the start time of the medication/therapy?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
   mms:dataElementDescription "Time the medication was started."^^xsd:string ;
   mms:dataElementLabel "Start Time"^^xsd:string ;
@@ -606,7 +587,6 @@
   cdashs:prompt "Any meds?"^^xsd:string ;
   cdashs:questionText "Were any medications taken?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.CM> ;
-  mms:dataElementDescription "General prompt question to aid in monitoring and data cleaning. {NY}"^^xsd:string ;
   mms:dataElementDescription "General prompt question to aid in monitoring and data cleaning."^^xsd:string ;
   mms:dataElementLabel "Any meds?"^^xsd:string ;
   mms:dataElementName "CMYN"^^xsd:string ;
@@ -616,23 +596,19 @@
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.COMMON.INVID>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions """Record the sponsor-defined identifier for your site investigator.
-"""^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the sponsor-defined identifier for your site investigator."^^xsd:string ;
   cdashs:prompt "Investigator"^^xsd:string ;
   cdashs:questionText "What is the investigator identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.COMMON> ;
-  mms:dataElementDescription """A unique identifier assigned to an Investigator.
-"""^^xsd:string ;
+  mms:dataElementDescription "A unique identifier assigned to an Investigator."^^xsd:string ;
   mms:dataElementLabel "Investigator"^^xsd:string ;
-  mms:dataElementName """INVID
-"""^^xsd:string ;
+  mms:dataElementName "INVID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:ordinal "6"^^xsd:positiveInteger ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.COMMON.SITEID>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions """Record your clinical site's
-identifier as defined by the sponsor."""^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record your clinical site's identifier as defined by the sponsor."^^xsd:string ;
   cdashs:prompt "Site"^^xsd:string ;
   cdashs:questionText "What is the site identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.COMMON> ;
@@ -644,8 +620,7 @@ identifier as defined by the sponsor."""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.COMMON.SPONSOR>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions """Not applicable
-"""^^xsd:string ;
+  cdashs:crfCompletionInstructions "Not applicable"^^xsd:string ;
   cdashs:prompt "Sponsor"^^xsd:string ;
   cdashs:questionText "What is the sponsor identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.COMMON> ;
@@ -659,15 +634,11 @@ A corporation or agency whose employees conduct the investigation is considered 
 <http://rdf.cdisc.org/cdash-1-1/std#Column.COMMON.STUDYID>
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Not applicable."^^xsd:string ;
-  cdashs:prompt """Protocol
-or
-Study"""^^xsd:string ;
+  cdashs:prompt "Protocol or Study"^^xsd:string ;
   cdashs:questionText "What is the study identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.COMMON> ;
   mms:dataElementDescription "Unique identifier for a study."^^xsd:string ;
-  mms:dataElementLabel """Protocol
-or
-Study"""^^xsd:string ;
+  mms:dataElementLabel "Protocol or Study"^^xsd:string ;
   mms:dataElementName "STUDYID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:ordinal "2"^^xsd:positiveInteger ;
@@ -678,7 +649,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Subject"^^xsd:string ;
   cdashs:questionText "What is the subject identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.COMMON> ;
-  mms:dataElementDescription "Identifier assigned to each trial subject to protect the subject�s identity, and used instead of the subject�s name when the Investigator reports trial data."^^xsd:string ;
+  mms:dataElementDescription "Identifier assigned to each trial subject to protect the subject's identity, and used instead of the subject's name when the Investigator reports trial data."^^xsd:string ;
   mms:dataElementLabel "Subject"^^xsd:string ;
   mms:dataElementName "SUBJID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -686,16 +657,13 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.COMMON.USUBJID>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions """Not applicable.
-"""^^xsd:string ;
+  cdashs:crfCompletionInstructions "Not applicable."^^xsd:string ;
   cdashs:prompt "Unique Subject ID"^^xsd:string ;
   cdashs:questionText "For this multi-study subject, what is the unique subject identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.COMMON> ;
-  mms:dataElementDescription """Identifier used to uniquely identify a subject across all studies or all applications or submissions involving the product.
-"""^^xsd:string ;
+  mms:dataElementDescription "Identifier used to uniquely identify a subject across all studies or all applications or submissions involving the product."^^xsd:string ;
   mms:dataElementLabel "Unique Subject ID"^^xsd:string ;
-  mms:dataElementName """USUBJID
-"""^^xsd:string ;
+  mms:dataElementName "USUBJID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:ordinal "5"^^xsd:positiveInteger ;
 .
@@ -717,7 +685,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Date <dispensed or returned>"^^xsd:string ;
   cdashs:questionText "What date was the study treatment (dispensed or returned)?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Date the study treatment was dispensed or returned"^^xsd:string ;
+  mms:dataElementDescription "Date the study treatment was dispensed or returned."^^xsd:string ;
   mms:dataElementLabel "Date <dispensed or returned>"^^xsd:string ;
   mms:dataElementName "DADAT"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -729,7 +697,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Amount"^^xsd:string ;
   cdashs:questionText "What is the amount dispensed or the amount returned?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Result of the Drug Accountability assessment as originally dispensed or returned (e.g., actual amount). "^^xsd:string ;
+  mms:dataElementDescription "Result of the Drug Accountability assessment as originally dispensed or returned (e.g., actual amount)."^^xsd:string ;
   mms:dataElementLabel "Amount"^^xsd:string ;
   mms:dataElementName "DAORRES"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -742,8 +710,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Units"^^xsd:string ;
   cdashs:questionText "What are the units of study treatment dispensed or returned?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Unit for DAORRES (e.g., tablets).   "^^xsd:string ;
-  mms:dataElementDescription "Unit for DAORRES (e.g., tablets). {UNIT}  "^^xsd:string ;
+  mms:dataElementDescription "Unit for DAORRES (e.g., tablets)."^^xsd:string ;
   mms:dataElementLabel "Units"^^xsd:string ;
   mms:dataElementName "DAORRESU"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -757,7 +724,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "DA Performed?"^^xsd:string ;
   cdashs:questionText "Was drug accountability performed?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Status of whether or not drug accountability was done. {NY}"^^xsd:string ;
   mms:dataElementDescription "Status of whether or not drug accountability was done."^^xsd:string ;
   mms:dataElementLabel "DA Performed?"^^xsd:string ;
   mms:dataElementName "DAPERF"^^xsd:string ;
@@ -771,7 +737,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Treatment label ID"^^xsd:string ;
   cdashs:questionText "What is the treatment label identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Treatment label identifier (e.g. kit number, bottle label, vial identifier). "^^xsd:string ;
+  mms:dataElementDescription "Treatment label identifier (e.g. kit number, bottle label, vial identifier)."^^xsd:string ;
   mms:dataElementLabel "Treatment label ID"^^xsd:string ;
   mms:dataElementName "DAREFID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -779,7 +745,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DA.DASCAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the name of the study treatment dispensed/returned (e.g., Bottle A, Bottle B). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the name of the study treatment dispensed/returned (e.g., Bottle A, Bottle B)."^^xsd:string ;
   cdashs:prompt "Treatment Name"^^xsd:string ;
   cdashs:questionText "What was the name of the study treatment (dispensed or returned)?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
@@ -796,8 +762,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Dispensed or Returned"^^xsd:string ;
   cdashs:questionText "Is this the amount dispensed or the amount returned?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Descriptive name of the measurement or finding, (e.g., dispensed, returned)  "^^xsd:string ;
-  mms:dataElementDescription "Descriptive name of the measurement or finding, (e.g., dispensed, returned) {DATEST} "^^xsd:string ;
+  mms:dataElementDescription "Descriptive name of the measurement or finding, (e.g., dispensed, returned)."^^xsd:string ;
   mms:dataElementLabel "Dispensed or Returned"^^xsd:string ;
   mms:dataElementName "DATEST"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -811,8 +776,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Dispensed or Returned"^^xsd:string ;
   cdashs:questionText "Is this the amount dispensed or the amount returned?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DA> ;
-  mms:dataElementDescription "Descriptive name of the measurement or finding, (e.g., dispensed, returned)   "^^xsd:string ;
-  mms:dataElementDescription "Descriptive name of the measurement or finding, (e.g., dispensed, returned) {DATESTCD}  "^^xsd:string ;
+  mms:dataElementDescription "Descriptive name of the measurement or finding, (e.g., dispensed, returned)."^^xsd:string ;
   mms:dataElementLabel "Dispensed or Returned"^^xsd:string ;
   mms:dataElementName "DATESTCD"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -823,7 +787,7 @@ Study"""^^xsd:string ;
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record age of the subject."^^xsd:string ;
   cdashs:prompt "Age"^^xsd:string ;
-  cdashs:questionText "What is the subject�s age?"^^xsd:string ;
+  cdashs:questionText "What is the subject's age?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
   mms:dataElementDescription "Numeric age of subject."^^xsd:string ;
   mms:dataElementLabel "Age"^^xsd:string ;
@@ -834,11 +798,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.AGEU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "AGEU"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the appropriate age unit (e.g., YEARS, MONTHS, WEEKS, etc.). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the appropriate age unit (e.g., YEARS, MONTHS, WEEKS, etc.)."^^xsd:string ;
   cdashs:prompt "Age Unit"^^xsd:string ;
   cdashs:questionText "What is the age unit used?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "Those units of time that are routinely used to express the age of a person. (NCI) {AGEU}"^^xsd:string ;
   mms:dataElementDescription "Those units of time that are routinely used to express the age of a person. (NCI)"^^xsd:string ;
   mms:dataElementLabel "Age Unit"^^xsd:string ;
   mms:dataElementName "AGEU"^^xsd:string ;
@@ -848,11 +811,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.BRTHDAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the date of birth to the level of precision known (e.g., day/month/year, year, month/year, etc). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the date of birth to the level of precision known (e.g., day/month/year, year, month/year, etc)."^^xsd:string ;
   cdashs:prompt "Birth Date"^^xsd:string ;
-  cdashs:questionText "What is the subject�s date of birth?"^^xsd:string ;
+  cdashs:questionText "What is the subject's date of birth?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "A subject�s date of birth (with or without the time of birth). The complete Date of Birth is made from the temporal components of Birth Year, Birth Month, Birth Day and Birth Time. "^^xsd:string ;
+  mms:dataElementDescription "A subject's date of birth (with or without the time of birth). The complete Date of Birth is made from the temporal components of Birth Year, Birth Month, Birth Day and Birth Time."^^xsd:string ;
   mms:dataElementLabel "Birth Date"^^xsd:string ;
   mms:dataElementName "BRTHDAT"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -860,11 +823,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.BRTHDY>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the subject�s day of birth (e.g., 01-31). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the subject's day of birth (e.g., 01-31)."^^xsd:string ;
   cdashs:prompt "Birth Day"^^xsd:string ;
-  cdashs:questionText "What is the subject�s day of birth?"^^xsd:string ;
+  cdashs:questionText "What is the subject's day of birth?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "Numeric day of the month of the subject�s birth."^^xsd:string ;
+  mms:dataElementDescription "Numeric day of the month of the subject's birth."^^xsd:string ;
   mms:dataElementLabel "Birth Day"^^xsd:string ;
   mms:dataElementName "BRTHDY"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -872,11 +835,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.BRTHMO>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the subject�s month of birth [e.g., (in local language short month format) (JAN- DEC) or (ENE-DIE) or (JAN- DEZ), etc.]. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the subject's month of birth [e.g., (in local language short month format) (JAN- DEC) or (ENE-DIE) or (JAN- DEZ), etc.]."^^xsd:string ;
   cdashs:prompt "Birth Month"^^xsd:string ;
-  cdashs:questionText "What is the subject�s month of birth?"^^xsd:string ;
+  cdashs:questionText "What is the subject's month of birth?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "Text value for the month of the subject�s birth."^^xsd:string ;
+  mms:dataElementDescription "Text value for the month of the subject's birth."^^xsd:string ;
   mms:dataElementLabel "Birth Month"^^xsd:string ;
   mms:dataElementName "BRTHMO"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -886,9 +849,9 @@ Study"""^^xsd:string ;
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the time of birth (as completely as possible)."^^xsd:string ;
   cdashs:prompt "Birth Time"^^xsd:string ;
-  cdashs:questionText "What is the time of the subject�s birth?"^^xsd:string ;
+  cdashs:questionText "What is the time of the subject's birth?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "Time of subject�s birth."^^xsd:string ;
+  mms:dataElementDescription "Time of subject's birth."^^xsd:string ;
   mms:dataElementLabel "Birth Time"^^xsd:string ;
   mms:dataElementName "BRTHTIM"^^xsd:string ;
   mms:dataElementType "xsd:time"^^xsd:QName ;
@@ -896,11 +859,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.BRTHYR>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the subject�s year of birth (e.g., YYYY, a four digit year). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the subject's year of birth (e.g., YYYY, a four digit year)."^^xsd:string ;
   cdashs:prompt "Birth Year"^^xsd:string ;
-  cdashs:questionText "What is the subject�s year of birth?"^^xsd:string ;
+  cdashs:questionText "What is the subject's year of birth?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "Year of the subject�s birth."^^xsd:string ;
+  mms:dataElementDescription "Year of the subject's birth."^^xsd:string ;
   mms:dataElementLabel "Birth Year"^^xsd:string ;
   mms:dataElementName "BRTHYR"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -921,12 +884,11 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.ETHNIC>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "ETHNIC"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Study participants should self-report ethnicity, with ethnicity being asked about before race. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Study participants should self-report ethnicity, with ethnicity being asked about before race."^^xsd:string ;
   cdashs:prompt "Ethnicity"^^xsd:string ;
   cdashs:questionText "What is the ethnicity of the subject?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease (NCI � CDISC Definition).   "^^xsd:string ;
-  mms:dataElementDescription "A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease (NCI � CDISC Definition). {ETHNIC}  "^^xsd:string ;
+  mms:dataElementDescription "A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease (NCI - CDISC Definition)."^^xsd:string ;
   mms:dataElementLabel "Ethnicity"^^xsd:string ;
   mms:dataElementName "ETHNIC"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -936,11 +898,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.RACE>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "RACE"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Study participants should self-report race, with race being asked about after ethnicity. (The FDA guidance suggests \"that individuals be permitted to designate a multiracial identity\". \"Check all that apply\" at the time of collection.) "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Study participants should self-report race, with race being asked about after ethnicity. (The FDA guidance suggests \"that individuals be permitted to designate a multiracial identity\". \"Check all that apply\" at the time of collection.)"^^xsd:string ;
   cdashs:prompt "Race"^^xsd:string ;
   cdashs:questionText "What is the race of the subject?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "An arbitrary classification based on physical characteristics; a group of persons related by common descent or heredity (U.S. Center for Disease Control). {RACE}"^^xsd:string ;
   mms:dataElementDescription "An arbitrary classification based on physical characteristics; a group of persons related by common descent or heredity (U.S. Center for Disease Control)."^^xsd:string ;
   mms:dataElementLabel "Race"^^xsd:string ;
   mms:dataElementName "RACE"^^xsd:string ;
@@ -950,11 +911,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.RACEOTH>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "If none of the pre-printed values for RACE are applicable or if another, unprinted selection should be added to those pre- printed values, record the value in this free text field. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If none of the pre-printed values for RACE are applicable or if another, unprinted selection should be added to those pre- printed values, record the value in this free text field."^^xsd:string ;
   cdashs:prompt "Specify Other"^^xsd:string ;
   cdashs:questionText "Specify other race."^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "A free-text field to be used when none of the pre- printed values for RACE are applicable or if another, unprinted selection should be added to those pre-printed values. "^^xsd:string ;
+  mms:dataElementDescription "A free-text field to be used when none of the pre- printed values for RACE are applicable or if another, unprinted selection should be added to those pre-printed values."^^xsd:string ;
   mms:dataElementLabel "Specify Other"^^xsd:string ;
   mms:dataElementName "RACEOTH"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -963,12 +924,11 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DM.SEX>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "SEX"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the appropriate sex (e.g., F (female), M (male). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the appropriate sex (e.g., F (female), M (male)."^^xsd:string ;
   cdashs:prompt "Sex"^^xsd:string ;
   cdashs:questionText "What is the sex of the subject?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DM> ;
-  mms:dataElementDescription "The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female (NCI � CDISC Definition). {SEX}"^^xsd:string ;
-  mms:dataElementDescription "The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female (NCI � CDISC Definition)."^^xsd:string ;
+  mms:dataElementDescription "The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female (NCI - CDISC Definition)."^^xsd:string ;
   mms:dataElementLabel "Sex"^^xsd:string ;
   mms:dataElementName "SEX"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -978,11 +938,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DS.DSCONT>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "To the best of your knowledge, record if the subject will be continuing to <the next phase of this study or another related study> (sponsor to specify as appropriate). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "To the best of your knowledge, record if the subject will be continuing to <the next phase of this study or another related study> (sponsor to specify as appropriate)."^^xsd:string ;
   cdashs:prompt "Subject Continue"^^xsd:string ;
   cdashs:questionText "Will the subject continue?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
-  mms:dataElementDescription "Plan for subject continuation to the next phase of the study or another study at the time of completion of the CRF. {NY}"^^xsd:string ;
   mms:dataElementDescription "Plan for subject continuation to the next phase of the study or another study at the time of completion of the CRF."^^xsd:string ;
   mms:dataElementLabel "Subject Continue"^^xsd:string ;
   mms:dataElementName "DSCONT"^^xsd:string ;
@@ -993,12 +952,11 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DS.DSDECOD>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NCOMPLT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Document the subject�s status at <insert text corresponding to the selected trial epoch>. If the subject discontinued prematurely, record the primary reason for discontinuation. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Document the subject's status at <insert text corresponding to the selected trial epoch>. If the subject discontinued prematurely, record the primary reason for discontinuation."^^xsd:string ;
   cdashs:prompt "Status"^^xsd:string ;
   cdashs:questionText "What was the subject's status?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
-  mms:dataElementDescription "Describes whether a subject completed the study or a portion of a study (epoch) or the reason they did not complete. DSDECOD is the Standardized Disposition Term {NCOMPLT}"^^xsd:string ;
-  mms:dataElementDescription "Describes whether a subject completed the study or a portion of a study (epoch) or the reason they did not complete. DSDECOD is the Standardized Disposition Term"^^xsd:string ;
+  mms:dataElementDescription "Describes whether a subject completed the study or a portion of a study (epoch) or the reason they did not complete. DSDECOD is the Standardized Disposition Term."^^xsd:string ;
   mms:dataElementLabel "Status"^^xsd:string ;
   mms:dataElementName "DSDECOD"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1023,7 +981,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "<protocol milestone/ disposition event> date"^^xsd:string ;
   cdashs:questionText "What was the date of <protocol milestone/ disposition event>?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
-  mms:dataElementDescription "The date of the specified protocol milestone (e.g. informed consent, randomization) or disposition event (e.g. study completion or discontinuation). "^^xsd:string ;
+  mms:dataElementDescription "The date of the specified protocol milestone (e.g. informed consent, randomization) or disposition event (e.g. study completion or discontinuation)."^^xsd:string ;
   mms:dataElementLabel "<protocol milestone/ disposition event> date"^^xsd:string ;
   mms:dataElementName "DSSTDAT"^^xsd:string ;
   mms:dataElementType "xsd:date"^^xsd:QName ;
@@ -1031,7 +989,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DS.DSSTTIM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the time (as complete as possible) that the subject completed the study or portion of the study as defined in the protocol and/or CRF Completion Instructions. If the subject did not complete the study or portion of the study, record the time (as complete as possible) as defined in the protocol and/or CRF Completion Instructions. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the time (as complete as possible) that the subject completed the study or portion of the study as defined in the protocol and/or CRF Completion Instructions. If the subject did not complete the study or portion of the study, record the time (as complete as possible) as defined in the protocol and/or CRF Completion Instructions."^^xsd:string ;
   cdashs:prompt "Completion or Discontinuation Time"^^xsd:string ;
   cdashs:questionText "What was the time of <protocol milestone/ disposition event>?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
@@ -1043,11 +1001,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DS.DSTERM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Document the subject�s status at <insert text corresponding to the selected trial epoch>. If the subject discontinued prematurely, record the primary reason for discontinuation. (Or, if used with a DECOD list), if \"Other\" is selected from the Status list, provide the verbatim reason. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Document the subject's status at <insert text corresponding to the selected trial epoch>. If the subject discontinued prematurely, record the primary reason for discontinuation. (Or, if used with a DECOD list), if \"Other\" is selected from the Status list, provide the verbatim reason."^^xsd:string ;
   cdashs:prompt "Specify status"^^xsd:string ;
   cdashs:questionText "Specify Status"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
-  mms:dataElementDescription "A free text field that captures how a subject completed the study or a portion of a study (epoch) or the reason they did not complete. (Or if used with a DECOD list), free text description of the subject�s \"Other\" status. "^^xsd:string ;
+  mms:dataElementDescription "A free text field that captures how a subject completed the study or a portion of a study (epoch) or the reason they did not complete. (Or if used with a DECOD list), free text description of the subject's \"Other\" status."^^xsd:string ;
   mms:dataElementLabel "Specify status"^^xsd:string ;
   mms:dataElementName "DSTERM"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1056,12 +1014,11 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DS.DSUNBLND>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Was the subject�s treatment assignment unblinded by the site?"^^xsd:string ;
+  cdashs:crfCompletionInstructions "Was the subject's treatment assignment unblinded by the site?"^^xsd:string ;
   cdashs:prompt "Unblinded"^^xsd:string ;
   cdashs:questionText "Was treatment unblinded by the site?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
-  mms:dataElementDescription "Identifies in a blinded trial whether or not the subject�s blind was broken by the site.  (See  Section 2.2.)"^^xsd:string ;
-  mms:dataElementDescription "Identifies in a blinded trial whether or not the subject�s blind was broken by the site. {NY} (See  Section 2.2.)"^^xsd:string ;
+  mms:dataElementDescription "Identifies in a blinded trial whether or not the subject's blind was broken by the site.  (See  Section 2.2.)"^^xsd:string ;
   mms:dataElementLabel "Unblinded"^^xsd:string ;
   mms:dataElementName "DSUNBLND"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1070,11 +1027,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DS.EPOCH>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Check the <epoch, or insert more appropriate wording> for which disposition is being recorded. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Check the <epoch, or insert more appropriate wording> for which disposition is being recorded."^^xsd:string ;
   cdashs:prompt "Trial Period"^^xsd:string ;
   cdashs:questionText "To which period of the trial does this disposition refer?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DS> ;
-  mms:dataElementDescription "Trial epoch (e.g., DOUBLE BLIND, SINGLE BLIND, TREATMENT, SCREENING, RUN IN) for which subject disposition is being collected. "^^xsd:string ;
+  mms:dataElementDescription "Trial epoch (e.g., DOUBLE BLIND, SINGLE BLIND, TREATMENT, SCREENING, RUN IN) for which subject disposition is being collected."^^xsd:string ;
   mms:dataElementLabel "Trial Period"^^xsd:string ;
   mms:dataElementName "EPOCH"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1106,7 +1063,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DV.DVENTIM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "If appropriate, record the time (as complete as possible) the protocol deviation ended. This should be the time the protocol deviation stopped and not the time it was discovered or reported. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If appropriate, record the time (as complete as possible) the protocol deviation ended. This should be the time the protocol deviation stopped and not the time it was discovered or reported."^^xsd:string ;
   cdashs:prompt "End Time"^^xsd:string ;
   cdashs:questionText "What was the protocol deviation end time?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DV> ;
@@ -1142,7 +1099,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DV.DVSTTIM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "If appropriate, record the time (as complete as possible) the protocol deviation began. This should be the start or occurrence of the protocol deviation and not the time it was discovered or reported. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If appropriate, record the time (as complete as possible) the protocol deviation began. This should be the start or occurrence of the protocol deviation and not the time it was discovered or reported."^^xsd:string ;
   cdashs:prompt "Start Time"^^xsd:string ;
   cdashs:questionText "What was the protocol deviation start time?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DV> ;
@@ -1159,7 +1116,7 @@ Study"""^^xsd:string ;
   cdashs:questionText "What was the protocol deviation term?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DV> ;
   mms:dataElementDescription "DVTERM is the verbatim text."^^xsd:string ;
-  mms:dataElementLabel "Protocol Deviation or Other, Specify "^^xsd:string ;
+  mms:dataElementLabel "Protocol Deviation or Other, Specify"^^xsd:string ;
   mms:dataElementName "DVTERM"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:ordinal "3"^^xsd:positiveInteger ;
@@ -1167,11 +1124,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.DV.DVYN>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Enter \"Yes\" if a protocol deviation occurred and \"No\" if none occurred.  Ensure that any adverse event, concomitant medication use, newly discovered medical history, etc. which triggers a protocol deviation is noted in the respective CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Enter \"Yes\" if a protocol deviation occurred and \"No\" if none occurred.  Ensure that any adverse event, concomitant medication use, newly discovered medical history, etc. which triggers a protocol deviation is noted in the respective CRF."^^xsd:string ;
   cdashs:prompt "Any Deviations?"^^xsd:string ;
   cdashs:questionText "Were there any protocol deviations?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.DV> ;
-  mms:dataElementDescription "Indication of whether or not there was a protocol deviation. {NY}"^^xsd:string ;
   mms:dataElementDescription "Indication of whether or not there was a protocol deviation."^^xsd:string ;
   mms:dataElementLabel "Any Deviations?"^^xsd:string ;
   mms:dataElementName "DVYN"^^xsd:string ;
@@ -1186,7 +1142,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Clinically significant"^^xsd:string ;
   cdashs:questionText "Was the ECG clinically significant?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Whether ECG results were clinically significant. {NY}"^^xsd:string ;
   mms:dataElementDescription "Whether ECG results were clinically significant."^^xsd:string ;
   mms:dataElementLabel "Clinically significant"^^xsd:string ;
   mms:dataElementName "EGCLSIG"^^xsd:string ;
@@ -1213,7 +1168,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Method"^^xsd:string ;
   cdashs:questionText "What was the method used to measure ECG?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Method used to measure ECG. {EGMETHOD}"^^xsd:string ;
   mms:dataElementDescription "Method used to measure ECG."^^xsd:string ;
   mms:dataElementLabel "Method"^^xsd:string ;
   mms:dataElementName "EGMETHOD"^^xsd:string ;
@@ -1223,7 +1177,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EG.EGORRES>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record test results, interpretations or findings. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record test results, interpretations or findings."^^xsd:string ;
   cdashs:prompt "Result"^^xsd:string ;
   cdashs:questionText "What was the result of the ECG?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
@@ -1236,11 +1190,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EG.EGORRESU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the original units in which these data were collected, if not pre- printed on CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the original units in which these data were collected, if not pre- printed on CRF."^^xsd:string ;
   cdashs:prompt "Units"^^xsd:string ;
   cdashs:questionText "What were the ECG result units?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Original units in which the data were collected. {UNIT}"^^xsd:string ;
   mms:dataElementDescription "Original units in which the data were collected."^^xsd:string ;
   mms:dataElementLabel "Units"^^xsd:string ;
   mms:dataElementName "EGORRESU"^^xsd:string ;
@@ -1255,7 +1208,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "ECG Performed"^^xsd:string ;
   cdashs:questionText "Was the ECG performed?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Status of whether or not ECG or a specific ECG test was done. {NY}"^^xsd:string ;
   mms:dataElementDescription "Status of whether or not ECG or a specific ECG test was done."^^xsd:string ;
   mms:dataElementLabel "ECG Performed"^^xsd:string ;
   mms:dataElementName "EGPERF"^^xsd:string ;
@@ -1270,7 +1222,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Subject Position"^^xsd:string ;
   cdashs:questionText "What was the position of the subject during ECG measurement?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Position of the subject during the ECG measurement. {POSITION}"^^xsd:string ;
   mms:dataElementDescription "Position of the subject during the ECG measurement."^^xsd:string ;
   mms:dataElementLabel "Subject Position"^^xsd:string ;
   mms:dataElementName "EGPOS"^^xsd:string ;
@@ -1293,11 +1244,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EG.EGTEST>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "EGTEST"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the name of the ECG measurement or finding, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the name of the ECG measurement or finding, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "<Test name>"^^xsd:string ;
   cdashs:questionText "What was the ECG test name?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Descriptive name of the measurement or finding. {EGTEST}"^^xsd:string ;
   mms:dataElementDescription "Descriptive name of the measurement or finding."^^xsd:string ;
   mms:dataElementLabel "<Test name>"^^xsd:string ;
   mms:dataElementName "EGTEST"^^xsd:string ;
@@ -1310,7 +1260,6 @@ Study"""^^xsd:string ;
   cdashs:controlledTermsOrFormat "EGTESTCD"^^xsd:string ;
   cdashs:prompt "<Test name Coded>"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
-  mms:dataElementDescription "Terminology codelist used with ECG Tests within CDISC. {EGTESTCD}"^^xsd:string ;
   mms:dataElementDescription "Terminology codelist used with ECG Tests within CDISC."^^xsd:string ;
   mms:dataElementLabel "<Test name Coded>"^^xsd:string ;
   mms:dataElementName "EGTESTCD"^^xsd:string ;
@@ -1332,7 +1281,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EG.EGTPT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the time point labels for when the ECG test should be taken, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the time point labels for when the ECG test should be taken, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "<Planned Time Point>"^^xsd:string ;
   cdashs:questionText "What was the planned time point of the measurement?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EG> ;
@@ -1344,11 +1293,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXADJ>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "If there was a change in dosing, record the reason for change. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If there was a change in dosing, record the reason for change."^^xsd:string ;
   cdashs:prompt "Reason adjusted"^^xsd:string ;
   cdashs:questionText "What was the reason the dose was adjusted?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Describes reason or explanation of why a dose is adjusted � used only when an adjustment is represented in EXPOSURE dataset. May be used for variations from protocol-specified doses, or changes from expected doses. "^^xsd:string ;
+  mms:dataElementDescription "Describes reason or explanation of why a dose is adjusted - used only when an adjustment is represented in EXPOSURE dataset. May be used for variations from protocol-specified doses, or changes from expected doses."^^xsd:string ;
   mms:dataElementLabel "Reason adjusted"^^xsd:string ;
   mms:dataElementName "EXADJ"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1357,11 +1306,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXDOSADJ>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Select either \"Yes\" or \"No\" to indicate whether there was a change in dosing. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Select either \"Yes\" or \"No\" to indicate whether there was a change in dosing."^^xsd:string ;
   cdashs:prompt "Adjusted"^^xsd:string ;
   cdashs:questionText "Was the dose adjusted from planned?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Confirmation of dose adjustment. {NY}"^^xsd:string ;
   mms:dataElementDescription "Confirmation of dose adjustment."^^xsd:string ;
   mms:dataElementLabel "Adjusted"^^xsd:string ;
   mms:dataElementName "EXDOSADJ"^^xsd:string ;
@@ -1372,11 +1320,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXDOSFRM>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "FRM"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the formulation (e.g., SOLUTION, TABLET, LOTION) or enter the appropriate code from the code list. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the formulation (e.g., SOLUTION, TABLET, LOTION) or enter the appropriate code from the code list."^^xsd:string ;
   cdashs:prompt "Formulation"^^xsd:string ;
   cdashs:questionText "What was the formulation of the study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Dose form for EXTRT. {FRM}"^^xsd:string ;
   mms:dataElementDescription "Dose form for EXTRT."^^xsd:string ;
   mms:dataElementLabel "Formulation"^^xsd:string ;
   mms:dataElementName "EXDOSFRM"^^xsd:string ;
@@ -1387,11 +1334,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXDOSFRQ>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "FREQ"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the frequency the study treatment was administered for a defined period of time (e.g., BID, QID, TID). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the frequency the study treatment was administered for a defined period of time (e.g., BID, QID, TID)."^^xsd:string ;
   cdashs:prompt "Frequency"^^xsd:string ;
   cdashs:questionText "What was the frequency of study treatment dosing?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Number of doses given per a specific interval. {FREQ}"^^xsd:string ;
   mms:dataElementDescription "Number of doses given per a specific interval."^^xsd:string ;
   mms:dataElementLabel "Frequency"^^xsd:string ;
   mms:dataElementName "EXDOSFRQ"^^xsd:string ;
@@ -1402,11 +1348,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXDOSU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the unit of dose or amount taken per period recorded (e.g., ng, mg, mg/kg). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the unit of dose or amount taken per period recorded (e.g., ng, mg, mg/kg)."^^xsd:string ;
   cdashs:prompt "Units"^^xsd:string ;
   cdashs:questionText "What were the units for the dose?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Units for EXDOSE. {UNIT}"^^xsd:string ;
   mms:dataElementDescription "Units for EXDOSE."^^xsd:string ;
   mms:dataElementLabel "Units"^^xsd:string ;
   mms:dataElementName "EXDOSU"^^xsd:string ;
@@ -1440,7 +1385,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXENTIM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the time, (as complete as possible) when study treatment administration stopped (e.g., for infusions this is the time when the infusion ended). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the time, (as complete as possible) when study treatment administration stopped (e.g., for infusions this is the time when the infusion ended)."^^xsd:string ;
   cdashs:prompt "End Time"^^xsd:string ;
   cdashs:questionText "What was the treatment end time?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
@@ -1452,7 +1397,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXFLRT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the Rate of Infusion (e.g., if rate is10 mL/min. Record \"10\"as the infusion rate). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the Rate of Infusion (e.g., if rate is10 mL/min. Record \"10\"as the infusion rate)."^^xsd:string ;
   cdashs:prompt "Infusion Rate"^^xsd:string ;
   cdashs:questionText "What was the study treatment infusion rate?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
@@ -1465,11 +1410,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXFLRTU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the unit for the infusion rate (e.g., mL/min). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the unit for the infusion rate (e.g., mL/min)."^^xsd:string ;
   cdashs:prompt "Infusion Rate Units"^^xsd:string ;
   cdashs:questionText "What were the units for the infusion rate?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "The unit of measure for the rate of infusion. {UNIT}"^^xsd:string ;
   mms:dataElementDescription "The unit of measure for the rate of infusion."^^xsd:string ;
   mms:dataElementLabel "Infusion Rate Units"^^xsd:string ;
   mms:dataElementName "EXFLRTU"^^xsd:string ;
@@ -1481,7 +1425,7 @@ Study"""^^xsd:string ;
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the duration of treatment interruption."^^xsd:string ;
   cdashs:prompt "Interruption Duration"^^xsd:string ;
-  cdashs:questionText "If the dose was interrupted, how long was the interruption? "^^xsd:string ;
+  cdashs:questionText "If the dose was interrupted, how long was the interruption?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
   mms:dataElementDescription "Duration of the treatment interruption."^^xsd:string ;
   mms:dataElementLabel "Interruption Duration"^^xsd:string ;
@@ -1492,11 +1436,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXINTRPU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the unit (e.g., MINUTES, HOURS, DAYS) for the duration of treatment interruption. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the unit (e.g., MINUTES, HOURS, DAYS) for the duration of treatment interruption."^^xsd:string ;
   cdashs:prompt "<Duration Units>"^^xsd:string ;
-  cdashs:questionText "If the dose was interrupted, what were the units for the duration? "^^xsd:string ;
+  cdashs:questionText "If the dose was interrupted, what were the units for the duration?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Unit for the duration of treatment interruption. {UNIT}"^^xsd:string ;
   mms:dataElementDescription "Unit for the duration of treatment interruption."^^xsd:string ;
   mms:dataElementLabel "<Duration Units>"^^xsd:string ;
   mms:dataElementName "EXINTRPU"^^xsd:string ;
@@ -1507,11 +1450,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXLOC>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "LOC"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the body location where the study treatment was administered (e.g., SHOULDER, HIP, ARM). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the body location where the study treatment was administered (e.g., SHOULDER, HIP, ARM)."^^xsd:string ;
   cdashs:prompt "Anatomical Location"^^xsd:string ;
   cdashs:questionText "What was the anatomical location of the administration ?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Specifies anatomical location of administration. {LOC}"^^xsd:string ;
   mms:dataElementDescription "Specifies anatomical location of administration."^^xsd:string ;
   mms:dataElementLabel "Anatomical Location"^^xsd:string ;
   mms:dataElementName "EXLOC"^^xsd:string ;
@@ -1546,11 +1488,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXPDOSEU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the unit of dose or amount planned per period (e.g., ng, mg, mg/kg). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the unit of dose or amount planned per period (e.g., ng, mg, mg/kg)."^^xsd:string ;
   cdashs:prompt "Planned Dose Units"^^xsd:string ;
   cdashs:questionText "What were the units for the planned dose?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Units for EXPDOSE. {UNIT}"^^xsd:string ;
   mms:dataElementDescription "Units for EXPDOSE."^^xsd:string ;
   mms:dataElementLabel "Planned Dose Units"^^xsd:string ;
   mms:dataElementName "EXPDOSEU"^^xsd:string ;
@@ -1565,7 +1506,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Planned dose administered?"^^xsd:string ;
   cdashs:questionText "Was the planned dose administered?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Indicator that the planned dose was administered. {NY}"^^xsd:string ;
   mms:dataElementDescription "Indicator that the planned dose was administered."^^xsd:string ;
   mms:dataElementLabel "Planned dose administered?"^^xsd:string ;
   mms:dataElementName "EXPOCCUR"^^xsd:string ;
@@ -1579,7 +1519,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Treatment label ID"^^xsd:string ;
   cdashs:questionText "What is the treatment label identifier?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Treatment label identifier (e.g. kit number, bottle label, vial identifier). "^^xsd:string ;
+  mms:dataElementDescription "Treatment label identifier (e.g. kit number, bottle label, vial identifier)."^^xsd:string ;
   mms:dataElementLabel "Treatment label ID"^^xsd:string ;
   mms:dataElementName "EXREFID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1588,11 +1528,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXROUTE>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "ROUTE"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the route of administration (e.g., IV, ORAL, TRANSDERMAL) or enter the appropriate code from the code list. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the route of administration (e.g., IV, ORAL, TRANSDERMAL) or enter the appropriate code from the code list."^^xsd:string ;
   cdashs:prompt "Route"^^xsd:string ;
   cdashs:questionText "What was the route of administration for the study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Route of administration for EXTRT. {ROUTE}"^^xsd:string ;
   mms:dataElementDescription "Route of administration for EXTRT."^^xsd:string ;
   mms:dataElementLabel "Route"^^xsd:string ;
   mms:dataElementName "EXROUTE"^^xsd:string ;
@@ -1626,7 +1565,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXTPT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the planned time point of study treatment administration (e.g., 5 minutes post dose). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the planned time point of study treatment administration (e.g., 5 minutes post dose)."^^xsd:string ;
   cdashs:prompt "<Planned Time Point>"^^xsd:string ;
   cdashs:questionText "What was the planned time point for study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
@@ -1642,7 +1581,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Treatment Name"^^xsd:string ;
   cdashs:questionText "What was the study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Name of the study treatment or intervention given per single administration or during the \"constant dosing interval\" for the observation. "^^xsd:string ;
+  mms:dataElementDescription "Name of the study treatment or intervention given per single administration or during the \"constant dosing interval\" for the observation."^^xsd:string ;
   mms:dataElementLabel "Treatment Name"^^xsd:string ;
   mms:dataElementName "EXTRT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1651,11 +1590,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXTRTCMP>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Select either \"Yes\" or \"No\" to indicate whether subject has completed the full course of treatment. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Select either \"Yes\" or \"No\" to indicate whether subject has completed the full course of treatment."^^xsd:string ;
   cdashs:prompt "Completed Treatment"^^xsd:string ;
   cdashs:questionText "Did the subject complete the full course of study treatment?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "Subject did not did not complete the intended regimen. {NY}"^^xsd:string ;
   mms:dataElementDescription "Subject did not did not complete the intended regimen."^^xsd:string ;
   mms:dataElementLabel "Completed Treatment"^^xsd:string ;
   mms:dataElementName "EXTRTCMP"^^xsd:string ;
@@ -1678,11 +1616,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXVAMTU>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "UNIT"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the unit of total amount administered/ given to the subject (e.g., mL). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the unit of total amount administered/ given to the subject (e.g., mL)."^^xsd:string ;
   cdashs:prompt "Units"^^xsd:string ;
   cdashs:questionText "What were the units for the amount administered?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "The unit of measure for the exposure amount. {UNIT}"^^xsd:string ;
   mms:dataElementDescription "The unit of measure for the exposure amount."^^xsd:string ;
   mms:dataElementLabel "Units"^^xsd:string ;
   mms:dataElementName "EXVAMTU"^^xsd:string ;
@@ -1693,11 +1630,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.EX.EXYN>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Indicate if the subject took any medications.  If \"Yes\", include the appropriate details where indicated. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Indicate if the subject took any medications.  If \"Yes\", include the appropriate details where indicated."^^xsd:string ;
   cdashs:prompt "Treatment?"^^xsd:string ;
   cdashs:questionText "Is treatment data available?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.EX> ;
-  mms:dataElementDescription "A general prompt question to aid in monitoring and data cleaning.  Indicates if data is available regarding whether the subject took study medication/ treatment. {NY}"^^xsd:string ;
   mms:dataElementDescription "A general prompt question to aid in monitoring and data cleaning.  Indicates if data is available regarding whether the subject took study medication/ treatment."^^xsd:string ;
   mms:dataElementLabel "Treatment?"^^xsd:string ;
   mms:dataElementName "EXYN"^^xsd:string ;
@@ -1707,7 +1643,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.IE.IECAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record whether the criterion that this subject did not meet was \"Inclusion\" or \"Exclusion\". Checkbox: Check \"Inclusion\" or \"Exclusion\". "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record whether the criterion that this subject did not meet was \"Inclusion\" or \"Exclusion\". Checkbox: Check \"Inclusion\" or \"Exclusion\"."^^xsd:string ;
   cdashs:prompt "Criterion Type"^^xsd:string ;
   cdashs:questionText "What was the category of the criterion?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.IE> ;
@@ -1731,11 +1667,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.IE.IETESTCD>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "If \"No\", enter the identifying code for each criterion not met.  Record this only for the criterion/criteria that this subject did not meetii Paper: Record the criterion identifier from the list of inclusion/ exclusion criteria provided by the sponsor. EDC: Select the criterion from the pick-list. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If \"No\", enter the identifying code for each criterion not met.  Record this only for the criterion/criteria that this subject did not meetii Paper: Record the criterion identifier from the list of inclusion/ exclusion criteria provided by the sponsor. EDC: Select the criterion from the pick-list."^^xsd:string ;
   cdashs:prompt "Criterion ID Not Met"^^xsd:string ;
   cdashs:questionText "What is the identifier of the criterion the subject did not meet?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.IE> ;
-  mms:dataElementDescription "The identifier associated with the criterion that the subject did not meet.  This must be a unique identifier that corresponds to a specific entry criterioni"^^xsd:string ;
+  mms:dataElementDescription "The identifier associated with the criterion that the subject did not meet.  This must be a unique identifier that corresponds to a specific entry criterion."^^xsd:string ;
   mms:dataElementLabel "Criterion ID Not Met"^^xsd:string ;
   mms:dataElementName "IETESTCD"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1744,11 +1680,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.IE.IEYN>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record \"Yes\" if all eligibility criteria were met for the study.  Record \"No\" if subject did not meet all criteria at the time the subject was enrolled. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record \"Yes\" if all eligibility criteria were met for the study.  Record \"No\" if subject did not meet all criteria at the time the subject was enrolled."^^xsd:string ;
   cdashs:prompt "Met Criteria"^^xsd:string ;
   cdashs:questionText "Did the subject meet all eligibility criteria?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.IE> ;
-  mms:dataElementDescription "Response for whether the subject met all the eligibility requirements for this study at the time the subject was enrolled. Did subject meet all eligibility criteria? {NY}"^^xsd:string ;
   mms:dataElementDescription "Response for whether the subject met all the eligibility requirements for this study at the time the subject was enrolled. Did subject meet all eligibility criteria?"^^xsd:string ;
   mms:dataElementLabel "Met Criteria"^^xsd:string ;
   mms:dataElementName "IEYN"^^xsd:string ;
@@ -1758,11 +1693,11 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.LB.LBCAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the lab test category, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the lab test category, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "<Panel Name>"^^xsd:string ;
   cdashs:questionText "What was the lab panel name?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
-  mms:dataElementDescription "Used to define a category of related laboratory records (e.g. HEMATOLOGY, CHEMISTRY, URINALYSIS). "^^xsd:string ;
+  mms:dataElementDescription "Used to define a category of related laboratory records (e.g. HEMATOLOGY, CHEMISTRY, URINALYSIS)."^^xsd:string ;
   mms:dataElementLabel "<Panel Name>"^^xsd:string ;
   mms:dataElementName "LBCAT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1784,12 +1719,11 @@ Study"""^^xsd:string ;
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
   cdashs:crfCompletionInstructions "Record whether protocol defined testing conditions were met."^^xsd:string ;
-  cdashs:prompt "<protocol- defined testing condition> e.g., Fasting? "^^xsd:string ;
+  cdashs:prompt "<protocol- defined testing condition> e.g., Fasting?"^^xsd:string ;
   cdashs:questionText "Did the subject meet <protocol- defined testing condition> requirements?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
   mms:dataElementDescription "Confirmation that the protocol defined condition imposed on the subject when  testing (e.g., FASTING, HYDRATION, EXERCISE) was met. If collecting this as a Yes/No, use  "^^xsd:string ;
-  mms:dataElementDescription "Confirmation that the protocol defined condition imposed on the subject when  testing (e.g., FASTING, HYDRATION, EXERCISE) was met. If collecting this as a Yes/No, use {NY} "^^xsd:string ;
-  mms:dataElementLabel "<protocol- defined testing condition> e.g., Fasting? "^^xsd:string ;
+  mms:dataElementLabel "<protocol- defined testing condition> e.g., Fasting?"^^xsd:string ;
   mms:dataElementName "LBCOND"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:dataElementValueDomain cdashct:C71620 ;
@@ -1822,11 +1756,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.LB.LBNRIND>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NRIND"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record where the specimen fell with respect to the reference range (e.g. HIGH, LOW, ABNORMAL). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record where the specimen fell with respect to the reference range (e.g. HIGH, LOW, ABNORMAL)."^^xsd:string ;
   cdashs:prompt "Abnormal"^^xsd:string ;
   cdashs:questionText "Was the result for this test abnormal?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
-  mms:dataElementDescription "Reference Range Indicator Indicates where value falls with respect to reference range defined by high and low ranges. {NRIND}"^^xsd:string ;
   mms:dataElementDescription "Reference Range Indicator Indicates where value falls with respect to reference range defined by high and low ranges."^^xsd:string ;
   mms:dataElementLabel "Abnormal"^^xsd:string ;
   mms:dataElementName "LBNRIND"^^xsd:string ;
@@ -1872,7 +1805,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.LB.LBORRESU>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the units of the lab test, if not pre-printed on the CRF or captured in an external \"lab normal\" file. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the units of the lab test, if not pre-printed on the CRF or captured in an external \"lab normal\" file."^^xsd:string ;
   cdashs:prompt "Units"^^xsd:string ;
   cdashs:questionText "What were the units for the result?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
@@ -1889,7 +1822,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Lab Status"^^xsd:string ;
   cdashs:questionText "Was the sample collected? or Was the lab performed?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
-  mms:dataElementDescription "Status of whether or not lab specimen was collected or measurement performed. {NY}"^^xsd:string ;
   mms:dataElementDescription "Status of whether or not lab specimen was collected or measurement performed."^^xsd:string ;
   mms:dataElementLabel "Lab Status"^^xsd:string ;
   mms:dataElementName "LBPERF"^^xsd:string ;
@@ -1907,16 +1839,15 @@ Study"""^^xsd:string ;
   mms:dataElementLabel "Accession Number"^^xsd:string ;
   mms:dataElementName "LBREFID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
-  mms:ordinal "19"^^xsd:positiveInteger ;
   mms:ordinal "8"^^xsd:positiveInteger ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.LB.LBSCAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the lab test sub- category, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the lab test sub- category, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "<Sub-Panel Name>"^^xsd:string ;
   cdashs:questionText "What was the lab sub-panel name?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
-  mms:dataElementDescription "Used to define a sub- category of related laboratory records (e.g. Electrolytes, Liver Function). "^^xsd:string ;
+  mms:dataElementDescription "Used to define a sub- category of related laboratory records (e.g. Electrolytes, Liver Function)."^^xsd:string ;
   mms:dataElementLabel "<Sub-Panel Name>"^^xsd:string ;
   mms:dataElementName "LBSCAT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -1936,11 +1867,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.LB.LBTEST>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "LBTEST"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Record the type or name of the lab test, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the type or name of the lab test, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "<Test Name>"^^xsd:string ;
   cdashs:questionText "What is the test name?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
-  mms:dataElementDescription "Verbatim name of the test or examination used to obtain the measurement or finding. Any test normally performed by a clinical laboratory is considered a lab test. {LBTEST}"^^xsd:string ;
   mms:dataElementDescription "Verbatim name of the test or examination used to obtain the measurement or finding. Any test normally performed by a clinical laboratory is considered a lab test."^^xsd:string ;
   mms:dataElementLabel "<Test Name>"^^xsd:string ;
   mms:dataElementName "LBTEST"^^xsd:string ;
@@ -1954,7 +1884,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "<Test Name Coded>"^^xsd:string ;
   cdashs:questionText "What is the test name?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
-  mms:dataElementDescription "Terminology used for Laboratory Tests of the CDISC Standard Data Tabulation Model. {LBTESTCD}"^^xsd:string ;
   mms:dataElementDescription "Terminology used for Laboratory Tests of the CDISC Standard Data Tabulation Model."^^xsd:string ;
   mms:dataElementLabel "<Test Name Coded>"^^xsd:string ;
   mms:dataElementName "LBTESTCD"^^xsd:string ;
@@ -1976,7 +1905,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.LB.LBTPT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record the planned time point labels for the lab test, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record the planned time point labels for the lab test, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "<Planned Time Point>"^^xsd:string ;
   cdashs:questionText "What was the planned time point of the lab?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.LB> ;
@@ -1993,9 +1922,9 @@ Study"""^^xsd:string ;
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Not applicable."^^xsd:string ;
   cdashs:prompt "<MH Category>"^^xsd:string ;
-  cdashs:questionText "Not Applicable (This would be a heading on the CRF or screen, not a question) "^^xsd:string ;
+  cdashs:questionText "Not Applicable (This would be a heading on the CRF or screen, not a question)"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
-  mms:dataElementDescription "Used to define a category of related records (e.g., CARDIAC, GENERAL). "^^xsd:string ;
+  mms:dataElementDescription "Used to define a category of related records (e.g., CARDIAC, GENERAL)."^^xsd:string ;
   mms:dataElementLabel "<MH Category>"^^xsd:string ;
   mms:dataElementName "MHCAT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2008,7 +1937,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Controlled"^^xsd:string ;
   cdashs:questionText "Is the medical history disease/conditi on under control?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
-  mms:dataElementDescription "Indicates that the disease/symptoms are under control at the time of data collection. {NY}"^^xsd:string ;
   mms:dataElementDescription "Indicates that the disease/symptoms are under control at the time of data collection."^^xsd:string ;
   mms:dataElementLabel "Controlled"^^xsd:string ;
   mms:dataElementName "MHCTRL"^^xsd:string ;
@@ -2043,11 +1971,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.MH.MHOCCUR>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Please indicate if <specific condition> has occurred /is occurring by checking \"Yes\" or \"No\". "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Please indicate if <specific condition> has occurred /is occurring by checking \"Yes\" or \"No\"."^^xsd:string ;
   cdashs:prompt "<specific condition> Example: High blood pressure OR <specific procedure> Example: Appendectomy"^^xsd:string ;
   cdashs:questionText "Does the subject have <specific condition>? Example: Does the subject have high blood pressure? OR Has the subject had <specific procedure>? Example: Has the subject had an appendectomy ?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
-  mms:dataElementDescription "A response to a pre- printed term used to indicate whether or not a medical condition has occurred. {NY}"^^xsd:string ;
   mms:dataElementDescription "A response to a pre- printed term used to indicate whether or not a medical condition has occurred."^^xsd:string ;
   mms:dataElementLabel "<specific condition> Example: High blood pressure OR <specific procedure> Example: Appendectomy"^^xsd:string ;
   mms:dataElementName "MHOCCUR"^^xsd:string ;
@@ -2062,7 +1989,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "Ongoing"^^xsd:string ;
   cdashs:questionText "Is the medical history disease/conditi on or event still ongoing?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
-  mms:dataElementDescription "Indicates medical history event is ongoing when no End Date is provided. {NY}"^^xsd:string ;
   mms:dataElementDescription "Indicates medical history event is ongoing when no End Date is provided."^^xsd:string ;
   mms:dataElementLabel "Ongoing"^^xsd:string ;
   mms:dataElementName "MHONGO"^^xsd:string ;
@@ -2072,9 +1998,9 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.MH.MHSCAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "The CRF instructions will depend upon the format of the CRF. Some sponsors ask the sites to use a numeric code (e.g., \"123\") to designate a particular category (e.g., \"cardiovascular\") while other sponsors will simply pre-print the categories on the CRF and/or provide space for the site to record the ailment, disease or surgery. Instruction examples: Use the (sponsor-defined) code list to group the past and/or concomitant medical conditions or surgeries.  For example, if the subject has a history of high blood pressure, use code \"123\" for \"cardiovascular\". OR Record the concomitant medical conditions or past surgeries under the appropriate category.  For example, \"high blood pressure\" should be recorded under \"cardiovascular\". "^^xsd:string ;
+  cdashs:crfCompletionInstructions "The CRF instructions will depend upon the format of the CRF. Some sponsors ask the sites to use a numeric code (e.g., \"123\") to designate a particular category (e.g., \"cardiovascular\") while other sponsors will simply pre-print the categories on the CRF and/or provide space for the site to record the ailment, disease or surgery. Instruction examples: Use the (sponsor-defined) code list to group the past and/or concomitant medical conditions or surgeries.  For example, if the subject has a history of high blood pressure, use code \"123\" for \"cardiovascular\". OR Record the concomitant medical conditions or past surgeries under the appropriate category.  For example, \"high blood pressure\" should be recorded under \"cardiovascular\"."^^xsd:string ;
   cdashs:prompt "<MH Subcategory>"^^xsd:string ;
-  cdashs:questionText "Not Applicable (This would be a heading on the CRF or screen, not a question) "^^xsd:string ;
+  cdashs:questionText "Not Applicable (This would be a heading on the CRF or screen, not a question)"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
   mms:dataElementDescription "A categorization of the condition or event pre- printed on the CRF or instructions."^^xsd:string ;
   mms:dataElementLabel "<MH Subcategory>"^^xsd:string ;
@@ -2108,7 +2034,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.MH.MHTERM>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record all relevant past and/or concomitant medical conditions and past surgeries, as defined in the protocol. Record only one condition or surgery per line. When recording a condition and surgery related to that condition, use one line for the condition and one line for the surgery.  Ensure that any of the conditions listed on the Medical History page do not meet any of the exclusion criteria. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record all relevant past and/or concomitant medical conditions and past surgeries, as defined in the protocol. Record only one condition or surgery per line. When recording a condition and surgery related to that condition, use one line for the condition and one line for the surgery.  Ensure that any of the conditions listed on the Medical History page do not meet any of the exclusion criteria."^^xsd:string ;
   cdashs:prompt "<Medical History Term>"^^xsd:string ;
   cdashs:questionText "What is the verbatim term for the medical history condition/event ?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
@@ -2121,11 +2047,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.MH.MHYN>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "If the subject has experienced any past and/or concomitant diseases or has had any type of surgery, select \"Yes\" and provide the requested information. Otherwise, select \"No\" and leave the page blank. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If the subject has experienced any past and/or concomitant diseases or has had any type of surgery, select \"Yes\" and provide the requested information. Otherwise, select \"No\" and leave the page blank."^^xsd:string ;
   cdashs:prompt "Any medical history?"^^xsd:string ;
   cdashs:questionText "Has the subject experienced any past and/ or concomitant diseases or past surgeries?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.MH> ;
-  mms:dataElementDescription "General prompt question to aid in monitoring and data cleaning. {NY}"^^xsd:string ;
   mms:dataElementDescription "General prompt question to aid in monitoring and data cleaning."^^xsd:string ;
   mms:dataElementLabel "Any medical history?"^^xsd:string ;
   mms:dataElementName "MHYN"^^xsd:string ;
@@ -2139,7 +2064,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Clinically significant"^^xsd:string ;
   cdashs:questionText "Was the physical examination result clinically significant?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
-  mms:dataElementDescription "Whether physical examination abnormality is clinically significant"^^xsd:string ;
+  mms:dataElementDescription "Whether physical examination abnormality is clinically significant."^^xsd:string ;
   mms:dataElementLabel "Clinically significant"^^xsd:string ;
   mms:dataElementName "PECLSIG"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2147,7 +2072,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.PE.PEDAT>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record complete date of examination, day, month and year using this format (DD- MON-YYYY). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record complete date of examination, day, month and year using this format (DD- MON-YYYY)."^^xsd:string ;
   cdashs:prompt "Exam Date"^^xsd:string ;
   cdashs:questionText "What was the physical examination date?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
@@ -2161,7 +2086,7 @@ Study"""^^xsd:string ;
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record all abnormal findings for the given body system in the space provided."^^xsd:string ;
   cdashs:prompt "Abnormal Findings"^^xsd:string ;
-  cdashs:questionText "If the result was abnormal, what were the findings? "^^xsd:string ;
+  cdashs:questionText "If the result was abnormal, what were the findings?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
   mms:dataElementDescription "Text description of any abnormal findings."^^xsd:string ;
   mms:dataElementLabel "Abnormal Findings"^^xsd:string ;
@@ -2171,7 +2096,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.PE.PEEVAL>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Enter the role of the person who provided the evaluation (e.g., INVESTIGATOR, ADJUDICATION COMMITTEE, VENDOR). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Enter the role of the person who provided the evaluation (e.g., INVESTIGATOR, ADJUDICATION COMMITTEE, VENDOR)."^^xsd:string ;
   cdashs:prompt "Evaluator"^^xsd:string ;
   cdashs:questionText "What was the role of the person performing the physical examination?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
@@ -2184,11 +2109,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.PE.PEPERF>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "If physical examination was performed as planned then select \"Yes\", otherwise, select \"No\". "^^xsd:string ;
+  cdashs:crfCompletionInstructions "If physical examination was performed as planned then select \"Yes\", otherwise, select \"No\"."^^xsd:string ;
   cdashs:prompt "Exam performed"^^xsd:string ;
   cdashs:questionText "Was the physical examination performed?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
-  mms:dataElementDescription "Used to indicate if the overall physical examination was performed as scheduled. Was the physical examination performed? {NY}"^^xsd:string ;
   mms:dataElementDescription "Used to indicate if the overall physical examination was performed as scheduled. Was the physical examination performed?"^^xsd:string ;
   mms:dataElementLabel "Exam performed"^^xsd:string ;
   mms:dataElementName "PEPERF"^^xsd:string ;
@@ -2198,9 +2122,9 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.PE.PERES>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "For each body system listed, record the result of the examination (Normal or Abnormal).  If the examination is not performed or not required, select Not Done. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "For each body system listed, record the result of the examination (Normal or Abnormal).  If the examination is not performed or not required, select Not Done."^^xsd:string ;
   cdashs:prompt "Result"^^xsd:string ;
-  cdashs:questionText "Were the results normal, abnormal or not done? "^^xsd:string ;
+  cdashs:questionText "Were the results normal, abnormal or not done?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
   mms:dataElementDescription "Overall assessment of examined body system."^^xsd:string ;
   mms:dataElementLabel "Result"^^xsd:string ;
@@ -2214,7 +2138,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "<line number> or <PE number>"^^xsd:string ;
   cdashs:questionText "What is the sponsor- defined ID?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
-  mms:dataElementDescription "A sponsor-defined identifier (e.g., pre-printed numbers on the CRF.) "^^xsd:string ;
+  mms:dataElementDescription "A sponsor-defined identifier (e.g., pre-printed numbers on the CRF.)"^^xsd:string ;
   mms:dataElementLabel "<line number> or <PE number>"^^xsd:string ;
   mms:dataElementName "PESPID"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2222,7 +2146,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.PE.PETEST>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Per protocol, perform physical examinations of specified body systems. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Per protocol, perform physical examinations of specified body systems."^^xsd:string ;
   cdashs:prompt "<Body System>"^^xsd:string ;
   cdashs:questionText "What was the body system examined?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.PE> ;
@@ -2247,11 +2171,11 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.SC.SCORRES>
   rdf:type mms:DataElement ;
   cdashs:crfCompletionInstructions "Record the answer to the question."^^xsd:string ;
-  cdashs:prompt "< subject characteristic>"^^xsd:string ;
-  cdashs:questionText "What is the subject�s <characteristic> ?"^^xsd:string ;
+  cdashs:prompt "<subject characteristic>"^^xsd:string ;
+  cdashs:questionText "What is the subject's <characteristic> ?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SC> ;
   mms:dataElementDescription "Answer/result of the subject characteristic question as originally received or collected."^^xsd:string ;
-  mms:dataElementLabel "< subject characteristic>"^^xsd:string ;
+  mms:dataElementLabel "<subject characteristic>"^^xsd:string ;
   mms:dataElementName "SCORRES"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
   mms:ordinal "3"^^xsd:positiveInteger ;
@@ -2259,11 +2183,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.SC.SCPERF>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Indicate if subject characteristics information was collected If \"Yes\", include the appropriate details. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Indicate if subject characteristics information was collected If \"Yes\", include the appropriate details."^^xsd:string ;
   cdashs:prompt "Any Subject Characteristics?"^^xsd:string ;
   cdashs:questionText "Have relevant subject characteristics been collected?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SC> ;
-  mms:dataElementDescription "General prompt question to aid in monitoring and data cleaning. {NY}"^^xsd:string ;
   mms:dataElementDescription "General prompt question to aid in monitoring and data cleaning."^^xsd:string ;
   mms:dataElementLabel "Any Subject Characteristics?"^^xsd:string ;
   mms:dataElementName "SCPERF"^^xsd:string ;
@@ -2276,9 +2199,8 @@ Study"""^^xsd:string ;
   cdashs:controlledTermsOrFormat "SCCD"^^xsd:string ;
   cdashs:crfCompletionInstructions "Not applicable."^^xsd:string ;
   cdashs:prompt "<subject characteristic>"^^xsd:string ;
-  cdashs:questionText "What is the subject�s <characteristic> ? or What was the subject�s <characteristic> ?"^^xsd:string ;
+  cdashs:questionText "What is the subject's <characteristic> ? or What was the subject's <characteristic> ?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SC> ;
-  mms:dataElementDescription "The name of the subject characteristic being queried. {SCCD}"^^xsd:string ;
   mms:dataElementDescription "The name of the subject characteristic being queried."^^xsd:string ;
   mms:dataElementLabel "<subject characteristic>"^^xsd:string ;
   mms:dataElementName "SCTEST"^^xsd:string ;
@@ -2292,7 +2214,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "<Substance Category>"^^xsd:string ;
   cdashs:questionText "What was the category of substance used?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
-  mms:dataElementDescription "Used to define a category of related records (e.g., TOBACCO, ALCOHOL, CAFFEINE). "^^xsd:string ;
+  mms:dataElementDescription "Used to define a category of related records (e.g., TOBACCO, ALCOHOL, CAFFEINE)."^^xsd:string ;
   mms:dataElementLabel "<Substance Category>"^^xsd:string ;
   mms:dataElementName "SUCAT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2300,7 +2222,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.SU.SUCDUR>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Provide the duration of the Substance Abuse (e.g., Record how long the subject has smoked). "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Provide the duration of the Substance Abuse (e.g., Record how long the subject has smoked)."^^xsd:string ;
   cdashs:prompt "Duration"^^xsd:string ;
   cdashs:questionText "What was the duration of substance use?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
@@ -2316,7 +2238,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "<Duration Unit>"^^xsd:string ;
   cdashs:questionText "What was the unit of duration of substance use?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
-  mms:dataElementDescription "Units for SUCDUR (e.g., WEEKS, MONTHS, YEARS). "^^xsd:string ;
+  mms:dataElementDescription "Units for SUCDUR (e.g., WEEKS, MONTHS, YEARS)."^^xsd:string ;
   mms:dataElementLabel "<Duration Unit>"^^xsd:string ;
   mms:dataElementName "SUCDURU"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2328,7 +2250,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Frequency"^^xsd:string ;
   cdashs:questionText "What was the frequency of substance use?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
-  mms:dataElementDescription "Usually expressed as the number of uses consumed per a specific interval (e.g., PER DAY, PER WEEK, OCCASIONAL). "^^xsd:string ;
+  mms:dataElementDescription "Usually expressed as the number of uses consumed per a specific interval (e.g., PER DAY, PER WEEK, OCCASIONAL)."^^xsd:string ;
   mms:dataElementLabel "Frequency"^^xsd:string ;
   mms:dataElementName "SUDOSFRQ"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2341,8 +2263,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Unit"^^xsd:string ;
   cdashs:questionText "What was the unit of the substance used?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
-  mms:dataElementDescription "Units for SUDOSTXT (e.g., PACKS, OUNCES).  See Section 2.2. "^^xsd:string ;
-  mms:dataElementDescription "Units for SUDOSTXT (e.g., PACKS, OUNCES). {UNIT} See Section 2.2. "^^xsd:string ;
+  mms:dataElementDescription "Units for SUDOSTXT (e.g., PACKS, OUNCES).  See Section 2.2."^^xsd:string ;
   mms:dataElementLabel "Unit"^^xsd:string ;
   mms:dataElementName "SUDOSU"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2355,7 +2276,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "Amount"^^xsd:string ;
   cdashs:questionText "What was the amount of substance used?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
-  mms:dataElementDescription "The amount of substance used [e.g., 1-2 (packs), 8 (ounces)]. "^^xsd:string ;
+  mms:dataElementDescription "The amount of substance used [e.g., 1-2 (packs), 8 (ounces)]."^^xsd:string ;
   mms:dataElementLabel "Amount"^^xsd:string ;
   mms:dataElementName "SUDSTXT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2376,12 +2297,11 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.SU.SUNCF>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "SUNCF"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Check the appropriate box to indicate if the subject has ever used/consumed tobacco/alcohol/caffeine, currently consumes tobacco/alcohol/caffeine, or formerly used/consumed tobacco/alcohol/caffeine. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Check the appropriate box to indicate if the subject has ever used/consumed tobacco/alcohol/caffeine, currently consumes tobacco/alcohol/caffeine, or formerly used/consumed tobacco/alcohol/caffeine."^^xsd:string ;
   cdashs:prompt "Usage"^^xsd:string ;
   cdashs:questionText "Has the subject ever used the substance?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
   mms:dataElementDescription "Substance Use Occurrence.  (See Section 2.2)"^^xsd:string ;
-  mms:dataElementDescription "Substance Use Occurrence. {SUNCF} (See Section 2.2)"^^xsd:string ;
   mms:dataElementLabel "Usage"^^xsd:string ;
   mms:dataElementName "SUNCF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2406,7 +2326,7 @@ Study"""^^xsd:string ;
   cdashs:prompt "<Type of Substance>"^^xsd:string ;
   cdashs:questionText "What was the type of substance used?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.SU> ;
-  mms:dataElementDescription "The type of substance (e.g., TOBACCO, ALCOHOL, CAFFEINE or CIGARETTES, CIGARS, COFFEE) "^^xsd:string ;
+  mms:dataElementDescription "The type of substance (e.g., TOBACCO, ALCOHOL, CAFFEINE or CIGARETTES, CIGARS, COFFEE)."^^xsd:string ;
   mms:dataElementLabel "<Type of Substance>"^^xsd:string ;
   mms:dataElementName "SUTRT"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2486,7 +2406,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.VS.VSCLSIG>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record or select location on body where measurement was performed, if not pre- printed on CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record or select location on body where measurement was performed, if not pre- printed on CRF."^^xsd:string ;
   cdashs:prompt "Clinically Significant"^^xsd:string ;
   cdashs:questionText "Was the result clinically significant?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
@@ -2516,7 +2436,6 @@ Study"""^^xsd:string ;
   cdashs:questionText "At what location was the measurement taken?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
   mms:dataElementDescription "Location relevant to the collection of Vital Signs measurement.  Example: LEFT ARM for blood pressure.  (See Section 2.2)"^^xsd:string ;
-  mms:dataElementDescription "Location relevant to the collection of Vital Signs measurement.  Example: LEFT ARM for blood pressure. {LOC} (See Section 2.2)"^^xsd:string ;
   mms:dataElementLabel "Location"^^xsd:string ;
   mms:dataElementName "VSLOC"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2525,7 +2444,7 @@ Study"""^^xsd:string ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#Column.VS.VSORRES>
   rdf:type mms:DataElement ;
-  cdashs:crfCompletionInstructions "Record or select the unit of measure associated with the test, if not pre-printed on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Record or select the unit of measure associated with the test, if not pre-printed on the CRF."^^xsd:string ;
   cdashs:prompt "Result"^^xsd:string ;
   cdashs:questionText "What was the result of the measurement?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
@@ -2542,7 +2461,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "<Units>"^^xsd:string ;
   cdashs:questionText "What was the unit of the measurement?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
-  mms:dataElementDescription "Original units in which the data were collected. {VSRESU}"^^xsd:string ;
   mms:dataElementDescription "Original units in which the data were collected."^^xsd:string ;
   mms:dataElementLabel "<Units>"^^xsd:string ;
   mms:dataElementName "VSORRESU"^^xsd:string ;
@@ -2553,11 +2471,10 @@ Study"""^^xsd:string ;
 <http://rdf.cdisc.org/cdash-1-1/std#Column.VS.VSPERF>
   rdf:type mms:DataElement ;
   cdashs:controlledTermsOrFormat "NY"^^xsd:string ;
-  cdashs:crfCompletionInstructions "Indicate if the vital signs were collected.  If yes, include the appropriate details where indicated on the CRF. "^^xsd:string ;
+  cdashs:crfCompletionInstructions "Indicate if the vital signs were collected.  If yes, include the appropriate details where indicated on the CRF."^^xsd:string ;
   cdashs:prompt "Vital signs collected?"^^xsd:string ;
   cdashs:questionText "Were vital signs collected?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
-  mms:dataElementDescription "General prompt question regarding whether or not any VS were collected during the study.  This provides verification that all other fields on the CRF were deliberately left blank. {NY}"^^xsd:string ;
   mms:dataElementDescription "General prompt question regarding whether or not any VS were collected during the study.  This provides verification that all other fields on the CRF were deliberately left blank."^^xsd:string ;
   mms:dataElementLabel "Vital signs collected?"^^xsd:string ;
   mms:dataElementName "VSPERF"^^xsd:string ;
@@ -2572,7 +2489,6 @@ Study"""^^xsd:string ;
   cdashs:questionText "In what position was the subject during the measurement?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
   mms:dataElementDescription "Position of the subject during a measurement or examination.  (See Section 2.2)"^^xsd:string ;
-  mms:dataElementDescription "Position of the subject during a measurement or examination. {POSITION} (See Section 2.2)"^^xsd:string ;
   mms:dataElementLabel "Position"^^xsd:string ;
   mms:dataElementName "VSPOS"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2598,7 +2514,6 @@ Study"""^^xsd:string ;
   cdashs:prompt "<Test>"^^xsd:string ;
   cdashs:questionText "What is the vital sign test name?"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
-  mms:dataElementDescription "Verbatim name of the test or examination used to obtain the measurement or finding. {VSTEST}"^^xsd:string ;
   mms:dataElementDescription "Verbatim name of the test or examination used to obtain the measurement or finding."^^xsd:string ;
   mms:dataElementLabel "<Test>"^^xsd:string ;
   mms:dataElementName "VSTEST"^^xsd:string ;
@@ -2612,8 +2527,7 @@ Study"""^^xsd:string ;
   cdashs:crfCompletionInstructions "Record vital sign results."^^xsd:string ;
   cdashs:prompt "<Test Code>"^^xsd:string ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Table.VS> ;
-  mms:dataElementDescription "The name given to the test that analyzes a particular set of vital signs including temperature, respiratory rate, heart beat (pulse), and blood pressure. (NCI).   "^^xsd:string ;
-  mms:dataElementDescription "The name given to the test that analyzes a particular set of vital signs including temperature, respiratory rate, heart beat (pulse), and blood pressure. (NCI). {VSTESTCD}  "^^xsd:string ;
+  mms:dataElementDescription "The name given to the test that analyzes a particular set of vital signs including temperature, respiratory rate, heart beat (pulse), and blood pressure. (NCI)"^^xsd:string ;
   mms:dataElementLabel "<Test Coded>"^^xsd:string ;
   mms:dataElementName "VSTESTCD"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:QName ;
@@ -2647,17 +2561,17 @@ Study"""^^xsd:string ;
 :CommonTimingVariableDataset
   rdf:type mms:DatasetContext ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Model.CDASH-1-1> ;
-  mms:contextDescription "Dataset holding Common Timing Variables used by CDASH"^^xsd:string ;
+  mms:contextDescription "Dataset holding Common Timing Variables used by CDASH."^^xsd:string ;
   mms:contextLabel "Common Timing Variables"^^xsd:string ;
-  mms:contextName "Common Timing Variables"^^xsd:string ;
+  mms:contextName "CommonTimingVariables"^^xsd:string ;
   mms:ordinal "9"^^xsd:positiveInteger ;
 .
 :CommonVariableDataset
   rdf:type mms:DatasetContext ;
   mms:context <http://rdf.cdisc.org/cdash-1-1/std#Model.CDASH-1-1> ;
-  mms:contextDescription "Dataset holding variables that might be applied to all CDASH Domains where the concept is not captured at the Domain level"^^xsd:string ;
+  mms:contextDescription "Dataset holding variables that might be applied to all CDASH Domains where the concept is not captured at the Domain level."^^xsd:string ;
   mms:contextLabel "Common Variables"^^xsd:string ;
-  mms:contextName "Common Variables"^^xsd:string ;
+  mms:contextName "CommonVariables"^^xsd:string ;
   mms:ordinal "8"^^xsd:positiveInteger ;
 .
 <http://rdf.cdisc.org/cdash-1-1/std#DataCollectionField.AE.AEACN>

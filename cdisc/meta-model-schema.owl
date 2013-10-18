@@ -13,7 +13,7 @@
     >CDISC Common Meta Model Schema</rdfs:label>
     <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Frederik Malfait, Hoffmann-La Roche</dc:creator>
+    >NCI EVS</dc:creator>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The common CDISC Meta Model Schema defines a set of generic meta-model resources that provides a common language and infrastructure to describe the CDISC operational standards.</skos:definition>
   </owl:Ontology>

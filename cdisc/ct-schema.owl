@@ -11,7 +11,7 @@
   <owl:Ontology rdf:about="">
     <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Frederik Malfait, Hoffmann-La Roche</dc:creator>
+    >NCI EVS</dc:creator>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >SDTM Terminology Schema</rdfs:label>
   </owl:Ontology>
