@@ -2,7 +2,7 @@
 # imports: http://rdf.cdisc.org/schema
 
 # c14n-version: 3
-@prefix cdashs: <http://rdf.cdisc.org/cdash-1-1/schema#> .
+@prefix cdashs-1-1: <http://rdf.cdisc.org/cdash-1-1/schema#> .
 @prefix cdiscs: <http://rdf.cdisc.org/schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mms: <http://rdf.cdisc.org/mms#> .
@@ -34,14 +34,14 @@
   rdfs:label "Recommended or Conditional Data Collection Field"^^xsd:string ;
   skos:definition "Recommended/Conditional (R/C): A data collection field that should be on a CRF based on certain conditions (e.g., complete date of birth is preferred, but may not be allowed in some regions; AE time should only be captured if there is another data point with which to compare it). In the absence of this data point other data points would be less meaningful."^^xsd:string ;
 .
-cdashs:crfCompletionInstructions
+cdashs-1-1:crfCompletionInstructions
   rdf:type owl:DatatypeProperty ;
   rdfs:domain mms:DataElement ;
   rdfs:isDefinedBy <http://rdf.cdisc.org/schema> ;
   rdfs:label "CDASH CRF Completion Instructions"^^xsd:string ;
   rdfs:range xsd:string ;
 .
-cdashs:prompt
+cdashs-1-1:prompt
   rdf:type owl:DatatypeProperty ;
   rdfs:domain mms:DataElement ;
   rdfs:isDefinedBy <http://rdf.cdisc.org/schema> ;
@@ -49,7 +49,7 @@ cdashs:prompt
   rdfs:range xsd:string ;
   rdfs:subPropertyOf mms:dataElementLabel ;
 .
-cdashs:questionText
+cdashs-1-1:questionText
   rdf:type owl:DatatypeProperty ;
   rdfs:domain mms:DataElement ;
   rdfs:isDefinedBy <http://rdf.cdisc.org/schema> ;
