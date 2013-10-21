@@ -1,0 +1,173 @@
+# baseURI: http://rdf.cdisc.org/sdtm-1-3/schema
+# imports: http://rdf.cdisc.org/schema
+
+# c14n-version: 3
+@prefix : <http://rdf.cdisc.org/sdtm-1-3/schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mms: <http://rdf.cdisc.org/mms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<http://rdf.cdisc.org/sdtm-1-3/schema>
+  rdf:type owl:Ontology ;
+  dc:creator "FDA/PhUSE Semantic Technology Project"^^xsd:string ;
+  rdfs:label "SDTM Schema"^^xsd:string ;
+  owl:imports <http://rdf.cdisc.org/schema> ;
+  owl:versionInfo "1.3"^^xsd:string ;
+  skos:definition "A schema for the Study Data Tabulation Model (SDTM) Version 1.3."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.Character>
+  rdf:type :DataElementType ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Char"^^xsd:string ;
+  skos:definition "Classifies an SDTM variable of type character."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.ExpectedVariable>
+  rdf:type :DataElementCompliance ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Expected Variable"^^xsd:string ;
+  skos:definition "An Expected variable is any variable necessary to make a record useful in the context of a specific domain. Expected variables may contain some null values, but in most cases will not contain null values for every record. When no data has been collected for an expected variable, however, a null column should still be included in the dataset, and a comment should be included in the define.xml to state that data was not collected."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.GroupingQualifier>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Grouping Qualifier"^^xsd:string ;
+  skos:definition "Grouping Qualifiers are used to group together a collection of observations within the same domain. Examples include --CAT and --SCAT."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.IdentifierVariable>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Identifier Variable"^^xsd:string ;
+  skos:definition "Identifier variables, such as those that identify the study, subject, domain, and sequence number of the record."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.Numeric>
+  rdf:type :DataElementType ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Num"^^xsd:string ;
+  skos:definition "Classifies an SDTM variable of type numeric."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.PermissibleVariable>
+  rdf:type :DataElementCompliance ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Permissible Variable"^^xsd:string ;
+  skos:definition "A Permissible variable should be used in a domain as appropriate when collected or derived. Except where restricted by specific domain assumptions, any SDTM Timing and Identifier variables, and any Qualifier variables from the same general observation class are permissible for use in a domain based on that general observation class. The Sponsor can decide whether a Permissible variable should be included as a column when all values for that variable are null. The sponsor does not have the discretion to not submit permissible variables when they contain data."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.RecordQualifier>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Record Qualifier"^^xsd:string ;
+  skos:definition "Record Qualifiers define additional attributes of the observation record as a whole (rather than describing a particular variable within a record). Examples include --REASND, AESLIFE, and all other SAE flag variables in the AE domain; AGE, SEX, and RACE in the DM domain; and --BLFL, --POS, --LOC, --SPEC and --NAM in a Findings domain."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.RequiredVariable>
+  rdf:type :DataElementCompliance ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Required Variable"^^xsd:string ;
+  skos:definition "A Required variable is any variable that is basic to the identification of a data record (i.e., essential key variables and a topic variable) or is necessary to make the record meaningful. Required variables must always be included in the dataset and cannot be null for any record."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.ResultQualifier>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Result Qualifier"^^xsd:string ;
+  skos:definition "Result Qualifiers describe the specific results associated with the topic variable in a Findings dataset. They answer the question raised by the topic variable. Result Qualifiers are --ORRES, --STRESC, and --STRESN."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.RuleVariable>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Rule Variable"^^xsd:string ;
+  skos:definition "Rule variables, which express an algorithm or executable method to define start, end, and branching or looping conditions in the Trial Design model."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.SynonymQualifier>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Synonym Qualifier"^^xsd:string ;
+  skos:definition "Synonym Qualifiers specify an alternative name for a particular variable in an observation. Examples include --MODIFY and --DECOD, which are equivalent terms for a --TRT or --TERM topic variable, --TEST and --LOINC which are equivalent terms for a --TESTCD."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.TimingVariable>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Timing Variable"^^xsd:string ;
+  skos:definition "Timing variables, which describe the timing of the observation (such as start date and end date)."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.TopicVariable>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Topic Variable"^^xsd:string ;
+  skos:definition "Topic variables, which specify the focus of the observation (such as the name of a lab test)."^^xsd:string ;
+.
+<http://rdf.cdisc.org/sdtm-1-3/schema#Classifier.VariableQualifier>
+  rdf:type :DataElementRole ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Variable Qualifier"^^xsd:string ;
+  skos:definition "Variable Qualifiers are used to further modify or describe a specific variable within an observation and are only meaningful in the context of the variable they qualify. Examples include --ORRESU, --ORNRHI, and --ORNRLO, all of which are Variable Qualifiers of --ORRES; and --DOSU, which is a Variable Qualifier of --DOSE."^^xsd:string ;
+.
+:DataElementCompliance
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "SDTM Data Element Compliance"^^xsd:string ;
+  rdfs:subClassOf mms:Classifier ;
+  skos:definition "The compliance level of an SDTM variable."^^xsd:string ;
+.
+:DataElementRole
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "SDTM Data Element Role"^^xsd:string ;
+  rdfs:subClassOf mms:Classifier ;
+  skos:definition "The role of an SDTM variable."^^xsd:string ;
+.
+:DataElementType
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "SDTM Data Element Type"^^xsd:string ;
+  rdfs:subClassOf mms:Classifier ;
+  skos:definition "The type of an SDTM variable."^^xsd:string ;
+.
+:dataElementCompliance
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Data Element Compliance"^^xsd:string ;
+  rdfs:range :DataElementCompliance ;
+  skos:definition "Refers to the compliance level of a CDISC SDTM data element."^^xsd:string ;
+.
+:dataElementRole
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Data Element Role"^^xsd:string ;
+  rdfs:range :DataElementRole ;
+  skos:definition "Refers to the role of a CDISC SDTM data element."^^xsd:string ;
+.
+:dataElementType
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Data Element Type"^^xsd:string ;
+  rdfs:range :DataElementType ;
+  skos:definition "Refers to the type of a CDISC SDTM data element."^^xsd:string ;
+.
+:qualifies
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Qualifies"^^xsd:string ;
+  rdfs:range mms:DataElement ;
+  skos:definition "Relates a qualifying SDTM variable to a qualified SDTM variable."^^xsd:string ;
+.
+:supportedBySDTMIG
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Supported by SDTM Implementation Guide (IG)"^^xsd:string ;
+  rdfs:range xsd:boolean ;
+  skos:definition "Indicates if a  data element is supported by the SDTM Implementation Guide (IG)."^^xsd:string ;
+.
+:supportedBySEND
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  rdfs:label "Supported by Standard for Exchange of Non-clinical Data (SEND)"^^xsd:string ;
+  rdfs:range xsd:boolean ;
+  skos:definition "Indicates if a  data element is supported by the Standard for Exchange of Non-clinical Data (SEND)."^^xsd:string ;
+.
