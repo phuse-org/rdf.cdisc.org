@@ -1,0 +1,46 @@
+# baseURI: http://rdf.cdisc.org/sdtmig-3-1-2/schema
+# imports: http://rdf.cdisc.org/sdtm-1-2/schema
+
+# c14n-version: 3
+@prefix cts: <http://rdf.cdisc.org/ct/schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mms: <http://rdf.cdisc.org/mms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdtmigs-3-1-2: <http://rdf.cdisc.org/sdtmig-3-1-2/schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<http://rdf.cdisc.org/sdtmig-3-1-2/schema>
+  rdf:type owl:Ontology ;
+  dc:creator "Frederik Malfait, Hoffmann-La Roche"^^xsd:string ;
+  rdfs:label "SDTM Implementation Guide Schema"^^xsd:string ;
+  owl:imports <http://rdf.cdisc.org/sdtm-1-2/schema> ;
+  owl:versionInfo "3.1.2"^^xsd:string ;
+  skos:definition "A schema for the Study Data Tabulation Model Implementation Guide (SDTMIG) Version 3.1.2."^^xsd:string ;
+  skos:note "SDTM defines a standard structure and format of clinical trial data tabulations (domains) for submission to regulatory authorities (e.g. US Food & Drug Administration). SDTM is being adopted by clinical trial sponsors in the Pharmaceutical Industry in order to expedite drug and biologic approvals. Adoption is supported by an implementation guide (SDTM IG) and SDTM controlled terminology (code lists), both provided by CDISC. The SDTM IG describes how to implement each specific domain within the model and how to extend the model in order to include data that is not within scope of the SDTM IG version."^^xsd:string ;
+.
+sdtmigs-3-1-2:domainCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:Dataset ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtmig-3-1-2/schema> ;
+  rdfs:label "Two-Character SDTM Domain Code"^^xsd:string ;
+  rdfs:range xsd:string ;
+  skos:definition "Each domain dataset is distinguished by a unique, two-character code that should be used consistently throughout the submission. This code, which is stored in the SDTM variable named DOMAIN, is used in four ways: as the dataset name, the value of the DOMAIN variable in that dataset, as a prefix for most variable names in that dataset, and as a value in the RDOMAIN variable in relationship tables."^^xsd:string ;
+.
+sdtmigs-3-1-2:domainStructure
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:Dataset ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtmig-3-1-2/schema> ;
+  rdfs:label "Domain Structure"^^xsd:string ;
+  rdfs:range xsd:string ;
+  skos:definition "Description of the domain structure indicating the criteria for uniquely identifying a record (primary key)."^^xsd:string ;
+.
+sdtmigs-3-1-2:references
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:isDefinedBy <http://rdf.cdisc.org/sdtmig-3-1-2/schema> ;
+  rdfs:label "SDTM and SDTMIG References"^^xsd:string ;
+  rdfs:range xsd:string ;
+  skos:definition "References to sections of the SDTM and SDTMIG documents."^^xsd:string ;
+.
