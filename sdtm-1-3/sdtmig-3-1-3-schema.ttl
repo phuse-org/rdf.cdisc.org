@@ -3,45 +3,40 @@
 # imports: http://rdf.cdisc.org/mms
 # imports: http://rdf.cdisc.org/sdtm-1-3/schema
 
-@prefix :        <http://rdf.cdisc.org/sdtmig-3-1-3/schema#> .
-@prefix cts:     <http://rdf.cdisc.org/ct/schema#> .
-@prefix mms:     <http://rdf.cdisc.org/mms#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sdtms:   <http://rdf.cdisc.org/sdtm-1-3/schema#> .
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
+# c14n-version: 3
+@prefix cts: <http://rdf.cdisc.org/ct/schema#> .
+@prefix mms: <http://rdf.cdisc.org/mms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdtmigs-3-1-3: <http://rdf.cdisc.org/sdtmig-3-1-3/schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://rdf.cdisc.org/sdtmig-3-1-3/schema>
-      rdf:type owl:Ontology ;
-      owl:imports <http://rdf.cdisc.org/ct/schema> , <http://rdf.cdisc.org/mms> , <http://rdf.cdisc.org/sdtm-1-3/schema> ;
-      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
-
-:controlledTermsOrFormat
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:DataElement ;
-      rdfs:label "Controlled Terms or Format"^^xsd:string ;
-      rdfs:range xsd:string ;
-      skos:definition "The domain dataset models included in Section 5 and Section 6 of the SDTM Implementation Guide provide additional information about Controlled Terms or Format, notes on proper usage, and examples. Controlled terminology (CT) is now represented in one of four ways. (1) A single asterisk when there is no specific CT available at the current time, but the SDS Team expects that sponsors may have their own CT and/or the CDISC Controlled Terminology Team may be developing CT. (2) A list of controlled terms for the variable when values are not yet maintained externally. (3) The name of an external codelist whose values can be found via the hyperlinks in either the domain or Appendix C1. (4) A common format such as ISO 8601."^^xsd:string .
-
-:domainCode
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:Dataset ;
-      rdfs:label "Two-Character SDTM Domain Code"^^xsd:string ;
-      rdfs:range xsd:string ;
-      skos:definition "Each domain dataset is distinguished by a unique, two-character code that should be used consistently throughout the submission. This code, which is stored in the SDTM variable named DOMAIN, is used in four ways: as the dataset name, the value of the DOMAIN variable in that dataset, as a prefix for most variable names in that dataset, and as a value in the RDOMAIN variable in relationship tables."^^xsd:string .
-
-:domainStructure
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:Dataset ;
-      rdfs:label "Domain Structure"^^xsd:string ;
-      rdfs:range xsd:string ;
-      skos:definition "Description of the domain structure indicating the criteria for uniquely identifying a record (primary key)."^^xsd:string .
-
-:references
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:DataElement ;
-      rdfs:label "SDTM and SDTMIG References"^^xsd:string ;
-      rdfs:range xsd:string ;
-      skos:definition "References to sections of the SDTM and SDTMIG documents."^^xsd:string .
+  rdf:type owl:Ontology ;
+  owl:imports <http://rdf.cdisc.org/ct/schema> ;
+  owl:imports <http://rdf.cdisc.org/mms> ;
+  owl:imports <http://rdf.cdisc.org/sdtm-1-3/schema> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+sdtmigs-3-1-3:domainCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:Dataset ;
+  rdfs:label "Two-Character SDTM Domain Code"^^xsd:string ;
+  rdfs:range xsd:string ;
+  skos:definition "Each domain dataset is distinguished by a unique, two-character code that should be used consistently throughout the submission. This code, which is stored in the SDTM variable named DOMAIN, is used in four ways: as the dataset name, the value of the DOMAIN variable in that dataset, as a prefix for most variable names in that dataset, and as a value in the RDOMAIN variable in relationship tables."^^xsd:string ;
+.
+sdtmigs-3-1-3:domainStructure
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:Dataset ;
+  rdfs:label "Domain Structure"^^xsd:string ;
+  rdfs:range xsd:string ;
+  skos:definition "Description of the domain structure indicating the criteria for uniquely identifying a record (primary key)."^^xsd:string ;
+.
+sdtmigs-3-1-3:references
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mms:DataElement ;
+  rdfs:label "SDTM and SDTMIG References"^^xsd:string ;
+  rdfs:range xsd:string ;
+  skos:definition "References to sections of the SDTM and SDTMIG documents."^^xsd:string ;
+.
