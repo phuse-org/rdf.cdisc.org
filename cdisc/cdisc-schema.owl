@@ -11,213 +11,222 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://rdf.cdisc.org/schema">
   <owl:Ontology rdf:about="">
-    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The CDISC Schema imports the other schemas, so it is sufficient for any other CDISC data standards file to import only this schema.</skos:note>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >FDA/PhUSE CSS Semantic Technology Project</dc:creator>
-    <owl:imports rdf:resource="http://rdf.cdisc.org/ct/schema"/>
-    <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >CDISC Schema</rdfs:label>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The CDISC Schema defines additional elements that are not part of the generic meta-model schema or the Controlled Terminology schema, and that may be applied across the different CDISC standards.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CDISC Schema</rdfs:label>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/ct/schema"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >FDA/PhUSE CSS Semantic Technology Project</dc:creator>
+    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The CDISC Schema imports the other schemas, so it is sufficient for any other CDISC data standards file to import only this schema.</skos:note>
   </owl:Ontology>
   <owl:Class rdf:about="http://rdf.cdisc.org/mms#DataCollectionField">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Collection Field</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://rdf.cdisc.org/mms#DataElementContext"/>
     </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Collection Field</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="DocumentationSection">
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A section that contains a set of assumptions about an administered item specified by the CDISC documentation.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Documentation Section</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A section that contains a set of assumptions about an administered item specified by the CDISC documentation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:about="http://rdf.cdisc.org/mms#DataCollectionForm">
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Context"/>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Data Collection Form</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Context"/>
   </owl:Class>
   <owl:Class rdf:ID="Recommendation">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >An recommendation about an administered item specified by the CDISC documentation.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Recommendation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An recommendation about an administered item specified by the CDISC documentation.</skos:definition>
   </owl:Class>
   <owl:Class rdf:ID="Assumption">
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Assumption</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An assumption about an administered item specified by the CDISC documentation.</skos:definition>
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assumption</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:about="http://rdf.cdisc.org/mms#Domain">
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Context"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Data Element Domain</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Context"/>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
   </owl:Class>
   <owl:Class rdf:about="http://rdf.cdisc.org/mms#DomainContext">
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Context"/>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Domain Context</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Context"/>
   </owl:Class>
   <owl:Class rdf:ID="DataElementType">
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element Type</rdfs:label>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The CDISC designated data type of a data element, character or numeric.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:ID="DataElementCompliance">
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element Compliance</rdfs:label>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The compliance level of a CDISC data element, e.g. required, permissible etc.</skos:definition>
-    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Some compliance levels have similar labels but different meanings across the different CDISC standards. In those cases different resources should be created to represent these.</skos:note>
-  </owl:Class>
-  <owl:Class rdf:about="http://rdf.cdisc.org/mms#DataElementContext">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A data element context maps a data element to a context and describes context dependent properties of that data element.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element Context</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="DataElementRole">
-    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element Role</rdfs:label>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The role of a CDISC data element, e.g. SDTM timing variable etc.</skos:definition>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="http://rdf.cdisc.org/mms#dataElement">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The data element that a data element context refers to.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element</rdfs:label>
-    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElementContext"/>
-    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="about">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The administered item that this assumption is about.</skos:definition>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >About</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
-    <rdfs:domain rdf:resource="#Assumption"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="documents">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The administered item that this documentation section gives more details about.</skos:definition>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Documents</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
-    <rdfs:domain rdf:resource="#DocumentationSection"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="dataElementCompliance">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element Compliance</rdfs:label>
-    <rdfs:range rdf:resource="#DataElementCompliance"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Refers to the compliance level of a CDISC data element.</skos:definition>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="dataElementRole">
-    <rdfs:range rdf:resource="#DataElementRole"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element Role</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Refers to the role of a CDISC data element.</skos:definition>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="dataElementType">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Refers to the type of a CDISC data element, character or numeric.</skos:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Data Element Type</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DataElementCompliance">
+    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Some compliance levels have similar labels but different meanings across the different CDISC standards. In those cases different resources should be created to represent these.</skos:note>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The compliance level of a CDISC data element, e.g. required, permissible etc.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Compliance</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://rdf.cdisc.org/mms#DataElementContext">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A data element context maps a data element to a context and describes context dependent properties of that data element.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="DataElementRole">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The role of a CDISC data element, e.g. SDTM timing variable etc.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Role</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://rdf.cdisc.org/mms#Classifier"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://rdf.cdisc.org/mms#dataElement">
+    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElementContext"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The data element that a data element context refers to.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="about">
+    <rdfs:domain rdf:resource="#Assumption"/>
+    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >About</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The administered item that this assumption is about.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="documents">
+    <rdfs:domain rdf:resource="#DocumentationSection"/>
+    <rdfs:range rdf:resource="http://rdf.cdisc.org/mms#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Documents</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The administered item that this documentation section gives more details about.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="dataElementCompliance">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Refers to the compliance level of a CDISC data element.</skos:definition>
     <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="#DataElementCompliance"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Compliance</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="dataElementRole">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Refers to the role of a CDISC data element.</skos:definition>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Role</rdfs:label>
+    <rdfs:range rdf:resource="#DataElementRole"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="dataElementType">
     <rdfs:range rdf:resource="#DataElementType"/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Type</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Refers to the type of a CDISC data element, character or numeric.</skos:definition>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="partOfSection">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The documentation section that this assumption is a part of.</skos:definition>
+    <rdfs:domain rdf:resource="#Assumption"/>
+    <rdfs:range rdf:resource="#DocumentationSection"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Part of Section</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:range rdf:resource="#DocumentationSection"/>
-    <rdfs:domain rdf:resource="#Assumption"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The documentation section that this assumption is a part of.</skos:definition>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:ID="recommendationText">
-    <rdfs:domain rdf:resource="#Recommendation"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Recommendation Text</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The text of an recommendation.</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Recommendation Text</rdfs:label>
+    <rdfs:domain rdf:resource="#Recommendation"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="controlledTermsOrFormat">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Controlled Terminology or Format</rdfs:label>
-    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A CDISC defined description about the controlled terms or the format of a data element.</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Controlled Terminology or Format</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="datasetStructure">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The record structure of a CDISC dataset.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#Dataset"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Set Structure</rdfs:label>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="sectionLabel">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The label of a documentation section.</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#DocumentationSection"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Section Label</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:domain rdf:resource="#DocumentationSection"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The label of a documentation section.</skos:definition>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="assumptionText">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The text of an assumption.</skos:definition>
+    <rdfs:domain rdf:resource="#Assumption"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Assumption Text</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#Assumption"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The text of an assumption.</skos:definition>
   </owl:DatatypeProperty>
   <cdiscs:DataElementType rdf:ID="Classifier.Numeric">
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Num</rdfs:label>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Classifies a CDISC data element of type numeric.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Num</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
   </cdiscs:DataElementType>
   <cdiscs:DataElementType rdf:ID="Classifier.Character">
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Char</rdfs:label>
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Classifies a CDISC data element of type character.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Char</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
   </cdiscs:DataElementType>
 </rdf:RDF>
 

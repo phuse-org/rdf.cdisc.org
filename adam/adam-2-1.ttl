@@ -1,82 +1,46 @@
 # baseURI: http://rdf.cdisc.org/adam-2-1
 # imports: http://rdf.cdisc.org/schema
 
-@prefix adam:    <http://rdf.cdisc.org/adam-2-1#> .
-@prefix mms:     <http://rdf.cdisc.org/mms#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
+# c14n-version: 3
+@prefix adam-2-1: <http://rdf.cdisc.org/adam-2-1#> .
+@prefix mms: <http://rdf.cdisc.org/mms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 <http://rdf.cdisc.org/adam-2-1>
-      rdf:type owl:Ontology ;
-      owl:imports <http://rdf.cdisc.org/schema> ;
-      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
-
+  rdf:type owl:Ontology ;
+  owl:imports <http://rdf.cdisc.org/schema> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
 <http://rdf.cdisc.org/adam-2-1#Class.ADAE>
-      rdf:type mms:DatasetContext ;
-      mms:context <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1> ;
-      mms:contextDescription
-              "ADAE may be the first example of a more general structure supporting analysis of incidence data, such as adverse events, concomitant medications, etc."^^xsd:string ;
-      mms:contextLabel "Incidence Data Structure"^^xsd:string ;
-      mms:contextName "ADAE"^^xsd:string ;
-      mms:ordinal "3"^^xsd:positiveInteger .
-
+  rdf:type mms:DatasetContext ;
+  mms:context <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1> ;
+  mms:contextDescription "ADAE may be the first example of a more general structure supporting analysis of incidence data, such as adverse events, concomitant medications, etc."^^xsd:string ;
+  mms:contextLabel "Incidence Data Structure"^^xsd:string ;
+  mms:contextName "ADAE"^^xsd:string ;
+  mms:ordinal "3"^^xsd:positiveInteger ;
+.
 <http://rdf.cdisc.org/adam-2-1#Class.ADSL>
-      rdf:type mms:DatasetContext ;
-      mms:context <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1> ;
-      mms:contextDescription
-              "The ADSL dataset structure has one record per subject and contains variables such as subject-level population flags, planned and actual treatment variables, demographic information, randomization factors, subgrouping variables, and important dates. ADSL contains required variables (as specified in the ADaMIG) plus other subject-level variables that are important in describing a subject's experience in the trial. ADSL and its related metadata are required in a CDISC-based submission of data from a clinical trial even if no other analysis datasets are submitted. Refer to Section 6 of the ADaM 2.1 document for a detailed description of ADSL. Although it would be technically feasible to take every single data value in a study and include them all as variables in a subject-level dataset such as ADSL, that is not the intent or the purpose of ADSL. The correct location for key endpoints and data that vary over time during the course of a study is in a BDS dataset."^^xsd:string ;
-      mms:contextLabel "The Subject-Level Analysis Dataset (ADSL) Structure"^^xsd:string ;
-      mms:contextName "ADSL"^^xsd:string ;
-      mms:ordinal "1"^^xsd:positiveInteger .
-
+  rdf:type mms:DatasetContext ;
+  mms:context <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1> ;
+  mms:contextDescription "The ADSL dataset structure has one record per subject and contains variables such as subject-level population flags, planned and actual treatment variables, demographic information, randomization factors, subgrouping variables, and important dates. ADSL contains required variables (as specified in the ADaMIG) plus other subject-level variables that are important in describing a subject's experience in the trial. ADSL and its related metadata are required in a CDISC-based submission of data from a clinical trial even if no other analysis datasets are submitted. Refer to Section 6 of the ADaM 2.1 document for a detailed description of ADSL. Although it would be technically feasible to take every single data value in a study and include them all as variables in a subject-level dataset such as ADSL, that is not the intent or the purpose of ADSL. The correct location for key endpoints and data that vary over time during the course of a study is in a BDS dataset."^^xsd:string ;
+  mms:contextLabel "The Subject-Level Analysis Dataset (ADSL) Structure"^^xsd:string ;
+  mms:contextName "ADSL"^^xsd:string ;
+  mms:ordinal "1"^^xsd:positiveInteger ;
+.
 <http://rdf.cdisc.org/adam-2-1#Class.BDS>
-      rdf:type mms:DatasetContext ;
-      mms:context <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1> ;
-      mms:contextDescription
-              "A BDS contains one or more records per subject, per analysis parameter, per analysis timepoint. Analysis timepoint is conditionally required, depending on the analysis. In situations where there is no analysis timepoint, the structure is one or more records per subject per analysis parameter. This structure contains a central set of variables that describe the analysis parameter (e.g., PARAM and related variables) and contain the value being analyzed (e.g., AVAL and AVALC and related variables). Other variables in the dataset provide more information about the value being analyzed (e.g., the subject identification) or describe and trace the derivation of it (e.g., DTYPE) or enable the analysis (e.g., treatment variables, covariates). The BDS supports parametric and nonparametric analyses such as ANOVA, ANCOVA, categorical analysis, logistic regression, Cochran-Mantel-Haenszel, Wilcoxon rank-sum, time-to-event analysis, etc. It is often optimal to have more than one BDS analysis dataset. Refer to the ADaMIG for details regarding the BDS standards. Though the BDS supports the majority of statistical analyses, it does not support all statistical analyses. For example, it does not support simultaneous analysis of multiple dependent (response/outcome) variables or correlation analysis across a range of response variables. The BDS was not designed to support analysis of incidence of adverse events or other occurrence data."^^xsd:string ;
-      mms:contextLabel "The Basic Data Structure (BDS)"^^xsd:string ;
-      mms:contextName "BDS"^^xsd:string ;
-      mms:ordinal "2"^^xsd:positiveInteger .
-
+  rdf:type mms:DatasetContext ;
+  mms:context <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1> ;
+  mms:contextDescription "A BDS contains one or more records per subject, per analysis parameter, per analysis timepoint. Analysis timepoint is conditionally required, depending on the analysis. In situations where there is no analysis timepoint, the structure is one or more records per subject per analysis parameter. This structure contains a central set of variables that describe the analysis parameter (e.g., PARAM and related variables) and contain the value being analyzed (e.g., AVAL and AVALC and related variables). Other variables in the dataset provide more information about the value being analyzed (e.g., the subject identification) or describe and trace the derivation of it (e.g., DTYPE) or enable the analysis (e.g., treatment variables, covariates). The BDS supports parametric and nonparametric analyses such as ANOVA, ANCOVA, categorical analysis, logistic regression, Cochran-Mantel-Haenszel, Wilcoxon rank-sum, time-to-event analysis, etc. It is often optimal to have more than one BDS analysis dataset. Refer to the ADaMIG for details regarding the BDS standards. Though the BDS supports the majority of statistical analyses, it does not support all statistical analyses. For example, it does not support simultaneous analysis of multiple dependent (response/outcome) variables or correlation analysis across a range of response variables. The BDS was not designed to support analysis of incidence of adverse events or other occurrence data."^^xsd:string ;
+  mms:contextLabel "The Basic Data Structure (BDS)"^^xsd:string ;
+  mms:contextName "BDS"^^xsd:string ;
+  mms:ordinal "2"^^xsd:positiveInteger ;
+.
 <http://rdf.cdisc.org/adam-2-1#Model.ADaM-2-1>
-      rdf:type mms:Model ;
-      mms:contextDescription
-              "The purpose of ADaM is to provide a framework that enables analysis of the data, while at the same time allowing reviewers and other recipients of the data to have a clear understanding of the data's lineage from collection to analysis to results. Whereas ADaM is optimized to support data derivation and analysis, CDISC's Study Data Tabulation Model (SDTM) is optimized to support data tabulation."^^xsd:string ;
-      mms:contextLabel "Analysis Data Model (ADaM) Version 2.1"^^xsd:string ;
-      mms:contextName "adam-2-1"^^xsd:string .
-
-adam:dataElementCompliance
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain mms:DataElement ;
-      rdfs:label "data element compliance"^^xsd:string ;
-      skos:definition "Refers to the compliance level of a CDISC ADAM data element."^^xsd:string .
-
-adam:dataElementRole
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain mms:DataElement ;
-      rdfs:label "data element role"^^xsd:string ;
-      skos:definition "Refers to the role of a CDISC ADAM data element."^^xsd:string .
-
-adam:dataElementType
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain mms:DataElement ;
-      rdfs:label "data element type"^^xsd:string ;
-      skos:definition "Refers to the type of a CDISC ADAM data element."^^xsd:string .
-
-adam:datasetDescription
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:Dataset ;
-      rdfs:range xsd:string .
-
-adam:datasetKeys
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:Dataset ;
-      rdfs:range xsd:string .
-
-adam:datasetStructure
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain mms:Dataset ;
-      rdfs:range xsd:string .
+  rdf:type mms:Model ;
+  mms:contextDescription "The purpose of ADaM is to provide a framework that enables analysis of the data, while at the same time allowing reviewers and other recipients of the data to have a clear understanding of the data's lineage from collection to analysis to results. Whereas ADaM is optimized to support data derivation and analysis, CDISC's Study Data Tabulation Model (SDTM) is optimized to support data tabulation."^^xsd:string ;
+  mms:contextLabel "Analysis Data Model (ADaM) Version 2.1"^^xsd:string ;
+  mms:contextName "adam-2-1"^^xsd:string ;
+.
