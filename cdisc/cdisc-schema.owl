@@ -205,6 +205,28 @@
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The label of a documentation section.</skos:definition>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="completionInstructions">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Completion Instructions</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="questionText">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Question Text</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="prompt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Prompt</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="http://rdf.cdisc.org/mms#DataElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://rdf.cdisc.org/mms#dataElementLabel"/>
+  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="assumptionText">
     <rdfs:domain rdf:resource="#Assumption"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
