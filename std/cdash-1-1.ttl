@@ -1,12 +1,12 @@
 # baseURI: http://rdf.cdisc.org/std/cdash-1-1
 # imports: http://rdf.cdisc.org/cdash-terminology
-# imports: http://rdf.cdisc.org/schema
 # imports: http://rdf.cdisc.org/sdtm-terminology
+# imports: http://rdf.cdisc.org/std/schema
 
 # c14n-version: 3
 @prefix cdash-1-1: <http://rdf.cdisc.org/std/cdash-1-1#> .
 @prefix cdashct: <http://rdf.cdisc.org/cdash-terminology#> .
-@prefix cdiscs: <http://rdf.cdisc.org/schema#> .
+@prefix cdiscs: <http://rdf.cdisc.org/std/schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mms: <http://rdf.cdisc.org/mms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -18,11 +18,12 @@
 <http://rdf.cdisc.org/std/cdash-1-1>
   rdf:type owl:Ontology ;
   dc:creator "FDA/PhUSE CSS Semantic Technology Project"^^xsd:string ;
-  rdfs:label "CDASH 1.1"^^xsd:string ;
   owl:imports <http://rdf.cdisc.org/cdash-terminology> ;
-  owl:imports <http://rdf.cdisc.org/schema> ;
   owl:imports <http://rdf.cdisc.org/sdtm-terminology> ;
+  owl:imports <http://rdf.cdisc.org/std/schema> ;
   owl:versionInfo "1.1"^^xsd:string ;
+  skos:definition "An ontology representing the content of Clinical Data Acquisition Standards Harmonization (CDASH) Version 1.1 as published by CDISC."^^xsd:string ;
+  skos:prefLabel "CDISC CDASH Standard 1.1"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/cdash-1-1#Classifier.HighlyRecommendedField>
   rdf:type cdiscs:DataElementCompliance ;
