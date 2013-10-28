@@ -5478,7 +5478,7 @@ Estonia and Latvia: contains Dexketoprofen trometamol"""^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/cdash-1-1#Section.5.8> ;
   cdiscs:recommendationText """SDTM IG definitions:
 * \"Drug Accountability is for data regarding the accountability of study drug, such as information on receipt, dispensing, return and packaging\" (SDTM IG V3.1.2 page 159)
-* \"The Exposure domain model records the details of a subject's exposure to protocol-specified study treatment. Study treatment may be any intervention that is prospectively defined as a test material within a study, and is typically but not always supplied to the subject. Examples include but are not limited to placebo, active comparators, and investigational products. Treatments that are not protocol-specified should be recorded in the Concomitant Medications (CM) domain.’ (SDTM IG V3.1.2 page 84)."""^^xsd:string ;
+* \"The Exposure domain model records the details of a subject's exposure to protocol-specified study treatment. Study treatment may be any intervention that is prospectively defined as a test material within a study, and is typically but not always supplied to the subject. Examples include but are not limited to placebo, active comparators, and investigational products. Treatments that are not protocol-specified should be recorded in the Concomitant Medications (CM) domain.\" (SDTM IG V3.1.2 page 84)."""^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/cdash-1-1#Recommendation.DA.5.8.0.04>
   rdf:type cdiscs:Recommendation ;

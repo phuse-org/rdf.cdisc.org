@@ -8030,7 +8030,7 @@ properties (e.g., volume and pH) are handled via separate records in this datase
   rdf:type mms:Column ;
   mms:context <http://rdf.cdisc.org/std/sendig-3-0#Dataset.TA> ;
   mms:dataElement <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Timing.EPOCH> ;
-  mms:dataElementDescription "Name of the study Epoch with which this Element of the Arm is associated (e.g., Treatment, Screen). Equivalent to 'Phase’ or ‘Period.'"^^xsd:string ;
+  mms:dataElementDescription "Name of the study Epoch with which this Element of the Arm is associated (e.g., Treatment, Screen). Equivalent to 'Phase' or 'Period.'"^^xsd:string ;
   mms:dataElementLabel "Trial Epoch"^^xsd:string ;
   mms:dataElementName "EPOCH"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
