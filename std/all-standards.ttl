@@ -1,0 +1,28 @@
+# baseURI: http://rdf.cdisc.org/std/all-standards
+# imports: http://rdf.cdisc.org/std/adam-2-1
+# imports: http://rdf.cdisc.org/std/adamig-1-0
+# imports: http://rdf.cdisc.org/std/cdash-1-1
+# imports: http://rdf.cdisc.org/std/sdtm-1-2
+# imports: http://rdf.cdisc.org/std/sdtm-1-3
+# imports: http://rdf.cdisc.org/std/sdtmig-3-1-2
+# imports: http://rdf.cdisc.org/std/sdtmig-3-1-3
+# imports: http://rdf.cdisc.org/std/sendig-3-0
+
+# c14n-version: 3
+@prefix : <http://rdf.cdisc.org/std/all-standards#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<http://rdf.cdisc.org/std/all-standards>
+  rdf:type owl:Ontology ;
+  owl:imports <http://rdf.cdisc.org/std/adam-2-1> ;
+  owl:imports <http://rdf.cdisc.org/std/adamig-1-0> ;
+  owl:imports <http://rdf.cdisc.org/std/cdash-1-1> ;
+  owl:imports <http://rdf.cdisc.org/std/sdtm-1-2> ;
+  owl:imports <http://rdf.cdisc.org/std/sdtm-1-3> ;
+  owl:imports <http://rdf.cdisc.org/std/sdtmig-3-1-2> ;
+  owl:imports <http://rdf.cdisc.org/std/sdtmig-3-1-3> ;
+  owl:imports <http://rdf.cdisc.org/std/sendig-3-0> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
