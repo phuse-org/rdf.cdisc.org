@@ -1,7 +1,6 @@
 # baseURI: http://rdf.cdisc.org/std/adamig-1-0
 # imports: http://rdf.cdisc.org/adam-terminology
 # imports: http://rdf.cdisc.org/std/adam-2-1
-# imports: http://rdf.cdisc.org/std/schema
 
 # c14n-version: 3
 @prefix adam-2-1: <http://rdf.cdisc.org/std/adam-2-1#> .
@@ -24,7 +23,6 @@
   dc:creator "FDA/PhUSE CSS Semantic Technology Project"^^xsd:string ;
   owl:imports <http://rdf.cdisc.org/adam-terminology> ;
   owl:imports <http://rdf.cdisc.org/std/adam-2-1> ;
-  owl:imports <http://rdf.cdisc.org/std/schema> ;
   owl:versionInfo "1.0"^^xsd:string ;
   skos:definition "An ontology representing the content of the Analysis Data Model Implementation Guide Version 1.0 as published by CDISC."^^xsd:string ;
   skos:prefLabel "CDISC ADaM Implementation Guide 1.0"^^xsd:string ;
