@@ -760,8 +760,8 @@ value. EXTRT should only include the treatment name and should not include dosag
 <http://rdf.cdisc.org/std/sendig-3-0#Assumption.MA.004.005>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "10"^^xsd:positiveInteger ;
+  cdiscs:about <http://rdf.cdisc.org/std/sendig-3-0#Column.MA.MADIR> ;
   cdiscs:about <http://rdf.cdisc.org/std/sendig-3-0#Column.MA.MALAT> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sendig-3-0#Column.MA.MALOC> ;
   cdiscs:assumptionText "e. For bilateral organs, records may be included for the left, right, and/or both left and right organs."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sendig-3-0#Section.MA.004> ;
 .
@@ -866,8 +866,8 @@ ii. Use of MISTAT and MIREASND: Whenever MISTAT is \"NOT DONE\"; MIREASND should
 <http://rdf.cdisc.org/std/sendig-3-0#Assumption.MI.003.003>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "7"^^xsd:positiveInteger ;
-  cdiscs:about <http://rdf.cdisc.org/std/sendig-3-0#Column.MI.MISTRESN> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sendig-3-0#Column.MI.MISTRESU> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Finding.--STRESN> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Finding.--STRESU> ;
   cdiscs:assumptionText "c. For microscopic evaluations that have numeric results (e.g., specific cell count tests), MISTRESN and MISTRESU should be included as well as other variables applicable for the Findings observation class to accurately reflect the data."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sendig-3-0#Section.MI.003> ;
 .
@@ -5322,9 +5322,6 @@ properties (e.g., volume and pH) are handled via separate records in this datase
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-2#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
 .
-<http://rdf.cdisc.org/std/sendig-3-0#Column.MA.MALOC>
-  rdf:type mms:AdministeredItem ;
-.
 <http://rdf.cdisc.org/std/sendig-3-0#Column.MA.MANAM>
   rdf:type mms:Column ;
   mms:context <http://rdf.cdisc.org/std/sendig-3-0#Dataset.MA> ;
@@ -5891,12 +5888,6 @@ properties (e.g., volume and pH) are handled via separate records in this datase
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-2#Classifier.ExpectedVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-2#Classifier.ResultQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-.
-<http://rdf.cdisc.org/std/sendig-3-0#Column.MI.MISTRESN>
-  rdf:type mms:AdministeredItem ;
-.
-<http://rdf.cdisc.org/std/sendig-3-0#Column.MI.MISTRESU>
-  rdf:type mms:AdministeredItem ;
 .
 <http://rdf.cdisc.org/std/sendig-3-0#Column.MI.MITEST>
   rdf:type mms:Column ;

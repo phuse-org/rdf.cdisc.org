@@ -760,9 +760,9 @@ SUPPDS QVAL=WITHDREW CONSENT"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Assumption.EG.000.004>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "4"^^xsd:positiveInteger ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGNRIND> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGORNRHI> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGORNRLO> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--NRIND> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORNRHI> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORNRLO> ;
   cdiscs:assumptionText "EGNRIND can be added to indicate where a result falls with respect to reference range defined by EGORNRLO and EGORNRHI. Examples: HIGH, LOW. Clinical significance would be represented as described in Section 4.1.5.5 as a record in SUPPEG with a QNAM of EGCLSIG (see also ECG Example 1 below)."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-3#Section.EG.000> ;
 .
@@ -5368,15 +5368,6 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.RecordQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3"^^xsd:string ;
-.
-<http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGNRIND>
-  rdf:type mms:AdministeredItem ;
-.
-<http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGORNRHI>
-  rdf:type mms:AdministeredItem ;
-.
-<http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGORNRLO>
-  rdf:type mms:AdministeredItem ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.EG.EGORRES>
   rdf:type mms:Column ;
