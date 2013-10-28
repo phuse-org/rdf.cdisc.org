@@ -80,7 +80,7 @@
   rdfs:label "Variable Qualifier"^^xsd:string ;
   skos:definition "Variable Qualifiers are used to further modify or describe a specific variable within an observation and are only meaningful in the context of the variable they qualify. Examples include --ORRESU, --ORNRHI, and --ORNRLO, all of which are Variable Qualifiers of --ORRES; and --DOSU, which is a Variable Qualifier of --DOSE."^^xsd:string ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--ACN>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--ACN>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Describes changes made to the study treatment as a result of the event. Examples: DOSE INCREASED, DOSE NOT CHANGED."^^xsd:string ;
@@ -93,7 +93,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--ACNOTH>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--ACNOTH>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Describes other actions taken as a result of the event that are unrelated to dose adjustments of study treatment."^^xsd:string ;
@@ -106,7 +106,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--BDSYCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--BDSYCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA System Organ Class code corresponding to --BODSYS assigned for analysis."^^xsd:string ;
@@ -116,11 +116,11 @@
   mms:ordinal "18"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--BODSYS> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--BODSYS> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--BODSYS>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--BODSYS>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Body system or system organ class from a standard hierarchy (e.g. MedDRA) associated with an event. Example: GASTROINTESTINAL DISORDERS."^^xsd:string ;
@@ -133,7 +133,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--CAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--CAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Used to define a category of topic-variable values."^^xsd:string ;
@@ -146,7 +146,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--CONTRT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--CONTRT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Was another treatment given because of the occurrence of the event? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -159,7 +159,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--DECOD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--DECOD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Dictionary or sponsor-defined derived text description of the topic variable, --TERM, or the modified topic variable (--MODIFY), if applicable. Equivalent to the Preferred Term (PT in MedDRA)."^^xsd:string ;
@@ -169,11 +169,11 @@
   mms:ordinal "5"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--HLGT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--HLGT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA High Level Group Term from the primary path."^^xsd:string ;
@@ -183,11 +183,11 @@
   mms:ordinal "9"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--HLGTCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--HLGTCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA High Level Group Term code from the primary path."^^xsd:string ;
@@ -197,11 +197,11 @@
   mms:ordinal "10"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--HLGT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--HLGT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--HLT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--HLT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA High Level Term from the primary path."^^xsd:string ;
@@ -211,11 +211,11 @@
   mms:ordinal "7"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--HLTCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--HLTCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA High Level Term code from the primary path."^^xsd:string ;
@@ -225,11 +225,11 @@
   mms:ordinal "8"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--HLT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--HLT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--LLT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--LLT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA Lowest Level Term."^^xsd:string ;
@@ -239,11 +239,11 @@
   mms:ordinal "3"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--LLTCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--LLTCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA Lowest Level Term code."^^xsd:string ;
@@ -253,11 +253,11 @@
   mms:ordinal "4"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--LLT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--LLT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--LOC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--LOC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Describes anatomical location relevant for the event. Example: LEFT ARM for skin rash."^^xsd:string ;
@@ -270,7 +270,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--MODIFY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--MODIFY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "If the value for --TERM is modified for coding purposes, then the modified text is placed here."^^xsd:string ;
@@ -280,11 +280,11 @@
   mms:ordinal "2"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--OCCUR>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--OCCUR>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Used to record whether a pre-specified event occurred when information about the occurrence of a specific event is solicited."^^xsd:string ;
@@ -297,7 +297,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--OUT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--OUT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Description of the outcome of an event. Examples: RECOVERED/RESOLVED, FATAL."^^xsd:string ;
@@ -310,7 +310,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--PATT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--PATT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Used to indicate the pattern of the event over time. Examples: INTERMITTENT, CONTINUOUS, SINGLE EVENT."^^xsd:string ;
@@ -323,7 +323,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--PRESP>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--PRESP>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Used to indicate whether the event described by --TERM was pre-specified on a CRF. Value is Y for pre-specified events, null for spontaneously reported events."^^xsd:string ;
@@ -333,11 +333,11 @@
   mms:ordinal "13"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--PTCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--PTCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA Preferred Term code."^^xsd:string ;
@@ -347,11 +347,11 @@
   mms:ordinal "6"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--DECOD> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--DECOD> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--REASND>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--REASND>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Reason not done. Used in conjunction with --STAT when its value is NOT DONE."^^xsd:string ;
@@ -364,7 +364,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--REL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--REL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Records the investigator's opinion as to the causality of the event to the treatment. ICH E2A and E2B examples include NOT RELATED, UNLIKELY RELATED, POSSIBLY RELATED, RELATED."^^xsd:string ;
@@ -377,7 +377,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--RELNST>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--RELNST>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "An opinion as to whether the event may have been due to a treatment other than study drug. Example: \"MORE LIKELY RELATED TO ASPIRIN USE.\""^^xsd:string ;
@@ -390,7 +390,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SCAN>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SCAN>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Was the event associated with the development of cancer? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -403,7 +403,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SCAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SCAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Used to define a further categorization of --CAT values."^^xsd:string ;
@@ -416,7 +416,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SCONG>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SCONG>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Was the event associated with congenital anomaly or birth defect? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -429,7 +429,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SDISAB>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SDISAB>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Did the event result in persistent or significant disability/incapacity? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -442,7 +442,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SDTH>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SDTH>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Did the event result in death? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -455,7 +455,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SER>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SER>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Is this is a serious event? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -468,7 +468,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SEV>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SEV>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "The severity or intensity of the event. Examples: MILD, MODERATE, SEVERE."^^xsd:string ;
@@ -481,7 +481,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SHOSP>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SHOSP>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Did the event require or prolong hospitalization? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -494,7 +494,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SLIFE>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SLIFE>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Was the event life threatening? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -507,7 +507,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SMIE>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SMIE>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Do additional categories for seriousness apply? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -520,7 +520,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SOC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SOC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA primary System Organ Class associated with the event."^^xsd:string ;
@@ -530,11 +530,11 @@
   mms:ordinal "19"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SOCCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SOCCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "MedDRA primary System Organ Class code."^^xsd:string ;
@@ -544,11 +544,11 @@
   mms:ordinal "20"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SOC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SOC> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--SOD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--SOD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Did the event occur with an overdose? Valid values are \"Y\" and \"N\"."^^xsd:string ;
@@ -561,7 +561,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--STAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--STAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Used to indicate when a question about the occurrence of a pre-specified event was not answered. Should be null or have a value of NOT DONE."^^xsd:string ;
@@ -574,7 +574,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TERM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TERM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Topic variable for an event observation, which is the verbatim or pre-specified name of the event."^^xsd:string ;
@@ -587,7 +587,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TOX>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TOX>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Description of toxicity quantified by --TOXGR such as NCI CTCAE Short Name. Examples: HYPERCALCEMIA, HYPOCALCEMIA. Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define.xml document."^^xsd:string ;
@@ -597,11 +597,11 @@
   mms:ordinal "39"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TOXGR> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TOXGR> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Event.--TOXGR>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Event.--TOXGR>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:EventVariables ;
   mms:dataElementDescription "Records toxicity grade using a standard toxicity scale (such as the NCI CTCAE). Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define.xml document."^^xsd:string ;
@@ -614,7 +614,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ACPTFL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ACPTFL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "In cases where more than one assessor provides an evaluation of a result or response, this flag identifies the record that is considered, by an independent assessor, to be the accepted evaluation. Expected to be Y or null."^^xsd:string ;
@@ -627,7 +627,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ANTREG>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ANTREG>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Defines the specific anatomical or biological region of a tissue, organ specimen or the region from which the specimen is obtained, as defined in the protocol, such as a section or part of what is described in the --SPEC variable. Examples: CORTEX, MEDULLA, MUCOSA."^^xsd:string ;
@@ -637,11 +637,11 @@
   mms:ordinal "26"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--SPEC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--SPEC> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--BLFL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--BLFL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Indicator used to identify a baseline value. Should be Y or null."^^xsd:string ;
@@ -654,7 +654,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--BODSYS>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--BODSYS>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Body System or Organ Class that is involved for a finding from the standard hierarchy for dictionary-coded results. Example: MedDRA SOC."^^xsd:string ;
@@ -667,7 +667,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--CAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--CAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to define a category of topic-variable values. Examples: HEMATOLOGY, URINALYSIS, CHEMISTRY, HAMILTON DEPRESSION SCALE, SF36."^^xsd:string ;
@@ -680,7 +680,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--CSTATE>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--CSTATE>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "The consciousness state of the subject at the time of measurement. Examples: CONSCIOUS, SEMI-CONSCIOUS, UNCONSCIOUS."^^xsd:string ;
@@ -693,7 +693,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--DIR>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--DIR>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Qualifier for anatomical location or specimen further detailing directionality. Examples: ANTERIOR, LOWER, PROXIMAL."^^xsd:string ;
@@ -703,11 +703,11 @@
   mms:ordinal "31"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LOC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LOC> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--DRVFL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--DRVFL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to indicate a derived record (e.g., a record that represents the average of other records such as a computed baseline). Should be Y or null."^^xsd:string ;
@@ -720,7 +720,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--DTHREL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--DTHREL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Describes the relationship of a particular finding to the death of a subject."^^xsd:string ;
@@ -733,7 +733,7 @@
   cdiscs:supportedBySDTMIG "false"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--EVAL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--EVAL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Role of the person who provided the evaluation. Used only for results that are subjective (e.g., assigned by a person or a group). Examples: ADJUDICATION COMMITTEE, INDEPENDENT ASSESSOR, RADIOLOGIST."^^xsd:string ;
@@ -746,7 +746,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--EVALID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--EVALID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to distinguish multiple evaluators with the same role recorded in --EVAL. Examples: RADIOLOGIST1 or RADIOLOGIST2."^^xsd:string ;
@@ -756,11 +756,11 @@
   mms:ordinal "40"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--EVAL> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--EVAL> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--EXCLFL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--EXCLFL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Indicates whether the values in the result variables for this record should be excluded from summary statistical calculations such as Mean, Standard Deviation, and Count (and others). Expected to be Y or null.  --EXCLFL should not be used when --STAT is NOT DONE.  Not to be used with human clinical trials."^^xsd:string ;
@@ -773,7 +773,7 @@
   cdiscs:supportedBySDTMIG "false"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--FAST>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--FAST>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Indicator used to identify fasting status. Valid values include Y, N, U or null if not relevant."^^xsd:string ;
@@ -786,7 +786,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Qualifier for anatomical location or specimen further detailing laterality. Examples: RIGHT, LEFT, BILATERAL."^^xsd:string ;
@@ -796,11 +796,11 @@
   mms:ordinal "30"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LOC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LOC> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LEAD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LEAD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Lead or leads identified to capture the measurement for a test from an instrument. Examples: LEAD I, LEAD V2, LEAD CM5."^^xsd:string ;
@@ -813,7 +813,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LLOQ>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LLOQ>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Indicates the lower limit of quantitation for an assay. Units will be those used for --STRESU."^^xsd:string ;
@@ -823,12 +823,12 @@
   mms:ordinal "46"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESN> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESN> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LOC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LOC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Location relevant to the collection of the measurement. Examples: RECTAL for temperature,  ARM for blood pressure."^^xsd:string ;
@@ -841,7 +841,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LOINC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LOINC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Logical Observation Identifiers Names and Codes (LOINC) code for the topic variable such as a lab test."^^xsd:string ;
@@ -851,11 +851,11 @@
   mms:ordinal "24"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TESTCD> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TESTCD> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--METHOD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--METHOD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Method of the test or examination. Examples: EIA (Enzyme Immunoassay), ELECTROPHORESIS, DIPSTICK."^^xsd:string ;
@@ -868,7 +868,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--MODIFY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--MODIFY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "If the value of --ORRES is modified for coding purposes, then the modified text is placed here."^^xsd:string ;
@@ -878,11 +878,11 @@
   mms:ordinal "3"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--NAM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--NAM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Name or identifier of the vendor (e.g., laboratory) that provided the test results."^^xsd:string ;
@@ -895,7 +895,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--NRIND>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--NRIND>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to indicate the value is outside the normal range or reference range. May be defined by --ORNRLO and --ORNRHI or other objective criteria. Examples: Y, N; HIGH, LOW; NORMAL; ABNORMAL."^^xsd:string ;
@@ -905,11 +905,11 @@
   mms:ordinal "18"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORNRHI>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORNRHI>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Upper end of normal range or reference range for results stored in --ORRES."^^xsd:string ;
@@ -919,11 +919,11 @@
   mms:ordinal "11"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORNRLO>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORNRLO>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Lower end of normal range or reference range for results stored in --ORRES."^^xsd:string ;
@@ -933,11 +933,11 @@
   mms:ordinal "10"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Result of the measurement or finding as originally received or collected. Examples: 120, <1, POS."^^xsd:string ;
@@ -950,7 +950,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRESU>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRESU>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Unit for --ORRES. Examples: IN, LB, kg/L."^^xsd:string ;
@@ -960,11 +960,11 @@
   mms:ordinal "9"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--PORTOT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--PORTOT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Qualifier for anatomical location or specimen further detailing the distribution, which means arrangement of, apportioning of. . Examples: ENTIRE, SINGLE, SEGMENT, MANY."^^xsd:string ;
@@ -974,11 +974,11 @@
   mms:ordinal "32"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--LOC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--LOC> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--POS>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--POS>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Position of the subject during a measurement or examination. Examples: SUPINE, STANDING, SITTING."^^xsd:string ;
@@ -991,7 +991,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--REASEX>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--REASEX>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Reason excluded from statistics. Used in conjunction with --EXCLFL when its value is Y. Not to be used with human clinical trials."^^xsd:string ;
@@ -1004,7 +1004,7 @@
   cdiscs:supportedBySDTMIG "false"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--REASND>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--REASND>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Reason not done.  Used in conjunction with --STAT when value is NOT DONE."^^xsd:string ;
@@ -1017,7 +1017,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--RESCAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--RESCAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to categorize the result of a finding. Example: MALIGNANT or BENIGN for tumor findings."^^xsd:string ;
@@ -1027,11 +1027,11 @@
   mms:ordinal "19"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--ORRES> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--ORRES> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--SCAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--SCAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to define a further categorization of --CAT values. Example: DIFFERENTIAL."^^xsd:string ;
@@ -1044,7 +1044,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--SEV>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--SEV>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Describes the severity or intensity of a particular finding. Examples: MILD, MODERATE, SEVERE."^^xsd:string ;
@@ -1057,7 +1057,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--SPCCND>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--SPCCND>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Defines the condition of the specimen. Example: CLOUDY."^^xsd:string ;
@@ -1070,7 +1070,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--SPCUFL>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--SPCUFL>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Describes the usability of the specimen for the test. The value will be N if the specimen is not usable, and null if the specimen is usable."^^xsd:string ;
@@ -1083,7 +1083,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--SPEC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--SPEC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Defines the type of specimen used for a measurement. Examples: SERUM, PLASMA, URINE."^^xsd:string ;
@@ -1096,7 +1096,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used to indicate that a question was not asked or a test was not done, or a test was attempted but did not generate a result. Should be null or have a value of NOT DONE."^^xsd:string ;
@@ -1109,7 +1109,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STNRC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STNRC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Normal range or reference range for results stored in --STRESC that are character in ordinal or categorical scale. Example: Negative to Trace."^^xsd:string ;
@@ -1119,12 +1119,12 @@
   mms:ordinal "17"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESN> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESN> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STNRHI>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STNRHI>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Upper end of normal range or reference range for standardized results (e.g., --STRESC, --STRESN) represented in standardized units (--STRESU)."^^xsd:string ;
@@ -1134,12 +1134,12 @@
   mms:ordinal "16"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESN> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESN> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STNRLO>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STNRLO>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Lower end of normal range or reference range for standardized results (e.g., --STRESC, --STRESN) represented in standardized units (--STRESU)."^^xsd:string ;
@@ -1149,12 +1149,12 @@
   mms:ordinal "15"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESN> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESN> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Contains the result value for all findings, copied or derived from --ORRES in a standard format or in standard units. --STRESC should store all results or findings in character format; if results are numeric, they should also be stored in numeric format in --STRESN. For example, if various tests have results \"NONE\", \"NEG\", and \"NEGATIVE\" in --ORRES and these results effectively have the same meaning, they could be represented in standard format in --STRESC as \"NEGATIVE\"."^^xsd:string ;
@@ -1167,7 +1167,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESN>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESN>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Used for continuous or numeric results or findings in standard format; copied in numeric format from --STRESC. --STRESN should store all numeric test results or findings."^^xsd:string ;
@@ -1180,7 +1180,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESU>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESU>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Standardized units used for --STRESC and --STRESN. Example: mol/L."^^xsd:string ;
@@ -1190,12 +1190,12 @@
   mms:ordinal "14"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESN> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESN> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TEST>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TEST>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Long name For --TESTCD. Examples: Platelet, Systolic Blood Pressure, Summary (Min) RR Duration, Eye Examination."^^xsd:string ;
@@ -1205,11 +1205,11 @@
   mms:ordinal "2"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TESTCD> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TESTCD> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TESTCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TESTCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Short character value for --TEST used as a column name when converting a dataset from a vertical format to a horizontal format. The short value can be up to 8 characters. Examples: PLAT, SYSBP, RRMIN, EYEEXAM."^^xsd:string ;
@@ -1222,7 +1222,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TOX>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TOX>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Description of toxicity quantified by --TOXGR such as NCI CTCAE Short Name. Examples: HYPERCALCEMIA, HYPOCALCEMIA. Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define.xml document."^^xsd:string ;
@@ -1232,11 +1232,11 @@
   mms:ordinal "42"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TOXGR> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TOXGR> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--TOXGR>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--TOXGR>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Records toxicity grade using a standard toxicity scale (such as the NCI CTCAE). Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define data definition document. Example: 2."^^xsd:string ;
@@ -1246,11 +1246,11 @@
   mms:ordinal "43"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--STRESC> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--STRESC> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Finding.--XFN>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Finding.--XFN>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingVariables ;
   mms:dataElementDescription "Filename for an external file, such as one for an ECG waveform or a medical image."^^xsd:string ;
@@ -1263,7 +1263,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.FindingAbout.--OBJ>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.FindingAbout.--OBJ>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:FindingsAboutVariables ;
   mms:dataElementDescription "Used in domains modeled as Findings About Events or Findings About Interventions. Describes the event or intervention whose property is being measured in --TESTCD/--TEST. Example: an event of vomiting which has findings, where --OBJ = \"VOMIT\" and the volume of VOMIT is being measured where --TESTCD = \"VOLUME\"."^^xsd:string ;
@@ -1276,7 +1276,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "false"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.--GRPID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.--GRPID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Optional group identifier, used to link together a block of related records within a subject in a domain. Also used to link together a block of related records in the Trial Summary dataset (Section 3.4)."^^xsd:string ;
@@ -1289,7 +1289,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.--LNKGRP>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.--LNKGRP>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "A grouping identifier used to identify a group of assessment results in one domain that are evaluated, as a group, and contribute to a (summary) result in another domain. This will usually be a many-to-one relationship. For example: Multiple tumor measurements/assessments will contribute to a single response to therapy determination record."^^xsd:string ;
@@ -1302,7 +1302,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.--LNKID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.--LNKID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Identifier used to link a feature (such as a tumor) initially recorded as a result in one findings domain to assessments of that feature in another findings domain. This may be a one-to-one or a one-to-many relationship. For Example: A single tumor may have multiple measurements/assessment performed at each study visit."^^xsd:string ;
@@ -1315,7 +1315,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.--REFID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.--REFID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Optional internal or external identifier such as lab specimen ID, or UUID for an ECG waveform or a medical image."^^xsd:string ;
@@ -1328,7 +1328,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.--SEQ>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.--SEQ>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Sequence number to ensure uniqueness of records within a dataset for a subject (or within a parameter, in the case of the Trial Summary domain). May be any valid number (including decimals) and does not have to start at 1."^^xsd:string ;
@@ -1341,7 +1341,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.--SPID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.--SPID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Sponsor-defined identifier. Example: pre-printed line identifier on a Concomitant Medications page."^^xsd:string ;
@@ -1354,7 +1354,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.DOMAIN>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.DOMAIN>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Two-character abbreviation for the domain most relevant to the observation. The Domain abbreviation is also used as a prefix for variables to ensure uniqueness when datasets are merged."^^xsd:string ;
@@ -1367,7 +1367,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.POOLID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.POOLID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "An identifier used to identify a result from a group of subjects that is not assignable to a specific subject."^^xsd:string ;
@@ -1380,7 +1380,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.STUDYID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.STUDYID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Unique identifier for a study."^^xsd:string ;
@@ -1393,7 +1393,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Identifier.USUBJID>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Identifier.USUBJID>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:IdentifierVariables ;
   mms:dataElementDescription "Identifier used to uniquely identify a subject across all studies for all applications or submissions involving the product."^^xsd:string ;
@@ -1406,7 +1406,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--ADJ>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--ADJ>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Describes reason or explanation of why a dose is adjusted. Examples ADVERSE EVENT, INSUFFICIENT RESPONSE, NON-MEDICAL REASON."^^xsd:string ;
@@ -1419,7 +1419,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--CAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--CAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Used to define a category of topic-variable values."^^xsd:string ;
@@ -1432,7 +1432,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--CLAS>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--CLAS>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Class for a medication or treatment, often obtained from a coding dictionary."^^xsd:string ;
@@ -1442,11 +1442,11 @@
   mms:ordinal "11"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--CLASCD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--CLASCD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Used to represent code for --CLAS."^^xsd:string ;
@@ -1456,11 +1456,11 @@
   mms:ordinal "12"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DECOD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DECOD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Standardized or dictionary-derived name of the topic variable, --TRT, or the modified topic variable (--MODIFY), if applicable. Equivalent to the generic drug name in WHO Drug, or a term in SNOMED, ICD9, or other published or sponsor-defined dictionaries."^^xsd:string ;
@@ -1470,11 +1470,11 @@
   mms:ordinal "3"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSE>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSE>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Amount of --TRT given. Not populated when --DOSTXT is populated."^^xsd:string ;
@@ -1487,7 +1487,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSFRM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSFRM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Dose form for the treatment. Examples: TABLET, CAPSULE."^^xsd:string ;
@@ -1497,13 +1497,13 @@
   mms:ordinal "16"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSE> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTOT> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTXT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSE> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTOT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTXT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSFRQ>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSFRQ>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Usually expressed as the number of doses given per a specific interval. Examples: QD, BID, TID, QID."^^xsd:string ;
@@ -1513,13 +1513,13 @@
   mms:ordinal "17"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSE> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTOT> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTXT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSE> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTOT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTXT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSRGM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSRGM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Text description of the (intended) schedule or regimen for the Intervention. Examples: TWO WEEKS ON, TWO WEEKS OFF."^^xsd:string ;
@@ -1529,13 +1529,13 @@
   mms:ordinal "19"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSE> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTOT> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTXT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSE> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTOT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTXT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTOT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTOT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Total daily dose of --TRT using the units in --DOSU. Used when dosing is collected as Total Daily Dose."^^xsd:string ;
@@ -1548,7 +1548,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTXT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTXT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Dosing information collected in text form. Examples: <1 per day, 200-400. Not populated when --DOSE is populated."^^xsd:string ;
@@ -1561,7 +1561,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSU>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSU>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Units for --DOSE, --DOSTOT, or --DOSTXT (Examples: ng, mg, mg/kg)."^^xsd:string ;
@@ -1571,13 +1571,13 @@
   mms:ordinal "15"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSE> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTOT> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--DOSTXT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSE> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTOT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--DOSTXT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--INDC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--INDC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Denotes the indication for the intervention (e.g., why the therapy was taken or administered)."^^xsd:string ;
@@ -1590,7 +1590,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--LOC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--LOC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Anatomical location of an intervention, such as an injection site. Example: RIGHT ARM for an injection."^^xsd:string ;
@@ -1603,7 +1603,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--LOT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--LOT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Lot number for the intervention described in --TRT."^^xsd:string ;
@@ -1616,7 +1616,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--MODIFY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--MODIFY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "If the value for --TRT is modified for coding purposes, then the modified text is placed here."^^xsd:string ;
@@ -1626,11 +1626,11 @@
   mms:ordinal "2"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--OCCUR>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--OCCUR>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Used to record whether a pre-specified intervention occurred when information about the occurrence of a specific intervention is solicited."^^xsd:string ;
@@ -1643,7 +1643,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--PRESP>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--PRESP>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Used when a specific intervention is pre-specified on a CRF. Values should be \"Y\" or null."^^xsd:string ;
@@ -1653,11 +1653,11 @@
   mms:ordinal "6"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--REASND>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--REASND>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Reason not done. Used in conjunction with --STAT when value is NOT DONE."^^xsd:string ;
@@ -1670,7 +1670,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--ROUTE>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--ROUTE>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Route of administration for the intervention. Examples: ORAL, INTRAVENOUS."^^xsd:string ;
@@ -1680,11 +1680,11 @@
   mms:ordinal "20"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--SCAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--SCAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Used to define a further categorization of --CAT values."^^xsd:string ;
@@ -1697,7 +1697,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--STAT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--STAT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Used to indicate when a question about the occurrence of a pre-specified intervention was not answered. Should be null or have a value of NOT DONE."^^xsd:string ;
@@ -1710,7 +1710,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "The topic for the intervention observation, usually the verbatim name of the treatment, drug, medicine, or therapy given during the dosing interval for the observation."^^xsd:string ;
@@ -1723,7 +1723,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--TRTV>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--TRTV>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Vehicle for administration of treatment, such as a liquid in which the treatment drug is dissolved. Example: SALINE."^^xsd:string ;
@@ -1736,7 +1736,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--VAMT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--VAMT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Amount of the treatment vehicle administered or given."^^xsd:string ;
@@ -1749,7 +1749,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--VAMTU>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--VAMTU>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:InterventionVariables ;
   mms:dataElementDescription "Units for the treatment vehicle. Examples: mL, mg."^^xsd:string ;
@@ -1759,11 +1759,11 @@
   mms:ordinal "25"^^xsd:positiveInteger ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.VariableQualifier> ;
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
-  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DE.Intervention.--VAMT> ;
+  cdiscs:qualifies <http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Intervention.--VAMT> ;
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--DETECT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--DETECT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "The number of days from the start of dosing to the earliest detection of a condition or pathogen."^^xsd:string ;
@@ -1776,7 +1776,7 @@
   cdiscs:supportedBySDTMIG "false"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--DTC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--DTC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Collection date and time of an observation represented in IS0 8601 character format."^^xsd:string ;
@@ -1789,7 +1789,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--DUR>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--DUR>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Collected duration of an event, intervention, or finding represented in ISO 8601 character format. Used only if collected on the CRF and not derived."^^xsd:string ;
@@ -1802,7 +1802,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--DY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--DY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Actual study day of visit/collection/exam expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics."^^xsd:string ;
@@ -1815,7 +1815,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--ELTM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--ELTM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Planned Elapsed time in ISO 8601 character format relative to a planned fixed reference (--TPTREF) such as \"Previous Dose\" or \"Previous Meal\". This variable is useful where there are repetitive measures. Not a clock time or a date/time variable, but an interval, represented as ISO duration."^^xsd:string ;
@@ -1828,7 +1828,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--ENDTC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--ENDTC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "End date/time of the observation represented in IS0 8601 character format."^^xsd:string ;
@@ -1841,7 +1841,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--ENDY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--ENDY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Actual study day of end of observation expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics."^^xsd:string ;
@@ -1854,7 +1854,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--ENRF>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--ENRF>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Identifies the end of the observation as being before, during or after the sponsor-defined reference period. The sponsor-defined reference period is a continuous period of time defined by a discrete starting point and a discrete ending point represented by RFSTDTC and RFENDTC in Demographics."^^xsd:string ;
@@ -1867,7 +1867,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--ENRTPT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--ENRTPT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Identifies the end of the observation as being before or after the sponsor-defined reference time point defined by variable --ENTPT."^^xsd:string ;
@@ -1880,7 +1880,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--ENTPT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--ENTPT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Description or date/time in ISO 8601 character format of the sponsor-defined reference point referred to by --ENRTPT. Examples: \"2003-12-25\" or \"VISIT 2\"."^^xsd:string ;
@@ -1893,7 +1893,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--EVLINT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--EVLINT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Duration of  interval associated with an observation such as a finding --TESTCD, represented in ISO 8601 character format. Example: -P2M to represent a period of the past 2 months as the evaluation interval for a question from a questionnaire such as SF-36."^^xsd:string ;
@@ -1906,7 +1906,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--RFTDTC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--RFTDTC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Date/time for a fixed reference time point defined by --TPTREF in ISO 8601 character format."^^xsd:string ;
@@ -1919,7 +1919,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--STDTC>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--STDTC>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Start date/time of an observation represented in IS0 8601 character format."^^xsd:string ;
@@ -1932,7 +1932,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--STDY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--STDY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Actual study day of start of observation expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics."^^xsd:string ;
@@ -1945,7 +1945,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--STRF>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--STRF>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Identifies the start of the observation as being before, during, or after the sponsor-defined reference period. The sponsor-defined reference period is a continuous period of time defined by a discrete starting point and a discrete ending point represented by RFSTDTC and RFENDTC in Demographics."^^xsd:string ;
@@ -1958,7 +1958,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--STRTPT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--STRTPT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Identifies the start of the observation as being before or after the sponsor-defined reference time point defined by variable --STTPT."^^xsd:string ;
@@ -1971,7 +1971,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--STTPT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--STTPT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Description or date/time in ISO 8601 character format of the sponsor-defined reference point referred to by --STRTPT. Examples: \"2003-12-15\" or \"VISIT 1\"."^^xsd:string ;
@@ -1984,7 +1984,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--TPT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--TPT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Text description of time when a measurement or observation should be taken as defined in the protocol. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See --TPTNUM and --TPTREF."^^xsd:string ;
@@ -1997,7 +1997,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--TPTNUM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--TPTNUM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Numeric version of planned time point used in sorting."^^xsd:string ;
@@ -2010,7 +2010,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.--TPTREF>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.--TPTREF>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Description of the fixed reference point referred to by --ELTM, --TPTNUM, and --TPT. Examples: PREVIOUS DOSE, PREVIOUS MEAL."^^xsd:string ;
@@ -2023,7 +2023,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.EPOCH>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.EPOCH>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Epoch associated with the start date/time of the observation, or the date/time of collection if start date/time is not collected. (See Section 3.2.2.)"^^xsd:string ;
@@ -2036,7 +2036,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.TAETORD>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.TAETORD>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Number that gives the planned order of the Element within the Arm (see Section 3.2.2)."^^xsd:string ;
@@ -2049,7 +2049,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.VISIT>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.VISIT>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Protocol-defined description of a clinical encounter."^^xsd:string ;
@@ -2062,7 +2062,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.VISITDY>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.VISITDY>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Planned study day of VISIT. Should be an integer."^^xsd:string ;
@@ -2075,7 +2075,7 @@
   cdiscs:supportedBySDTMIG "true"^^xsd:boolean ;
   cdiscs:supportedBySEND "true"^^xsd:boolean ;
 .
-<http://rdf.cdisc.org/std/sdtm-1-3#DE.Timing.VISITNUM>
+<http://rdf.cdisc.org/std/sdtm-1-3#DataElement.Timing.VISITNUM>
   rdf:type mms:DataElement ;
   mms:context sdtm-1-3:TimingVariables ;
   mms:dataElementDescription "Clinical encounter number. Numeric version of VISIT, used for sorting."^^xsd:string ;
