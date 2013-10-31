@@ -26,18 +26,18 @@ The main goal of this project is to represent the existing CDISC standards in RD
 Distribution
 ------------
 
-*** import-files ***
+-- import-files --
 
 There is an import file for each CDISC standard in RDF file. Each sheet contains a description of the instances of a single OWL class. The header of the first column is the name of OWL class. The other headers are the names of the predicates that can be applied to instances of this OWL class. Each row describes an instance. The first column contains the URI of the instance, the other columns describe the properties of the instance, which is either a literal for an owl:DatatypeProperty or a resource URI for an owl:ObjectProperty. Every resource URI is explicitly represented by its qname, we don’t assume any default namespace.
 
 
 If you are new to RDF but familiar with CDISC standards, the import files should give you a very good idea of what is being represented in RDF. In that case, we would recommend to first explore the import files before turning to the RDF datasets.
 
-*** resources ***
+-- resources --
 
 The resources directory contains the RDF files for SKOS and Dublin Core. We use these vocabularies to annotate and document the CDISC ontologies.
 
-*** schemas ***
+-- schemas --
 
 The schemas define the classes and predicates that constitute the ontology to represent the CDISC standards. There are three schemas. The Meta Model Schema and the CT Schema are already in use today by the NCI and are used to publish the CDISC controlled terminology in RDF. It gives a fairly compact vocabulary to represent metadata in the spirit of the ISO 11179 standard for metadata registries (MDR). The CDISC Schema defines some additional vocabulary to deal with more CDISC specific properties such as assumptions specified in the Implementation Guide, CRF completion instructions in CDASH etc.
 
@@ -45,11 +45,11 @@ The core element of the Metadata Model is that of an Administered Item, which ma
 
 Every data element belongs to a context, e.g. the data element VSTESTCD belongs to the context of the CDISC domain VS. A context can recursively be contained in a higher level context, e.g. VS belongs to the context Findings Observation Class, which in turn belongs to the context Model SDTMIG 3-1-2. One way to explore the RDF datasets is to start from a high-level context, e.g. instances of the Model class and then to follow the links to the lower level contexts.
 
-*** terminology-2013-06-28 ***
+-- terminology-2013-06-28 --
 
 The NCI already publishes CDISC controlled terminology in RDF based on the Meta Model Schema and the CT Schema. The files included here are the ones published by the NCI in June 2013. To obtain the latest files, please follow the appropriate link from the cdisc.org web site. The files provided here are for demonstration purposes only.
 
-*** std ***
+-- std --
 
 There is an RDF dataset in Turtle format (file extension ttl) for each RDF representation of a CDISC standard. There is a file all-standards that imports all the other standards, but does nothing else. This is a good starting point if you would like to explore all standards from a single entry point.
 
@@ -57,11 +57,11 @@ There is an RDF dataset in Turtle format (file extension ttl) for each RDF repre
 Known Issues
 ------------
 
-*** File Formats ***
+-- File Formats --
 
 The terminology and schema files are written in RDF/XML since this is the format the NCI currently uses. The CDISC standards in RDF are written in Turtle, which is a more popular format. In the future we would like to provide a distribution for both formats.
 
-*** Meta Model Schema ***
+-- Meta Model Schema --
 
 The following changes to the Meta Model Schema will need to be coordinated with the NCI who currently uses this schema to publish the CDISC controlled terminology.
 
@@ -80,11 +80,11 @@ The following classes have been added to the CDISC Schema and are expected to mo
 
 The ontology rdfs:label of the CT schema currently reads "SDTM Terminology Schema". This needs to be changed to "CDISC Terminology Schema" and will be fed back to the NCI.
 
-*** SEND Implementation Guide ***
+-- SEND Implementation Guide --
 
 The SEND Implementation Guide 3.0 is based on SDTM 1.2, but includes some variables that relate to the following SDTM 1.3 data elements: –ANTREG, --CSTATE, --DETECT, --DIR, --EXCLFL, --LAT, --LEAD, --PORTOT, --REASEX, --SPCUFL. No SDTM data elements were available for --ENINT, --STINT, and --METHOD (in the interventions domain).
 
-*** Analysis Data Model ***
+-- Analysis Data Model --
 
 The analysis data model has generally given more difficulties to map within the existing schemas.
 
@@ -104,5 +104,3 @@ Contact
 
 For more information about the FDA/PhUSE Semantic Technology project, please visit the Wiki at phusewiki.org or go straight to phusewiki.org/wiki/index.php?title=Semantic_Technology.
 
-
-FDA/PhUSE Semantic Technology Project Team
