@@ -2,10 +2,10 @@
 # imports: http://rdf.cdisc.org/adam-terminology
 # imports: http://rdf.cdisc.org/std/adam-2-1
 
-# c14n-version: 3
 @prefix adam-2-1: <http://rdf.cdisc.org/std/adam-2-1#> .
 @prefix adamct: <http://rdf.cdisc.org/adam-terminology#> .
 @prefix adamig-1-0: <http://rdf.cdisc.org/std/adamig-1-0#> .
+@prefix adamvr-1-2: <http://rdf.cdisc.org/std/adamvr-1-2#> .
 @prefix cdiscs: <http://rdf.cdisc.org/std/schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mms: <http://rdf.cdisc.org/mms#> .
@@ -15,6 +15,7 @@
 @prefix sdtmct: <http://rdf.cdisc.org/sdtm-terminology#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 <http://rdf.cdisc.org/std/adam-2-1#Classifier.LabRelatedAnalysisVariable>
   rdf:type adam-2-1:DataElementRole ;
 .
@@ -3170,6 +3171,7 @@
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
 .
 <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.SRCDOM>
+  rdf:type mms:AdministeredItem ;
   rdf:type mms:Column ;
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.DataPointTraceabilityVariables> ;
   mms:dataElementDescription "The 2-character identifier of the SDTM domain that relates to AVAL or AVALC."^^xsd:string ;
@@ -3550,9 +3552,78 @@
   mms:contextLabel "Analysis Data Model (ADaM) Implementation Guide Version 1.0"^^xsd:string ;
   mms:contextName "adamig-1-0"^^xsd:string ;
 .
+<http://rdf.cdisc.org/std/adamig-1-0#Section.2.3.1>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 2.3.1"^^xsd:string ;
+  mms:ordinal "1"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#Table.ADSL> ;
+  cdiscs:sectionLabel "The ADaM Subject-Level Analysis Dataset ADSL"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3"^^xsd:string ;
+  mms:ordinal "2"^^xsd:positiveInteger ;
+  cdiscs:sectionLabel "Standard ADaM Variables"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.1>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.1"^^xsd:string ;
+  mms:ordinal "3"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#Table.ADSL> ;
+  cdiscs:sectionLabel "ADSL Variables"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.1>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.1"^^xsd:string ;
+  mms:ordinal "4"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#BDS.SubjectIdentifierVariables> ;
+  cdiscs:sectionLabel "Subject Identifier Variables for BDS Datasets"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.2"^^xsd:string ;
+  mms:ordinal "5"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:sectionLabel "Treatment Variables for BDS Datasets"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.3"^^xsd:string ;
+  mms:ordinal "6"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:sectionLabel "Timing Variables for BDS Datasets"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.4"^^xsd:string ;
+  mms:ordinal "7"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:sectionLabel "Analysis Parameter Variables for BDS Datasets"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.5"^^xsd:string ;
+  mms:ordinal "8"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisDescriptorVariables> ;
+  cdiscs:sectionLabel "Analysis Descriptor Variables for BDS Datasets"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.6"^^xsd:string ;
+  mms:ordinal "9"^^xsd:positiveInteger ;
+  cdiscs:documents <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:sectionLabel "Indicator Variables for BDS Datasets"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.8>
+  rdf:type cdiscs:DocumentationSection ;
+  mms:identifier "Section 3.2.8"^^xsd:string ;
+  mms:ordinal "10"^^xsd:positiveInteger ;
+  cdiscs:sectionLabel "Other Variables"^^xsd:string ;
+.
 <http://rdf.cdisc.org/std/adamig-1-0#Table.ADAE>
   rdf:type mms:Dataset ;
   mms:context <http://rdf.cdisc.org/std/adam-2-1#Class.ADAE> ;
+  mms:context <http://rdf.cdisc.org/std/adamig-1-0#Model.ADaMIG-1-0> ;
   mms:contextDescription "This data set provides the general data structure and content typically found in Analysis Datasets used for common safety analysis of adverse events (AEs). The SDTM source domain AE, the corresponding SUPPAE, and the ADaM Subject-Level Analysis Dataset (ADSL) serve as the primary sources for the ADAE analysis structure. Each instance of the ADAE data set is likely to deviate from this representation."^^xsd:string ;
   mms:contextLabel "Adverse Event Analysis Dataset"^^xsd:string ;
   mms:contextName "ADAE"^^xsd:string ;
@@ -3562,6 +3633,7 @@
 <http://rdf.cdisc.org/std/adamig-1-0#Table.ADSL>
   rdf:type mms:Dataset ;
   mms:context <http://rdf.cdisc.org/std/adam-2-1#Class.ADSL> ;
+  mms:context <http://rdf.cdisc.org/std/adamig-1-0#Model.ADaMIG-1-0> ;
   mms:contextDescription "The Subject-Level Analysis Data set (ADSL) is used to provide the variables that describe attributes of a subject. ADSL is a source for subject-level variables used in other analysis data sets, such as population flags and treatment variables. There is only one ADSL per study. ADSL and its related metadata are required in a CDISC-based submission of data from a clinical trial even if no other analysis data sets are submitted."^^xsd:string ;
   mms:contextLabel "Subject-Level Analysis Dataset"^^xsd:string ;
   mms:contextName "ADSL"^^xsd:string ;
@@ -3571,9 +3643,2566 @@
 <http://rdf.cdisc.org/std/adamig-1-0#Table.BDS>
   rdf:type mms:Dataset ;
   mms:context <http://rdf.cdisc.org/std/adam-2-1#Class.BDS> ;
+  mms:context <http://rdf.cdisc.org/std/adamig-1-0#Model.ADaMIG-1-0> ;
   mms:contextDescription "The Basic Data Structure (BDS) data set contains one or more records per subject, per analysis parameter, (and conditionally) per analysis timepoint. The BDS structure contains a central set of variables, including the value being analyzed (e.g., AVAL) and the description of the value being analyzed (e.g., PARAM). Other variables in the data set provide more information about the value being analyzed, describe and trace the derivation of it, or support its analysis."^^xsd:string ;
   mms:contextLabel "ADaM Basic Data Structure Dataset"^^xsd:string ;
   mms:contextName "BDS"^^xsd:string ;
   mms:ordinal "2"^^xsd:positiveInteger ;
   cdiscs:datasetStructure "One record per subject per parameter per analysis visit"^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.001>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Table.ADSL> ;
+  cdiscs:assumptionText "There is only one ADSL per study"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.2.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.PopulationIndicatorVariables> ;
+  cdiscs:assumptionText "For subject-level character population flag variables:  N = no (not included in the population), Y = yes (included).  Null values are not allowed"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.PopulationIndicatorVariables> ;
+  cdiscs:assumptionText "For subject-level numeric population flag variables:  0 = no (not included), 1 = yes (included).  Null values are not allowed."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.037>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.SubjectDemographicVariables> ;
+  cdiscs:assumptionText "The *GRy and associated *GRyN variable must have a one-to-one relationship"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.StudyIdentifierVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.SubjectDemographicVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.ARM> ;
+  cdiscs:assumptionText "ADSL must have the variables SUBJID, SITEID, AGE, AGEU, SEX, RACE, ARM"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.048>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.PopulationIndicatorVariables> ;
+  cdiscs:assumptionText "ADSL must have at least one variable that ends in FL because you need at least one population flag"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.054>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.USUBJID> ;
+  cdiscs:assumptionText "ADSL is one record per USUBJID"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.062>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any ADSL variable beginning with TRT and ending in A or beginning in TRT and ending in AN must include xx where xx is a 2 digit number"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.064>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TRT and ending in AN must have a corresponding variable beginning with TRT, having the same increment and end in A"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.065>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any ADSL variable beginning with TR and containing PG  must have a padded numeric of 01 and increment"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.066>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TR, containing PG and ending in N must have a corresponding variable beginning with TR, containing PG, and having the same increment"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.068>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any ADSL variable beginning with TR and containing AG  must have  numeric where xx is a 2 digit number"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.069>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TR, containing AG and ending in N must have a corresponding variable beginning with TR, containing AG, and having the same increment"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.072>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "ADSL must have at least one TRTxxP variable"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.073>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any ADSL variable beginning with TRT and ending in P must have a suffix that is a two-digit integer [01-99]"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.074>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any ADSL variable beginning with TRT and ending in PN must have a suffix that is a two-digit integer [01-99]"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.075>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TRT and ending in PN must have a corresponding variable beginning with TRT, having the same increment and end in P"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.078>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:assumptionText "If there is more than one treatment period then TRxxSDT and TRxxEDT should exist in ADSL"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.080>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "If TRTxxA exists then TRTxxP should exist"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.081>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "If TRT(xx+1)P exists then TRTxxP should exist for xx+1 > 01"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.083>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:assumptionText "If TR01SDT exists then TRTSDT=TR01SDT"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.084>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.TRTEDT> ;
+  cdiscs:assumptionText "TRTEDT = maximum(TRxxEDT)"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.StudyIdentifierVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.SubjectDemographicVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "The lower case letter 'y' in a variable name (e.g., SITEGRy) refers to a grouping or other categorization, an analysis criterion, or an analysis range, and is replaced with a single digit [1-9]."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.227>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTSEQPN must be a one-to-one match to TRTSEQP"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.229>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTSEQAN must be a one-to-one match to TRTSEQA"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.231>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "TRxxPGy must have the same value for all records for a given value of TRTxxP."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.232>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "TRxxPGyN must be a one-to-one match to TRxxPGy"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.234>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "TRxxAGy must have the same value for all records for a given value of TRTxxA."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.235>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "TRxxAGyN must be a one-to-one match to TRxxAGy"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.242>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TRT and ending in AN must have a corresponding variable beginning with TRT, having the same increment and end in A"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.244>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTA must match at least one value in TRT01A-TRTxxA"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.058>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "All *DT variables must be numeric"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.059>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "All *TM variables must be numeric"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.060>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "All *DTM variables must be numeric"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.085>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.StudyIdentifierVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.SubjectIdentifierVariables> ;
+  cdiscs:assumptionText "BDS variables STUDYID, USUBJID, SUBJID, SITEID, etc. must match ADSL variable in metadata"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.091>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTP must match at least one value in TRT01P-TRTxxP"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.100>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APEREDT must have corresponding APxxEDT value"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.101>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APEREDTM must have corresponding APxxEDTM value"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.102>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APERIOD value must have corresponding TRTxxP/TRxxSDT/TRxxEDT variables"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.107>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APERSDT must have corresponding APxxSDT value"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.108>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APERSDTM must have corresponding APxxSDTM value"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.171>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.TRTEDT> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.TRTSDT> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.ADT> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.ONTRTFL> ;
+  cdiscs:assumptionText "If ONTRTFL ^=Y then TRTSDT <= ADT <= TRTEDT should not be true"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.174>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.TRTEDT> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.TRTSDT> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.ADT> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.LVOTFL> ;
+  cdiscs:assumptionText "If LVOTFL=Y then TRTSDT <= ADT <= TRTEDT should be true"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.202>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APERETM must have corresponding APxxETM value."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.203>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "APERSTM must have corresponding APxxSTM value."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.061>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:assumptionText "TRTSDT or TRTSDTM variables are required if there is an investigational product"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.StudyIdentifierVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.SubjectDemographicVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TreatmentVariables> ;
+  cdiscs:assumptionText "Any ADaM variable whose name is the same as an SDTM variable must be a copy of the SDTM variable, and its label, meaning, and values must not be modified."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.005>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.IndicatorVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "The names of all other character flag (or indicator) variables end in FL"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.006>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.IndicatorVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "The names of the corresponding numeric flag (or indicator) variables end in FN"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.007>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.IndicatorVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "If the numeric flag is used, the character version (*FL) is required"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.010>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.IndicatorVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "*FN and *FL must be a one-to-one mapping"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.013>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:assumptionText "ADaM variable names must be no more than 8 characters in length"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.014>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:assumptionText "ADaM variable names must start with a letter (not underscore), and be comprised only of letters (A-Z), underscore (_), and numerals (0-9)"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.016>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:assumptionText "All ADaM variable labels must be no more than 40 characters in length"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.017>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:assumptionText "All ADaM character variables must be no more than 200 characters in length"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.018>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:assumptionText "In general, the variable labels specified in the tables in Section 3 are required.  There are only two exceptions to this rule (1) descriptive text is allowed at the end of the labels of variables whose names contain indexes 'y', 'xx', or 'zz'; and (2) asterisks (*) and ellipses (...) in specified variable labels should be replaced by the sponsor with appropriate text"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.039>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "The names of date imputation flag variables end in DTF"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.040>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "The names of time imputation flag variables end in TMF"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.041>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "Numeric dates, times and datetimes should be formatted so as to be human readable with no loss of precision"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.044>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "If a *DTM and associated *TM variable exist, then the *TM variable must match the time part of the *DTM variable"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.045>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "If a *DTM and associated *DT variable exist, then the *DT variable must match the date part of the *DTM variable"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.088>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADAE.STUDYID> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADAE.USUBJID> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.STUDYID> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.ADSL.USUBJID> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.STUDYID> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.USUBJID> ;
+  cdiscs:assumptionText "All data sets must have the variables STUDYID and USUBJID"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.121>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "If *SDT and *EDT are nonmissing then *SDT <= *EDT"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.122>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADAE.TimingVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.TrialDateVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "If *SDTM and *EDTM are nonmissing then *SDTM <= *EDTM"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.200>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Model.ADaMIG-1-0> ;
+  cdiscs:assumptionText "ADaM variables defined in ADaM IG must be the defined type (num, char)"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.002>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adam-2-1#Model.ADaM-2-1> ;
+  cdiscs:assumptionText "Any ADaM variable whose name is the same as an SDTM variable must be a copy of the SDTM variable, and its label and values must not be modified"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.053>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#ADSL.StudyIdentifierVariables> ;
+  cdiscs:assumptionText "Invalid STUDYID/USUBJID combination not found in the SDTM Demographics domain"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.1> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.199>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Model.ADaMIG-1-0> ;
+  cdiscs:assumptionText "Any ADaM variable whose name is the same as an SDTM variable must be a copy of the SDTM variable, and its label and values must not be modified"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.033>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "For record-level character population flag variables:  Y = yes (included).  Null values are allowed"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.034>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "For parameter-level character population flag variables:  Y = yes (included).  Null values are allowed"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.035>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "For record-level numeric population flag variables:  1 = yes (included).  Null values are allowed"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.036>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "For parameter-level numeric population flag variables:  1 = yes (included).  Null values are allowed"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.046>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "*DY cannot = 0"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.090>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "BDS must have TRTP variable"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.092>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTPN must be a one-to-one match to TRTP"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.094>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Table.BDS> ;
+  cdiscs:assumptionText "The lower case letter 'y' in a variable name (e.g., SITEGRy) refers to a grouping or other categorization, an analysis criterion, or an analysis range, and is replaced with a single digit [1-9]."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.095>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTAN must be a one-to-one match to TRTA"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.097>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TRTPG and ending in N must have a corresponding variable beginning with TRTPG, and having the same increment"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.098>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "*SDY is less than or equal to *EDY if both are non-missing"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.099>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "*STDY is less than or equal to *ENDY if both are non-missing"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.105>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:assumptionText "APERIODC must have one-to-one mapping with APERIOD"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.109>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "AVISITN is a one-to-one mapping with AVISIT"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.111>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "When ARELTM is present, the anchor time variable and ARELTMU must also be included in the dataset, and the anchor time variable must be identified in the metadata for ARELTM"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.115>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "If ATPTREF is populated then ATPT must be populated"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.117>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "Within the same parameter there must be a one-to-one mapping between ATPT and ATPTN if both variables are present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.123>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "PARAMTYP has the same value for all records within a parameter"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.124>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "PARCATy has the same value for all records within a parameter"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.125>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "PARCATy and PARCATyN have a one-to-one mapping"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.127>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "If BASE is populated then there must be a corresponding AVAL value with ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.128>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
+  cdiscs:assumptionText "If BASEC is populated then there must be a corresponding AVALC value with ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.129>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "If both BASE and BASEC are populated then there must be a one-to-one mapping"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.131>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "If BASETYPE is populated for at least one record within a parameter then it must be populated for all records within that parameter"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.132>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "R2BASE must equal AVAL/BASE"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.133>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "R2AyLO must equal AVAL/AyLO"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.134>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "R2AyHI must equal AVAL/AyHI"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.135>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "SHIFTyN must be a one-to-one mapping with SHIFTy"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.137>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "If CRITyFL is populated then CRITy must be populated"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.141>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "PARAM and PARAMCD are present and have a one-to-one mapping"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.143>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.PARAMCD> ;
+  cdiscs:assumptionText "PARAMCD values should follow SAS V5 variable naming conventions"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.146>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.PARAMN> ;
+  cdiscs:assumptionText "PARAMN is a one-to-one mapping with PARAM if present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.148>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.PARAMN> ;
+  cdiscs:assumptionText "PARAMN must be an integer"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.149>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "If both AVAL and AVALC are populated then there must be a one-to-one mapping"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.151>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "The values of CRITy within a parameter must be constant on all rows on which it is populated"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.152>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "If BASE is populated for a parameter, and BASE is non-null for a subject for that parameter, then there must be a record flagged by ABLFL for that subject and parameter."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.153>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "If there are multiple baseline records flagged for a given parameter within a subject then BASETYPE should be populated and contain different values for the baseline records within a subject"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.155>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "Whenever there is more than one definition of baseline, the BASETYPE column is required.  BASETYPE identifies the definition of baseline that corresponds to the value of BASE in each row.  There is only one BASE column, and only one column for each qualifying function of AVAL and BASE"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.156>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "Variable CRITyFL must be present on the dataset if variable CRITy is present, and vice-versa."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.158>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisVisitWindowingVariables> ;
+  cdiscs:assumptionText "If AWTDIFF is present then AWTARGET must be present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.159>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisVisitWindowingVariables> ;
+  cdiscs:assumptionText "If AWTDIFF is populated then AWTARGET must be populated"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.160>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisVisitWindowingVariables> ;
+  cdiscs:assumptionText "If AWU is present then AWLO and AWHI must be present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.161>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisVisitWindowingVariables> ;
+  cdiscs:assumptionText "If AWU is populated then AWLO and AWHI must be populated"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.162>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisVisitWindowingVariables> ;
+  cdiscs:assumptionText "*LO must be less than or equal to  *HI"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.163>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.LabRelatedAnalysisVariables> ;
+  cdiscs:assumptionText "If BTOXGR is present then ATOXGR and ABLFL must be present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.165>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.LabRelatedAnalysisVariables> ;
+  cdiscs:assumptionText "If BTOXGR is populated then there must be a corresponding ATOXGR value with ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.166>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.LabRelatedAnalysisVariables> ;
+  cdiscs:assumptionText "If BNRIND is present then ANRIND and ABLFL must be present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.168>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.LabRelatedAnalysisVariables> ;
+  cdiscs:assumptionText "If BNRIND is populated then there must be a corresponding ANRIND value with ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.169>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimeToEventVariables> ;
+  cdiscs:assumptionText "CNSR should be an integer"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.170>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimeToEventVariables> ;
+  cdiscs:assumptionText "If STARTDT is present then CNSR must be present"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.175>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "A maximum of one record within a parameter timepoint can have LVOTFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.176>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "ABLFL must have a value of Y or null"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.177>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "A maximum of one record within a parameter can have ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.178>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "ANLzzFL must have a value of Y or null"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.181>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.IndicatorVariables> ;
+  cdiscs:assumptionText "If BASE is populated then it must be with avalue flagged for some record via ABLFL for that parameter"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.182>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.LabRelatedAnalysisVariables> ;
+  cdiscs:assumptionText "If BTOXGR is populated then there must be a corresponding ATOXGR value with ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.183>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.LabRelatedAnalysisVariables> ;
+  cdiscs:assumptionText "If BNRIND is populated then there must be a corresponding ANRIND value with ABLFL=Y"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.5> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "The lower case letter 'y' in a variable name (e.g., SITEGRy) refers to a grouping or other categorization, an analysis criterion, or an analysis range, and is replaced with a single digit [1-9]."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.194>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "PARAM and PARAMCD are present and have a one-to-one mapping"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.198>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "Either AVAL or AVALC must be present."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.201>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "Any variable beginning with TRTAG and ending in N must have a corresponding variable beginning with TRTAG, and having the same increment."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.211>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.ABLFN> ;
+  cdiscs:assumptionText "ABLFN must have a value of 1 or null"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.212>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.ANLzzFN> ;
+  cdiscs:assumptionText "ANLzzFN must have a value of 1 or null"^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.6> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.221>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "AVALCATy must have the same value for all records within a parameter for a given value of AVAL."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.222>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "BASECATy must have the same value for all records within a parameter for a given value of BASE."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.223>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "If populated, the value of CHG must be equal to AVAL-BASE."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.224>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "CHGCATy must have the same value for all records within a parameter for a given value of CHG."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.225>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "If populated, the value of PCHG must be equal to ((AVAL-BASE)/BASE)*100."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.226>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.AnalysisParameterVariables> ;
+  cdiscs:assumptionText "PCHGCATy must have the same value for all records within a parameter for a given value of PCHG."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.4> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.237>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTPGyN must have a one-to-one match to TRTPGy."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.239>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTAGy is required when TRTPGy is present and TRTA is present."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.240>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#BDS.TreatmentVariables> ;
+  cdiscs:assumptionText "TRTAGyN must have a one-to-one match to TRTAGy."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.2> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDSSDTM.180>
+  rdf:type cdiscs:Assumption ;
+  cdiscs:about <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.SRCDOM> ;
+  cdiscs:assumptionText "The value of SRCDOM should reference a valid SDTM domain."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/adamig-1-0#Section.3.2.8> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology>
+  rdf:type cdiscs:ValidationRuleCategory ;
+  rdfs:label "Controlled Terminology" ;
+  skos:definition "A category for validation rules that ensure a variable conforms to CDISC Controlled Terminology requirements."^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata>
+  rdf:type cdiscs:ValidationRuleCategory ;
+  rdfs:label "Metadata" ;
+  skos:definition "A category for validation rules that ensures a domain or variable conforms to CDISC metadata requirements."^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated>
+  rdf:type cdiscs:ValidationRuleCategory ;
+  rdfs:label "Present/Populated" ;
+  skos:definition "A category for validation rules that ensures domain(s) and/or variable(s) are present and/or are conditionally populated per CDISC assumptions."^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue>
+  rdf:type cdiscs:ValidationRuleCategory ;
+  rdfs:label "Valid Value" ;
+  skos:definition "A category for validation rules that ensures variable values conform to CDISC assumptions."^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency>
+  rdf:type cdiscs:ValidationRuleCategory ;
+  rdfs:label "Value Consistency" ;
+  skos:definition "A category for validation rules that ensures values for specific variables or values for related variables correspond to CDISC assumptions."^^xsd:string ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0001>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "1"^^xsd:string ;
+  cdiscs:failureCriteria "ADSL dataset does not exist"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.001> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0002>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "2"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present in ADaM with the same name as a variable present in SDTM but the variables do not have identical labels"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.002> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0003>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "3"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present in ADaM with the same name as a variable present in SDTM but the variables do not have identical formats"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.002> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0004>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "4"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present in ADaM with the same name as a variable present in SDTM but the variables do not have identical lengths"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.002> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0005>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "5"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FL has a value that is not Y, N or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.005> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0006>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "6"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FN has a value that is not  0, 1 or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.006> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0007>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "7"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FN is present but a variable with the same root and a suffix of FL is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.007> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0010>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "10"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FL is equal to Y and a variable with the same root and a suffix of FN is not equal to 1"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.010> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0011>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "11"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FL is equal to N and a variable with the same root and a suffix of FN is not equal to 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.010> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0012>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "12"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FL is equal to null and a variable with the same root and a suffix of FN is not equal to null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.010> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0013>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "13"^^xsd:string ;
+  cdiscs:failureCriteria "The length of a variable name exceeds 8 characters"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.013> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0014>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "14"^^xsd:string ;
+  cdiscs:failureCriteria "A variable name does not start with an English letter (A-Z, a-z)"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.014> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0015>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "15"^^xsd:string ;
+  cdiscs:failureCriteria "A variable name contains a character other than English letters (A-Z, a-z), underscores (_), or numerals (0-9)"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.014> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0016>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "16"^^xsd:string ;
+  cdiscs:failureCriteria "The length of a variable label is greater than 40 characters"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.016> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0017>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "17"^^xsd:string ;
+  cdiscs:failureCriteria "The length of a character value is greater than 200 characters"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.017> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0018>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "18"^^xsd:string ;
+  cdiscs:failureCriteria "Labels for  ADaM variables do not match the standard labels for ADaM variables listed in the implementation guide that cannot be modified (with the exception of 1) variables whose names contain indexes 'y', 'xx', or 'zz'; and (2) variable labels with asterisks (*) and ellipses (...) indicated for sponsor appropriate text)"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.018> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0019>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "19"^^xsd:string ;
+  cdiscs:failureCriteria "COMPLFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0020>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "20"^^xsd:string ;
+  cdiscs:failureCriteria "FASFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0021>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "21"^^xsd:string ;
+  cdiscs:failureCriteria "ITTFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0022>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "22"^^xsd:string ;
+  cdiscs:failureCriteria "PPROTFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0023>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "23"^^xsd:string ;
+  cdiscs:failureCriteria "SAFFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0024>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "24"^^xsd:string ;
+  cdiscs:failureCriteria "RANDFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0025>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "25"^^xsd:string ;
+  cdiscs:failureCriteria "ENRLFL is present and has a value that is not Y or N"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.019> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0026>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "26"^^xsd:string ;
+  cdiscs:failureCriteria "COMPLFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0027>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "27"^^xsd:string ;
+  cdiscs:failureCriteria "FASFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0028>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "28"^^xsd:string ;
+  cdiscs:failureCriteria "ITTFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0029>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "29"^^xsd:string ;
+  cdiscs:failureCriteria "PPROTFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0030>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "30"^^xsd:string ;
+  cdiscs:failureCriteria "SAFFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0031>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "31"^^xsd:string ;
+  cdiscs:failureCriteria "RANDFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0032>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "32"^^xsd:string ;
+  cdiscs:failureCriteria "ENRLFN is present and has a value that is not 1 or 0"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.026> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0033>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "33"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix  of RFL has a value that is not Y or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.033> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0034>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "34"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix  of PFL has a value that is not Y or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.034> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0035>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "35"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of RFN has a value that is not 1 or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.035> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0036>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "36"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of PFN has a value that is not 1 or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.036> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0037>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "37"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of a variable which has a suffix of GRyN for a given value of a variable with the same root name and suffix of GRy."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.037> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0038>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "38"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of a variable which has a suffix of GRy for a given value of a variable with the same root name and suffix of GRyN."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.037> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0039>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "39"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DTF has a value that is not within Controlled Terminology for DATEF"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.039> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0040>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "40"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of TMF has a value that is not within Controlled Terminology for TIMEF"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.040> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0041>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "41"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DT does not have a SAS Date format"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.041> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0042>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "42"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of TM does not have a SAS time format"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.041> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0043>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "43"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DTM does not have a SAS datetime format"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.041> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0044>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "44"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of TM and a variable with a suffix of DTM with the same root name have different time values"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.044> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0045>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "45"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DT and a variable with a suffix of DTM with the same root name have different date values"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.045> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0046>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "46"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DY has a value of zero"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.046> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0047>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "47"^^xsd:string ;
+  cdiscs:failureCriteria "SITEID is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0048>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "48"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of FL is not present in ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.048> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0049>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "49"^^xsd:string ;
+  cdiscs:failureCriteria "AGE is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0050>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "50"^^xsd:string ;
+  cdiscs:failureCriteria "AGEU is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0051>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "51"^^xsd:string ;
+  cdiscs:failureCriteria "SEX is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0052>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "52"^^xsd:string ;
+  cdiscs:failureCriteria "RACE is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0053>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "53"^^xsd:string ;
+  cdiscs:failureCriteria "The values of USUBJID are not present in SDTM.DM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.053> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0054>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "54"^^xsd:string ;
+  cdiscs:failureCriteria "Within ADSL there is more than one record for a unique value of USUBJID"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.054> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0055>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "55"^^xsd:string ;
+  cdiscs:failureCriteria "SUBJID is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0058>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "58"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DT is not a numeric variable"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.058> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0059>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "59"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of TM is not a numeric variable"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.059> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0060>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "60"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of DTM is not a numeric variable"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.060> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0061>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "61"^^xsd:string ;
+  cdiscs:failureCriteria "SDTM.EX is present and neither TRTSDT or TRTSDTM are present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.061> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0062>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "62"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRT and a suffix of A has xx fragment appended after TRT that is not a zero-padded two-digit integer [01-99], excluding TRTSEQA"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.062> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0063>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "63"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRT and a suffix of AN has xx fragment appended after TRT that is not a zero-padded two-digit integer [01-99], excluding TRTSEQAN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.062> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0064>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "64"^^xsd:string ;
+  cdiscs:failureCriteria "TRTxxAN is present and TRTxxA is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.064> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0065>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "65"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TR and containing PG has xx fragment appended after TR that is not a zero-padded two-digit integer [01-99]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.065> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0066>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "66"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TR, containing PG and a suffix of N is present and a variable with the same root without a suffix of N is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.066> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0068>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "68"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TR and containing AG has xx fragment appended after TR that is not a zero-padded two-digit integer [01-99]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.068> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0069>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "69"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TR and containing AG is present and a variable with the same root with a suffix of N is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.069> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0070>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "70"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TR, containing AG with a suffix of N is present and a variable with the same root without a suffix of N is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.069> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0071>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "71"^^xsd:string ;
+  cdiscs:failureCriteria "ARM is not present within ADSL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.047> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0072>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "72"^^xsd:string ;
+  cdiscs:failureCriteria "ADSL does not contain a variable with a prefix of TRT, a zero-padded two-digit integer [01-99] appended to TRT, and a suffix of P"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.072> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0073>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "73"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRT and a suffix of P has xx fragment appended after TRT that is not a zero-padded two-digit integer [01-99], excluding TRTSEQP"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.073> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0074>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "74"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRT and a suffix of PN has xx fragment appended after TRT that is not a zero-padded two-digit integer [01-99], excluding TRTSEQPN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.074> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0075>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "75"^^xsd:string ;
+  cdiscs:failureCriteria "TRTxxPN is present and TRTxxP is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.075> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0076>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "76"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTxxPN for a given value of TRTxxP"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.075> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0077>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "77"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTxxP for a given value of TRTxxPN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.075> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0078>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "78"^^xsd:string ;
+  cdiscs:failureCriteria "At least one TRTxxP is present where xx is greater than 01 and (TRTxxP is present and TRxxSDT is not present)"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.078> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0079>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "79"^^xsd:string ;
+  cdiscs:failureCriteria "At least one TRTxxP is present where xx is greater than 01 and (TRTxxP is present and TRxxEDT is not present)"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.078> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0080>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "80"^^xsd:string ;
+  cdiscs:failureCriteria "TRTxxA is present and TRTxxP is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.080> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0081>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "81"^^xsd:string ;
+  cdiscs:failureCriteria "TRTxxP is present and xx is greater than 01 and TRT{xx-1} is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.081> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0083>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "83"^^xsd:string ;
+  cdiscs:failureCriteria "TR01SDT does not equal TRTSDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.083> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0084>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "84"^^xsd:string ;
+  cdiscs:failureCriteria "TRTEDT is not equal to the maximum value of all TRxxEDT variables"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.084> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0085>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "85"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present with the same name as a variable present in ADSL but the variables do not have identical labels"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.085> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0086>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "86"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present with the same name as a variable present in ADSL but the variables do not have identical formats"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.085> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0087>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "87"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present with the same name as a variable present in ADSL but the variables do not have identical lengths"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.085> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0088>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "88"^^xsd:string ;
+  cdiscs:failureCriteria "STUDYID is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.088> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0089>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "89"^^xsd:string ;
+  cdiscs:failureCriteria "USUBJID is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.088> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0090>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "90"^^xsd:string ;
+  cdiscs:failureCriteria "TRTP is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.090> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0091>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "91"^^xsd:string ;
+  cdiscs:failureCriteria "TRTP is not equal to at least one variable with a prefix of TRT, a suffix of P and containing a two digit number"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.091> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0092>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "92"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTPN for a given value of TRTP"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.092> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0093>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "93"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTP for a given value of TRTPN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.092> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0094>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "94"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRTPG has y fragment appended after TRTPG that is not an integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.094> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0095>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "95"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTAN for a given value of TRTA"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.095> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0096>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "96"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTA for a given value of TRTAN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.095> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0097>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "97"^^xsd:string ;
+  cdiscs:failureCriteria "TRTPGyN is present and TRTPGy is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.097> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0098>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "98"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of SDY has a value greater than a value of a variable with the same root and a suffix of EDY, and both variables are populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.098> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0099>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "99"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of STDY has a value greater than a value of a variable with the same root and a suffix of ENDY, and both variables are populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.099> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0100>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "100"^^xsd:string ;
+  cdiscs:failureCriteria "The value of APEREDT when APERIOD is equal to xx is not equal to the value of APxxEDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.100> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0101>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "101"^^xsd:string ;
+  cdiscs:failureCriteria "The value of APEREDTM when APERIOD is equal to xx is not equal to the value of APxxEDTM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.101> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0102>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "102"^^xsd:string ;
+  cdiscs:failureCriteria "For every unique xx  value of APERIOD in BDS datasets, there is not a ADSL variable TRTxxP"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.102> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0103>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "103"^^xsd:string ;
+  cdiscs:failureCriteria "For every unique xx  value of APERIOD in BDS datasets, there is not a ADSL variable TRxxSDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.102> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0104>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "104"^^xsd:string ;
+  cdiscs:failureCriteria "For every unique xx  value of APERIOD in BDS datasets, there is not a ADSL variable TRxxEDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.102> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0105>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "105"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of APERIODC for a given value of APERIOD"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.105> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0106>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "106"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of APERIOD for a given value of APERIODC"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.105> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0107>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "107"^^xsd:string ;
+  cdiscs:failureCriteria "The value of APERSDT when APERIOD is equal to xx is not equal to the value of APxxSDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.107> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0108>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "108"^^xsd:string ;
+  cdiscs:failureCriteria "The value of APERSDTM when APERIOD is equal to xx is not equal to the value of APxxSDTM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.108> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0109>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "109"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of AVISITN for a given value of AVISIT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.109> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0110>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "110"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of AVISIT for a given value of AVISITN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.109> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0111>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "111"^^xsd:string ;
+  cdiscs:failureCriteria "ARELTM is present and ARELTMU is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.111> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0112>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "112"^^xsd:string ;
+  cdiscs:failureCriteria "ARELTM is populated and ARELTMU is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.111> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0113>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "113"^^xsd:string ;
+  cdiscs:failureCriteria "ARELTMU is present and ARELTM is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.111> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0114>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "114"^^xsd:string ;
+  cdiscs:failureCriteria "ARELTMU is populated and ARELTM is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.111> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0115>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "115"^^xsd:string ;
+  cdiscs:failureCriteria "ATPTREF is populated and ATPT is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.115> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0116>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "116"^^xsd:string ;
+  cdiscs:failureCriteria "ATPT is populated and ATPTREF is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.115> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0117>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "117"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD there is more than one value of ATPT for a given value of ATPTN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.117> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0118>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "118"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD there is more than one value of ATPTN for a given value of ATPT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.117> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0121>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "121"^^xsd:string ;
+  cdiscs:failureCriteria "The value of a variable with a suffix of SDT is greater than the value of a variable with the same root and a suffix of EDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.121> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0122>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "122"^^xsd:string ;
+  cdiscs:failureCriteria "The value of a variable with a suffix of SDTM is greater than the value of a variable with the same root and a suffix of EDTM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.122> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0123>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "123"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of PARAMTYP for a given value of PARAMCD"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.123> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0124>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "124"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of PARCATy for a given value of PARAMCD"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.124> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0125>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "125"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of a variable which has a suffix of PARCATy for a given value of a variable with the same root name and suffix of PARCATyN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.125> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0126>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "126"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of a variable which has a suffix of PARCATyN for a given value of a variable with the same root name and suffix of PARCATy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.125> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0127>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "127"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD for a subject, BASE is populated and there is not at least one record with ABLFL equal to Y"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.127> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0128>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "128"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD for a subject, BASEC is populated and there is not at least one record with ABLFL equal to Y"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.128> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0129>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "129"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD for a subject, there is more than one value of BASE for a given value of BASEC"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.129> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0130>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "130"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD for a subject, there is more than one value of BASEC for a given value of BASE"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.129> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0131>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "131"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, BASETYPE is populated for at least one record and is not populated for at least one record"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.131> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0132>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "132"^^xsd:string ;
+  cdiscs:failureCriteria "R2BASE is not equal to AVAL divided by BASE"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.132> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0133>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "133"^^xsd:string ;
+  cdiscs:failureCriteria "R2AyLO is not equal to AVAL divided by AyLO"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.133> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0134>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "134"^^xsd:string ;
+  cdiscs:failureCriteria "R2AyHI is not equal to AVAL divided by AyHI"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.134> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0135>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "135"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of SHIFTy for a given value of SHIFTyN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.135> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0136>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "136"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of SHIFTyN for a given value of SHIFTy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.135> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0137>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "137"^^xsd:string ;
+  cdiscs:failureCriteria "CRITyFL is populated and CRITy is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.137> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0141>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "141"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of PARAM for a given value of PARAMCD"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.141> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0142>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "142"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of PARAMCD for a given value of PARAM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.141> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0143>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "143"^^xsd:string ;
+  cdiscs:failureCriteria "PARAMCD has more than 8 characters in length"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.143> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0144>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "144"^^xsd:string ;
+  cdiscs:failureCriteria "PARAMCD starts with a character other than a letter or underscore"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.143> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0145>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "145"^^xsd:string ;
+  cdiscs:failureCriteria "PARAMCD has characters that are not letters, digits, and underscores"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.143> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0146>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "146"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of PARAM for a given value of PARAMN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.146> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0147>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "147"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of PARAMN for a given value of PARAM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.146> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0148>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "148"^^xsd:string ;
+  cdiscs:failureCriteria "PARAMN is not an integer"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.148> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0149>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "149"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of AVALC for a given value of AVAL"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.149> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0150>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "150"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of AVAL for a given value of AVALC"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.149> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0151>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "151"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD, there is more than one value of CRITy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.151> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0152>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "152"^^xsd:string ;
+  cdiscs:failureCriteria "BASETYPE is present, BASE is populated, and BASE is not equal to AVAL where ABLFL is equal to 'Y' for a given value of PARAMCD and BASETYPE for a subject"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.152> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0153>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "153"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given PARAMCD for a subject, more than one record has ABLFL='Y' and BASETYPE is null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.153> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0154>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "154"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given PARAMCD for a subject, more than one record has ABLFL='Y' and BASETYPE is the same value"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.153> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0155>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "155"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given PARAMCD for a subject, more than one record has ABLFL='Y' and BASETYPE is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.155> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0156>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "156"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of CRIT, a suffix of FL and containing a one-digit number is present and a variable with the same root without a suffix of FL is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.156> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0157>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "157"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of CRIT and a suffix of a one-digit number is present and a variable with the same root with a suffix of FL is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.156> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0158>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "158"^^xsd:string ;
+  cdiscs:failureCriteria "AWTDIFF is present and AWTARGET is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.158> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0159>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "159"^^xsd:string ;
+  cdiscs:failureCriteria "AWTDIFF is populated and AWTARGET is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.159> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0160>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "160"^^xsd:string ;
+  cdiscs:failureCriteria "AWU is present and both AWLO and AWHI are not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.160> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0161>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "161"^^xsd:string ;
+  cdiscs:failureCriteria "AWU is populated and both AWLO and AWHI are not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.161> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0162>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "162"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a suffix of LO has a value greater than the value of a variable with the same root name and a suffix of HI, and both variables are populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.162> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0163>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "163"^^xsd:string ;
+  cdiscs:failureCriteria "BTOXGR is present and ATOXGR is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.163> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0164>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "164"^^xsd:string ;
+  cdiscs:failureCriteria "BTOXGR is present and ABLFL is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.163> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0165>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "165"^^xsd:string ;
+  cdiscs:failureCriteria "BASETYPE is present, BTOXGR is populated, and BTOXGR is not equal to ATOXGR where ABLFL is equal to 'Y' for a given value of PARAMCD and BASETYPE"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.165> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0166>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "166"^^xsd:string ;
+  cdiscs:failureCriteria "BNRIND is present and ANRIND is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.166> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0167>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "167"^^xsd:string ;
+  cdiscs:failureCriteria "BNRIND is present and ABLFL is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.166> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0168>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "168"^^xsd:string ;
+  cdiscs:failureCriteria "BASETYPE is present, BNRIND is populated, and BNRIND is not equal to ANRIND where ABLFL is equal to 'Y' for a given value of PARAMCD and BASETYPE"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.168> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0169>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "169"^^xsd:string ;
+  cdiscs:failureCriteria "The value of CNSR is not an integer"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.169> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0170>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "170"^^xsd:string ;
+  cdiscs:failureCriteria "STARTDT is present and CNSR is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.170> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0171>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "171"^^xsd:string ;
+  cdiscs:failureCriteria "ONTRTFL is equal to Y and TRTSDT is greater than ADT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.171> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0172>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "172"^^xsd:string ;
+  cdiscs:failureCriteria "ONTRTFL is equal to Y and TRTEDT is less than ADT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.171> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0173>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "173"^^xsd:string ;
+  cdiscs:failureCriteria "ONTRTFL is not equal to Y and TRTSDT is less than or equal to ADT and TRTEDT is greater than or equal to ADT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.171> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0174>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "174"^^xsd:string ;
+  cdiscs:failureCriteria "LVOTFL is equal to Y and ADT is less than TRTSDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.174> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0175>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "175"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one record with LVOTFL equal to Y for a given value of PARAMCD"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.175> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0176>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "176"^^xsd:string ;
+  cdiscs:failureCriteria "ABLFL is not equal to Y or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.176> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0177>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "177"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one record with ABLFL equal to Y for a given value of PARAMCD and BASETYPE for a subject"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.177> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0178>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "178"^^xsd:string ;
+  cdiscs:failureCriteria "ANLzzFL is not equal to Y or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.178> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0179>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "179"^^xsd:string ;
+  cdiscs:failureCriteria "LVOTFL is equal to Y and ADT is greater than TRTEDT"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.174> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0180>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "180"^^xsd:string ;
+  cdiscs:failureCriteria "SRCDOM has a value that is not a SDTM dataset name or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDSSDTM.180> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0181>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "181"^^xsd:string ;
+  cdiscs:failureCriteria "BASETYPE is not present, BASE is populated, and BASE is not equal to AVAL where ABLFL is equal to \"Y\" for a given value of PARAMCD for a subject"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.181> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0182>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "182"^^xsd:string ;
+  cdiscs:failureCriteria "BASETYPE is not present, BTOXGR is populated, and BTOXGR is not equal to ATOXGR where ABLFL is equal to 'Y' for a given value of PARAMCD for a subject"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.182> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0183>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "183"^^xsd:string ;
+  cdiscs:failureCriteria "BASETYPE is not present, BNRIND is populated, and BNRIND is not equal to ANRIND where ABLFL is equal to 'Y' for a given value of PARAMCD for a subject"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.183> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0184>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "184"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRTAG has y fragment appended after TRTAG that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0185>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "185"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of PARCAT has y fragment appended after PARCAT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0186>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "186"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of AVALCAT has y fragment appended after AVALCAT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0187>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "187"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of BASECAT has y fragment appended after BASECAT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0188>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "188"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of CHGCAT has y fragment appended after CHGCAT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0189>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "189"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of PCHGCAT has y fragment appended after PCHGCAT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0190>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "190"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of R2A and a suffix of LO has y fragment appended after R2A that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0191>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "191"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of R2A and a suffix of HI has y fragment appended after R2A that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0192>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "192"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of SHIFT has y fragment appended after SHIFT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0193>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "193"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of CRIT has y fragment appended after CRIT that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0194>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "194"^^xsd:string ;
+  cdiscs:failureCriteria "PARAM is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.194> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0195>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "195"^^xsd:string ;
+  cdiscs:failureCriteria "PARAMCD is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.194> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0196>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "196"^^xsd:string ;
+  cdiscs:failureCriteria "PARAM is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.194> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0197>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "197"^^xsd:string ;
+  cdiscs:failureCriteria "PARAMCD is not populated"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.194> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0198>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "198"^^xsd:string ;
+  cdiscs:failureCriteria "AVAL is not present and AVALC is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.198> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0199>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "199"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present in ADaM with the same name as a variable present in SDTM but the variables do not have identical data types"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALLSDTM.002> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0200>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "200"^^xsd:string ;
+  cdiscs:failureCriteria "A variable is present in ADaM with the same name as a variable defined in the ADaM IG but the variables do not have identical data types"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ALL.200> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0201>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "201"^^xsd:string ;
+  cdiscs:failureCriteria "TRTAGyN is present and TRTAGy is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.201> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0202>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "202"^^xsd:string ;
+  cdiscs:failureCriteria "The value of APERETM when APERIOD is equal to xx is not equal to the value of APxxETM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.202> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0203>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "203"^^xsd:string ;
+  cdiscs:failureCriteria "The value of APERSTM when APERIOD is equal to xx is not equal to the value of APxxSTM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLBDS.203> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0204>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "204"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.AGE is not equal  to DM.AGE"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0205>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "205"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.AGEU is not equal  to DM.AGEU"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0206>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "206"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.SEX is not equal  to DM.SEX"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0207>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "207"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.RACE is not equal  to DM.RACE"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0208>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "208"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.SUBJID is not equal  to DM.SUBJID"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0209>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "209"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.SITEID is not equal  to DM.SITEID"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0210>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "210"^^xsd:string ;
+  cdiscs:failureCriteria "The value of ADSL.USUBJID is equal to the value of DM.USUBJID and ADSL.ARM is not equal  to DM.ARM"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSLSDTM.204> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0211>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "211"^^xsd:string ;
+  cdiscs:failureCriteria "ABLFN is not equal to 1 or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.211> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0212>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "212"^^xsd:string ;
+  cdiscs:failureCriteria "ANLzzFN is not equal to 1 or null"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.212> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ControlledTerminology> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0213>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "213"^^xsd:string ;
+  cdiscs:failureCriteria "The value of y within the variable name SITEGRy is not between the number 1 and 9"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0214>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "214"^^xsd:string ;
+  cdiscs:failureCriteria "The value of y within the variable name SITEGRyN is not between the number 1 and 9"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0215>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "215"^^xsd:string ;
+  cdiscs:failureCriteria "The value of y within the variable name RACEGRy is not between the number 1 and 9"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0216>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "216"^^xsd:string ;
+  cdiscs:failureCriteria "The value of y within the variable name RACEGRyN is not between the number 1 and 9"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0217>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "217"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRxxPG has y fragment appended after TRxxPG that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0218>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "218"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRxxAG has y fragment appended after TRxxAG that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.213> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0219>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "219"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRTPG has y fragment appended after TRTPG that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0220>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "220"^^xsd:string ;
+  cdiscs:failureCriteria "A variable with a prefix of TRTAG has y fragment appended after TRTAG that is not a single-digit integer [1-9]"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.184> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Metadata> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0221>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "221"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD there is more than one value of AVALCATy for a given value of AVAL and y."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.221> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0222>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "222"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD there is more than one value of BASECATy for a given value of BASE and y."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.222> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0223>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "223"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD for a subject, CHG is populated and is not equal to AVAL - BASE."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.223> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0224>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "224"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD there is more than one value of CHGCATy for a given value of CHG and y"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.224> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0225>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "225"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD for a subject, PCHG is populated and is not equal to ((AVAL - BASE)/BASE)*100"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.225> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValidValue> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0226>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "226"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of PARAMCD there is more than one value of PCHGCATy for a given value of PCHG and y"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.226> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0227>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "227"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTSEQP for a given value of TRTSEQPN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.227> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0228>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "228"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTSEQPN for a given value of TRTSEQP"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.227> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0229>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "229"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTSEQA for a given value of TRTSEQAN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.229> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0230>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "230"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTSEQAN for a given value of TRTSEQA"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.229> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0231>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "231"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of TRTxxP there is more than one value of TRxxPGy."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.231> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0232>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "232"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRxxPGy for a given value of TRxxPGyN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.232> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0233>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "233"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRxxPGyN for a given value of TRxxPGy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.232> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0234>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "234"^^xsd:string ;
+  cdiscs:failureCriteria "Within a given value of TRTxxA there is more than one value of TRxxAGy."^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.234> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0235>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "235"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRxxAGy for a given value of TRxxAGyN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.235> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0236>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "236"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRxxAGyN for a given value of TRxxAGy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.235> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0237>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "237"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTPGy for a given value of TRTPGyN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.237> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0238>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "238"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTPGyN for a given value of TRTPGy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.237> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0239>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "239"^^xsd:string ;
+  cdiscs:failureCriteria "TRTPGy is present and TRTA is present but TRTAGy is not present"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.239> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.Present-Populated> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0240>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "240"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTAGy for a given value of TRTAGyN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.240> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0241>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "241"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTAGyN for a given value of TRTAGy"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.BDS.240> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0242>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "242"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTxxAN for a given value of TRTxxA"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.242> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0243>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "243"^^xsd:string ;
+  cdiscs:failureCriteria "There is more than one value of TRTxxA for a given value of TRTxxAN"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.242> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
+.
+<http://rdf.cdisc.org/std/adamvr-1-2#ValidationRule.0244>
+  rdf:type cdiscs:ValidationRule ;
+  mms:identifier "244"^^xsd:string ;
+  cdiscs:failureCriteria "TRTA is not equal to at least one variable with a prefix of TRT, a suffix of A and containing a two digit number"^^xsd:string ;
+  cdiscs:validates <http://rdf.cdisc.org/std/adamvr-1-2#Assumption.ADSL.244> ;
+  cdiscs:validationRuleCategory <http://rdf.cdisc.org/std/adamvr-1-2#Classifier.ValueConsistency> ;
 .
