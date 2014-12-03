@@ -2,7 +2,6 @@
 # imports: http://rdf.cdisc.org/sdtm-terminology
 # imports: http://rdf.cdisc.org/std/sdtm-1-3
 
-# c14n-version: 3
 @prefix cdiscs: <http://rdf.cdisc.org/std/schema#> .
 @prefix cts: <http://rdf.cdisc.org/ct/schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -15,6 +14,7 @@
 @prefix sdtms-1-3: <http://rdf.cdisc.org/sdtm-1-3/schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 <http://rdf.cdisc.org/std/sdtmig-3-1-3>
   rdf:type owl:Ontology ;
   dc:creator "FDA/PhUSE CSS Semantic Technology Project"^^xsd:string ;
@@ -8912,12 +8912,12 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Used to define a category of related records. Examples: ANALYTE, SPECIMEN PROPERTY."^^xsd:string ;
   mms:dataElementLabel "Test Category"^^xsd:string ;
   mms:dataElementName "PCCAT"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "10"^^xsd:positiveInteger ;
   cdiscs:controlledTermsOrFormat "*"^^xsd:string ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.PermissibleVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.GroupingQualifier> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.2.6"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PC.PCDRVFL>
@@ -9164,12 +9164,12 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "A further categorization of a test category."^^xsd:string ;
   mms:dataElementLabel "Test Subcategory"^^xsd:string ;
   mms:dataElementName "PCSCAT"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "11"^^xsd:positiveInteger ;
   cdiscs:controlledTermsOrFormat "*"^^xsd:string ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.PermissibleVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.GroupingQualifier> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.2.6"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PC.PCSEQ>
@@ -9295,11 +9295,11 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Name of the analyte or specimen characteristic. Note any test normally performed by a clinical laboratory is considered a lab test. The value in PCTEST cannot be longer than 40 characters. Examples: Acetylsalicylic Acid, Volume, Specific Gravity."^^xsd:string ;
   mms:dataElementLabel "Pharmacokinetic Test Name"^^xsd:string ;
   mms:dataElementName "PCTEST"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "9"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.RequiredVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.2.1, SDTMIG 4.1.2.4, SDTMIG 4.1.5.3.1"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PC.PCTESTCD>
@@ -9309,11 +9309,11 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Short name of the analyte or specimen characteristic. It can be used as a column name when converting a dataset from a vertical to a horizontal format. The value in PCTESTCD cannot be longer than 8 characters, nor can it start with a number (e.g., \"1TEST\"). PCTESTCD cannot contain characters other than letters, numbers, or underscores. Examples: ASA, VOL, SPG."^^xsd:string ;
   mms:dataElementLabel "Pharmacokinetic Test Short Name"^^xsd:string ;
   mms:dataElementName "PCTESTCD"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "8"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.RequiredVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.TopicVariable> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.1.8, SDTMIG 4.1.2.1"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PC.PCTPT>
@@ -9819,12 +9819,12 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Used to define a category of related records. For PP, this should be the name of the analyte in PCTEST whose profile the parameter is associated with."^^xsd:string ;
   mms:dataElementLabel "Parameter Category"^^xsd:string ;
   mms:dataElementName "PPCAT"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "8"^^xsd:positiveInteger ;
   cdiscs:controlledTermsOrFormat "*"^^xsd:string ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.ExpectedVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.GroupingQualifier> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.2.6"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PP.PPDTC>
@@ -9922,12 +9922,12 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Categorization of the model type used to calculate the PK parameters. Examples include COMPARTMENTAL, NON-COMPARTMENTAL."^^xsd:string ;
   mms:dataElementLabel "Parameter Subcategory"^^xsd:string ;
   mms:dataElementName "PPSCAT"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "9"^^xsd:positiveInteger ;
   cdiscs:controlledTermsOrFormat "*"^^xsd:string ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.PermissibleVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.GroupingQualifier> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.2.6"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PP.PPSEQ>
@@ -10026,11 +10026,11 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Name of the pharmacokinetic parameter. The value in PPTEST cannot be longer than 40 characters. Examples: AUC, Tmax, Cmax."^^xsd:string ;
   mms:dataElementLabel "Parameter Name"^^xsd:string ;
   mms:dataElementName "PPTEST"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "7"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.RequiredVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.SynonymQualifier> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.2.1, SDTMIG 4.1.2.4, SDTMIG 4.1.5.3.1"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PP.PPTESTCD>
@@ -10040,11 +10040,11 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
   mms:dataElementDescription "Short name of the pharmacokinetic parameter. It can be used as a column name when converting a dataset from a vertical to a horizontal format. The value in PPTESTCD cannot be longer than 8 characters, nor can it start with a number (e.g., \"1TEST\"). PPTESTCD cannot contain characters other than letters, numbers, or underscores. Examples: AUC, TMAX, CMAX."^^xsd:string ;
   mms:dataElementLabel "Parameter Short Name"^^xsd:string ;
   mms:dataElementName "PPTESTCD"^^xsd:string ;
-  mms:dataElementType "xsd:decimal"^^xsd:anySimpleType ;
+  mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:ordinal "6"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.RequiredVariable> ;
   cdiscs:dataElementRole <http://rdf.cdisc.org/std/sdtm-1-3#Classifier.TopicVariable> ;
-  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Numeric> ;
+  cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
   cdiscs:references "SDTM 2.2.3, SDTMIG 4.1.1.8, SDTMIG 4.1.2.1"^^xsd:string ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-3#Column.PP.STUDYID>
