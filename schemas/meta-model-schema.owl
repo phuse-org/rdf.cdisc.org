@@ -44,6 +44,8 @@
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Data Element Domain</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of related data elements.</skos:definition>
   </owl:Class>
   <owl:Class rdf:ID="Column">
     <rdfs:subClassOf>
@@ -62,6 +64,8 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="#Context"/>
     </rdfs:subClassOf>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of dataset variables, e.g. SDTM IG Adverse Event domain.</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#AdministeredItem">
     <rdfs:isDefinedBy rdf:resource=""/>
@@ -86,6 +90,8 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="#Context"/>
     </rdfs:subClassOf>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Top-level context for all model elements, e.g. SDTM 3.1.2.</skos:definition>
   </owl:Class>
   <owl:Class rdf:ID="PermissibleValue">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -108,12 +114,16 @@
     >Data Collection Form</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:subClassOf rdf:resource="#Context"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of data collection fields.</skos:definition>
   </owl:Class>
   <owl:Class rdf:ID="DatasetContext">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Dataset Context</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:subClassOf rdf:resource="#Context"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group related data sets, e.g. Events Observation Class.</skos:definition>
   </owl:Class>
   <owl:Class rdf:ID="EnumeratedValueDomain">
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -128,22 +138,26 @@
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Domain Context</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group related domains.</skos:definition>
   </owl:Class>
   <owl:Class rdf:ID="Classifier">
-    <rdfs:subClassOf rdf:resource="#AdministeredItem"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A classifier defines a characteristic that can be used to organize a set of administered items into a discrete family of subsets.</skos:definition>
     <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >SDTM classifies variables to be either required, or expected, or permissible.</skos:example>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Classifier</rdfs:label>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A classifier defines a characteristic that can be used to classify a set of administered items into a discrete family of subsets.</skos:definition>
+    <rdfs:subClassOf rdf:resource="#AdministeredItem"/>
   </owl:Class>
   <owl:Class rdf:ID="VariableGrouping">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Variable Grouping</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:subClassOf rdf:resource="#Context"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of data elements, e.g. SDTM Timing Variables.</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="#DataElementContext">
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -153,6 +167,15 @@
     >Data Element Context</rdfs:label>
     <rdfs:subClassOf rdf:resource="#DataElement"/>
   </owl:Class>
+  <owl:ObjectProperty rdf:ID="dataElement">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The data element that a data element context refers to.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element</rdfs:label>
+    <rdfs:domain rdf:resource="#DataElementContext"/>
+    <rdfs:range rdf:resource="#DataElement"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="subsetOf">
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Identifies the parent enumerated value domain of which this enumerated value domain is a subset of.</skos:definition>
@@ -198,15 +221,6 @@
     <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The enumerated value domain to which a permissible value belongs.</skos:definition>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="dataElement">
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The data element that a data element context refers to.</skos:definition>
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data Element</rdfs:label>
-    <rdfs:domain rdf:resource="#DataElementContext"/>
-    <rdfs:range rdf:resource="#DataElement"/>
-  </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:ID="dataElementType">
     <rdfs:domain rdf:resource="#DataElement"/>
     <rdfs:isDefinedBy rdf:resource=""/>
@@ -215,6 +229,15 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Data Element Type</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anySimpleType"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="identifier">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The identifier of an administered item.</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Identifier</rdfs:label>
+    <rdfs:domain rdf:resource="#AdministeredItem"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="ordinal">
     <rdfs:domain rdf:resource="#AdministeredItem"/>
@@ -282,15 +305,6 @@
     >Context Label</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="identifier">
-    <rdfs:isDefinedBy rdf:resource="http://rdf.cdisc.org/mms"/>
-    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The identifier of an administered item.</skos:definition>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Identifier</rdfs:label>
-    <rdfs:domain rdf:resource="#AdministeredItem"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
 

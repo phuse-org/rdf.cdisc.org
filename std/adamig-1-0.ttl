@@ -3171,7 +3171,6 @@
   cdiscs:dataElementType <http://rdf.cdisc.org/std/schema#Classifier.Character> ;
 .
 <http://rdf.cdisc.org/std/adamig-1-0#Column.BDS.SRCDOM>
-  rdf:type mms:AdministeredItem ;
   rdf:type mms:Column ;
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.DataPointTraceabilityVariables> ;
   mms:dataElementDescription "The 2-character identifier of the SDTM domain that relates to AVAL or AVALC."^^xsd:string ;
