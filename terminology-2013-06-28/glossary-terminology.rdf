@@ -1,0 +1,1852 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:mms="http://rdf.cdisc.org/mms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://rdf.cdisc.org/glossary-terminology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cts="http://rdf.cdisc.org/ct/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://rdf.cdisc.org/glossary-terminology">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/ct/schema"/>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
+  </owl:Ontology>
+  <mms:PermissibleValue rdf:ID="C101836.C101249">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peripheral Embolus</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Acute occlusion of a peripheral blood vessel resulting from intravascular migration of material. Examples of embolic material include thrombus, fat, bone marrow, air, and amniotic fluid.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101249</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peripheral Embolus</cts:nciPreferredTerm>
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C101836">
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</cts:isExtensibleCodelist>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Clinical Data Element Glossary</cts:codelistName>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CLINDE</cts:cdiscSubmissionValue>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Clinical Data Element Glossary</cts:cdiscSynonyms>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C101836</cts:nciCode>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC Clinical Data Element Glossary Terminology</cts:nciPreferredTerm>
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >The terminology relevant to the CDISC Clinical Data Element Glossary.</cts:cdiscDefinition>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C51982">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Implantation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A surgical procedure that places something in the body.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C51982</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Implantation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50582">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemothorax</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Accumulation of blood in the thorax.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50582</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemothorax</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102710">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Site of Directed Therapy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The physical location at which the medication or therapy was observed, by the healthcare provider, as being taken by the subject.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102710</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Site of Directly Observed Therapy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C35053">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Syncope</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sudden loss of consciousness with loss of postural tone, not related to anesthesia, with spontaneous recovery as reported by patient or observer. A subject may experience syncope when supine. Syncope is often caused by insufficient blood supply to the brain.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C35053</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Syncope</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100057">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arterial Access Closure Method</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device or treatment used to stop bleeding and close the location of arterial entry following a percutaneous coronary intervention.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100057</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arterial Access Closure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C95803">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemorrhagic Cerebrovascular Accident</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An acute episode of focal or global cerebral or spinal dysfunction caused by intraparenchymal, intraventricular, or subarachnoid hemorrhage.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C95803</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemorrhagic Cerebrovascular Accident</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102727">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vaccination Evidence Source</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Source of information regarding the subject's vaccination status.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102727</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vaccination Evidence Source</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C18059">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tobacco Use</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Use of tobacco in any form i.e. smoking, chewing or sniffing.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C18059</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tobacco Use</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C2982">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Depression</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Depressed Mood</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A melancholy feeling of sadness and despair.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C2982</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Depression</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101241">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lead Dislodgement</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Movement of a lead away from the original implantation site.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101241</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lead Dislodgment</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102624">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Direct Observation Therapy</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DOT</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The therapy is dispensed and consumed under the direct supervision of personnel at a clinical site.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102624</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Directly Observed Therapy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C25717">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vital Status</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The state or condition of being living or deceased; also includes the case where the vital status is unknown.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25717</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vital Status</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99533">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fractional Flow Reserve</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A lesion-specific measure of stenosis severity within a blood vessel.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99533</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fractional Flow Reserve of Vessel</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100068">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Ablation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A procedure intended to eliminate or modify a focus or re-entry circuit that causes an arrhythmia.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100068</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Ablation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C77678">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Implantation Site</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The anatomic site at which a material such as a tissue, graft, device or radioactive material is inserted with some intended degree of permanence. This term may also refer to the site of the uterus at which the early embryo is attached.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C77678</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Implantation Site</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100081">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >In Stent Restenosis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Luminal narrowing within the stented segment of a vessel.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100081</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >In Stent Restenosis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84681">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ebstein's Anomaly</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A rare congenital heart malformation characterized by apical displacement of the tricuspid valve into the right ventricle. The defect involves both the right ventricle and the tricuspid valve, and can lead to cardiomyopathy and tachyarrhythmias.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84681</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ebstein Anomaly</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101235">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Exercise Counseling</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A process by which a health professional creates a regimen of physical activity intended to maintain or improve the health of a subject.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101235</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Exercise Counseling</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C390">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Contrast Agent</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Substances administered during diagnostic procedures that allows delineation of internal structures. Contrast agents appear opaque due to the difference in absorption of X-rays or other electromagnetic waves and surrounding tissue.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C390</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Contrast Agent</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100078">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transplant Waiting List</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A registry of patients awaiting an organ transplant.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100078</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transplant Waiting List</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80414">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Electrophysiology Study</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A cardiac procedure performed under fluoroscopy to determine the area of the heart that is the source of aberrant electrical impulses that give rise to arrhythmias. Aberrant pathways can be terminated by ablation.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80414</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Electrophysiology Study</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101254">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Renal Artery Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pathology involving the main renal arteries or extrarenal arterial branches.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101254</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Renal Artery Disease</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100070">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Venous Dissection</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A tear within the wall of a coronary vein.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100070</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Venous Dissection</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101248">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Explantation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A surgical procedure that removes something that was implanted in the body.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101248</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Explantation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100056">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arterial Access Site</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Anatomical location where an artery was accessed for a diagnostic or therapeutic procedure.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100056</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arterial Access Site</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C3117">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hypertension</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pathological increase in blood pressure defined as one of the following: History of hypertension diagnosed and treated with medication, diet, and/or exercise; On at least 2 separate occasions, documented blood pressure greater than 140 mm Hg systolic and/or 90 mm Hg diastolic in patients without diabetes or chronic kidney disease, or blood pressure greater than 130 mm Hg systolic or 80 mm Hg diastolic in patients with diabetes or chronic kidney disease; Currently on pharmacological therapy for the treatment of hypertension.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C3117</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hypertension</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101240">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lead Status</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The state of an insulated wire designed to conduct energy from an electrical device to an anatomic site.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101240</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >In Situ Lead Status</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C93238">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Implantable Cardioverter Defibrillator</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A battery-powered electrical impulse generator implanted in patients at risk of sudden cardiac death to detect cardiac arrhythmia and correct it by delivering a jolt of electricity.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C93238</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Implantable Cardioverter-defibrillator</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101234">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Rehabilitation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A medically supervised program to improve the health and well-being of people who have heart problems. This may include exercise training, education on heart healthy living, and/or counseling to reduce stress.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101234</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Rehabilitation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80385">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dyslipidemia</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A lipoprotein metabolism disorder characterized by decreased levels of high-density lipoproteins, or elevated levels of plasma cholesterol, low-density lipoproteins and/or triglycerides.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80385</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dyslipidemia</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100069">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Valve Injury</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An event that causes abnormal valve function. This is usually a tear in leaflet or chordae tendineae and manifests as a new regurgitant.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100069</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Valve Injury</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80078">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic Kidney Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic kidney disease is defined as either kidney damage or GFR less than 60 ml/min/1.73 m2 for greater than or equal to 3 months. Kidney damage is de?ned as pathologic abnormalities or markers of damage, including abnormalities in blood or urine tests or imaging studies.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80078</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic Kidney Disease</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99554">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Disease Presentation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The compilation of symptoms and/or clinical manifestation of any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99554</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Disease Presentation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102720">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Treatment Episode</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An indication of whether this is the individual's first time being treated for a disease or that they are receiving a subsequent treatment.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102720</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Treatment Episode Indicator</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99532">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diabetes Therapy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A therapeutic modality used to aide in the management of an individual's diabetes.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99532</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diabetes Therapy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100080">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Stent Placement</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A procedure performed during a percutaneous coronary intervention in which a device is deployed into the lumen of a coronary artery to expand and support the vessel wall such that the vessel remains patent and blood flow is uninhibited.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100080</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Stent Placement</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80409">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stress Cardiac Magnetic Resonance Imaging</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A study using magnetic resonance to observe cardiac activity during the administration of pharmacologic stressor.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80409</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stress Cardiac Magnetic Resonance Imaging</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C15221">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dialysis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A procedure to remove toxic substances from the blood that is used in patients with end-stage chronic kidney disease or acute kidney failure. This includes hemodialysis and peritoneal dialysis.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C15221</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dialysis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50646">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medical Contraindication</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A symptom or medical condition that makes a particular treatment or procedure inadvisable because a person is likely to have a bad reaction.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50646</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medical Contraindication</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102717">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Supporting Evidence for Retreatment</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Clinical evidence to support reason for re-treatment of disease.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102717</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Supporting Evidence for Retreatment</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99522">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Tachycardia/Ventricular Fibrillation Arrest</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A cardiac arrest attributed to ventricular tachycardia or ventricular fibrillation.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99522</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Tachycardia/Ventricular Fibrillation Arrest</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100079">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smoked Tobacco</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tobacco that is inhaled or puffed from a lit cigar, cigarette or pipe.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100079</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smoking Tobacco</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80398">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Family History of Coronary Artery Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80398</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Family History of Coronary Artery Disease</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99529">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Pacemaker Oversensing</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inappropriate pacemaker detection of electrical signals not related to cardiac depolarization of the lead chamber.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99529</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Pacemaker Oversensing</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101253">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Aorta Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pathology involving the thoracic, thoracoabdominal, or abdominal aorta (including aneurysms).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101253</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Aorta Disease</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C49343">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Deep Venous Thrombosis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A blood clot (thrombus) in a deep vein in the lower extremity.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C49343</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Deep Vein Thrombosis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C73502">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Perforation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The presence of an acquired hole in the heart. Cardiac perforation may or may not be symptomatic and may or may not be self sealing.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C73502</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Perforation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C35205">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Old Myocardial Infarction</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >History of Myocardial Infarction</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Documented history of previous myocardial infarction (MI), typically with objective evidence via positive biomarkers of myocardial necrosis.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C35205</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Old Myocardial Infarction</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50830">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Re-operation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Repeat performance of a surgical procedure or intervention.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50830</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Repeated Surgical Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101243">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Substance Adverse Event</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An unexpected or dangerous reaction to a substance (e.g., food, environmental agent).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101243</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Substance Adverse Event</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100073">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Exercise Stress Test</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The procedure in which physical activity is used to elicit signs and symptoms of myocardial ischemia.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100073</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Stress Test</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101233">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Vessel Bifurcation Lesion</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bifurcation Lesion</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A lesion found in the division of a vessel into at least two branches, each of which is 1.5 mm or greater in diameter.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101233</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Vessel Bifurcation Lesion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99553">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sleep Study</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Measurement of physiologic parameters during sleep.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99553</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sleep Study</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99535">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intravascular Ultrasound</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IVUS</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An invasive procedure in which sound waves (called ultrasound) are bounced off of vascular tissues from within the vessel and the echoes produce a picture (sonogram).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99535</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intravascular Ultrasound</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100066">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Lesion Complexity</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Characteristics of coronary lesions that contribute to procedural risk during percutaneous coronary intervention.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100066</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Lesion Complexity</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C2938">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cerebral Artery Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A disorder resulting from inadequate blood flow in the arteries that supply the brain. The diagnostic criteria may include current or previous history of the following: Ischemic stroke, TIA, Noninvasive or invasive arterial imaging test demonstrating greater than or equal to 50% stenosis of any of the major extracranial or intracranial vessels to the brain; Previous cervical or cerebral artery revascularization surgery or percutaneous intervention.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C2938</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cerebrovascular Disorder</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102676">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Myocardial Perfusion Imaging</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A procedure that obtains pictures that reflect blood flow in the heart muscle.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102676</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Myocardial Perfusion Imaging</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84506">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Septal Defect</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The presence of a defect (opening) in the septum that separates the two ventricles of the heart. The VSD can be congenital or acquired.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84506</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Septal Defect</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50482">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiogenic Shock</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiogenic shock is defined as a sustained (greater than30 minutes) episode of systolic blood pressure less than90 mm Hg, and/or cardiac index less than2.2 L/min/m2 determined to be secondary to cardiac dysfunction, and/or the requirement for parenteral inotropic or vasopressor agents or mechanical support (e.g., Intra aortic balloon pump (IABP), extracorporeal circulation, ventricular assist devices) to maintain blood pressure and cardiac index above those specified levels.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50482</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiogenic Shock</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99704">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arterial Dissection</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A tear within the wall of the artery.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99704</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arterial Dissection</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101252">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Venous Obstruction</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Partial or total occlusion of a vein.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101252</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Venous Obstruction</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C97055">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Giant Cell Myocarditis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An often fatal inflammatory disorder that affects the myocardium. Morphologically, it is characterized by the presence of an inflammatory infiltrate in the myocardial tissue that includes multinucleated giant cells. It is often associated with the presence of an autoimmune disorder, mediated by T lymphocytes. Patients present with arrhythmias and/or heart failure. Heart transplantation is the only treatment option available.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C97055</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Giant Cell Myocarditis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80397">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Family History of Sudden Cardiac Death</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A first-degree relative (parent, sibling, child) documented to have died suddenly of a presumed cardiac etiology without other obvious cause.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80397</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >History of Sudden Cardiac Death</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100072">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Culprit Lesion</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The lesion indicated is considered to be responsible for the acute coronary syndrome.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100072</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Culprit Lesion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101242">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reimplantation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A surgical procedure that places something in the body that was previously lost or removed.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101242</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reimplantation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100087">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intra-Aortic Balloon Pump</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medical device that increases myocardial oxygen perfusion while at the same time increasing cardiac output.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100087</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intra-Aortic Balloon Pump</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C15292">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comfort Measures</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The patient- and family-centered active holistic care of patients with advanced, progressive disease. Essential components of palliative care are: pain and symptom control, communication regarding treatment and alternatives, prognosis, and available services, rehabilitation services, care that addresses treatment and palliative concerns, intellectual, emotional, social, and spiritual needs, terminal care, support in bereavement. The goal of palliative care is an achievement of the best quality of life for patients and their families.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C15292</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Palliative Therapy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101232">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intracoronary Device</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device placed within the coronary anatomy.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101232</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intracoronary Device</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80475">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Lesion Treated</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The coronary lesions treated during a PCI (Percutaneous Coronary Intervention) procedure.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80475</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Lesions Treated</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84496">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peripheral Arterial Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A disorder of the arteries supplying the upper and lower extremity and the visceral organs. This includes the mesenteric arteries, the renal arteries and the aorta. This excludes cerebrovascular arterial disease. This is defined as any one of the following: Claudication, either with exertion or at rest, amputation for arterial vascular insufficiency, vascular reconstruction, bypass surgery, or percutaneous intervention to the extremities, documented aortic aneurysm with or without repair, vascular angiography demonstrating a 50% or greater stenosis of a major peripheral arterial vessel, positive noninvasive test for peripheral arterial disease, including an ankle-brachial index less than or equal to 0.9, ultrasound, magnetic resonance or computed tomography imaging demonstrating a 50% or greater stenosis of a major peripheral arterial vessel.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84496</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peripheral Arterial Disorder</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99552">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Permanent Cardiac Pacemaker</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A pacemaker where the generator is implanted inside the body.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99552</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Permanent Cardiac Pacemaker</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99534">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fractional Flow Reserve Ratio</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The pressure distal to the stenosis divided by the pressure proximal to the stenosis. This ratio is equal to maximum blood flow in the vessel with stenosis divided by the maximum hypothetical blood flow without stenosis.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99534</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fractional Flow Reserve Ratio of Vessel</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100067">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Reperfusion</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Procedures intended to re-establish normal coronary flow. Reperfusion therapy includes thrombolysis and primary PCI. Reperfusion therapy also includes pre-hospital thrombolytics.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100067</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Reperfusion Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102667">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microbial Identification Certainty</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A qualification that describes the degree of certainty of the correctness of a microbial identification test result.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102667</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microbial Identification Certainty</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C49068">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Blinded</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A characteristic of experimental design in which one or more groups involved (receiving, administering, or evaluating intervention) are unaware of which intervention any particular subject is receiving.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C49068</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Blinded</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80413">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Heart Catheterization</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The passage of a catheter into the left ventricle for the purposes of angiography, measurement of ventricular pressures, and/or oxygen saturation.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80413</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Heart Catheterization</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C34665">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Conduction Block</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An injury to the specialized cardiac conduction system that results in impaired signal transmission.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C34665</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Heart Block</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50481">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Tamponade</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Compression of the heart caused by increased intrapericardial pressure due to the collection of blood or fluid in the pericardial space. Cardiac tamponade should usually be documented by either: Echocardiogram showing pericardial fluid and signs of tamponade such as right heart compromise, or systemic hypotension due to pericardial fluid compromising cardiac function.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50481</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Tamponade</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50754">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stenosis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Narrowing or stricture of a vessel, duct or canal.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50754</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stenosis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99530">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bradycardia Arrest</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac arrest that was a result of bradycardia.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99530</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bradycardia Arrest</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100053">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sinus Node Function</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Descriptions of electrical activity and conduction involving the sinoatrial node.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100053</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sinus Node Functional Assessment</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99540">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mechanical Circulatory Support</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Use of a device to replace the function of a cardiac ventricle. This includes use of cardiopulmonary bypass, left ventricular assist device (LVAD), intra-aortic balloon pump (IABP) and/or extracorporeal membrane oxygenation (ECMO).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99540</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mechanical Circulatory Support</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99546">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Valve Procedure</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Surgical replacement and/or repair of a cardiac valve, by any approach. This includes percutaneous valve procedures and valvuloplasty.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99546</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Valve Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101251">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardioverter Defibrillator Shock Therapy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Delivery of strong electrical impulses by a cardioverter defibrillator to return the electrical activity of the heart to normal.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101251</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardioverter Defibrillator Shock Therapy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102654">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Ventricular Aneurysm</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A bulge or ballooning in the wall of the left ventricle of the heart.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102654</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Ventricular Aneurysm</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101231">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Device Deployment</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The act of instantiating, positioning or activating a medical device inside of the body.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101231</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medical Device Deployment</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100074">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ischemic Risk Score</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The relative risk of developing ischemia determined by a cardiac stress test.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100074</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Ischemic Risk Score</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100085">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diagnostic Coronary Angiography</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A procedure in which the catheter is passed into the aortic root or other great vessels for the purpose of angiography of the native coronary arteries or bypass grafts supplying native coronary arteries.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100085</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Angiography</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101245">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Antitachycardia Pacing</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Delivery of electrical impulses to the heart at a faster rate than the intrinsic rate during an episode of tachycardia, in an attempt to terminate the abnormal tachycardia.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101245</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Antitachycardia Pacing</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102704">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reason Treatment Not Administered</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The reason the treatment was not administered.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102704</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reason Treatment Not Administered</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99537">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Venous Thromboembolism</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Occlusion of the lumen of a vein by a thrombus that has migrated from a distal site via the blood stream.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99537</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Venous Thromboembolism</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C88023">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Susceptibility Result Category</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MSRESCAT</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A classification of the finding from a susceptibility test.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C88023</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microbiology Susceptibility Result Category</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50713">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pulmonary Embolism</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The obstruction of the pulmonary artery or one of its branches by an embolus, sometimes associated with infarction of the lung.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50713</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pulmonary Embolism</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C15409">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Packed Red Blood Cell Transfusion</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Red Blood Cell Transfusion</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The intravenous administration of red blood cells (whole blood without the plasma) into an individual.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C15409</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Packed Red Blood Cell Transfusion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C26924">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Arrhythmia</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal heart beat resulting from a pathologic process in the cardiac ventricles.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C26924</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Arrhythmia</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101239">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >In Situ Existing Lead</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Existing Lead</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An insulated electrical conductor designed to connect to an electrical device for which the lead is in situ.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101239</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >In Situ Existing Lead</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C29576">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Beta-Adrenergic Antagonist</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Natural or synthetic beta adrenergic antagonists selectively or non-selectively blocking or diminishing physiologic beta-adrenergic agonist actions on the sympathetic system. This group of antagonists are generally used for treatment of hypertension, cardiac arrhythmias, angina pectoris, glaucoma, migraine headaches, and anxiety.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C29576</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Beta-Adrenergic Antagonist</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C2868">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Amyloidosis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A disorder characterized by the localized or diffuse accumulation of amyloid protein in various anatomic sites. It may be primary, due to clonal plasma cell proliferations; secondary, due to long standing infections, chronic inflammatory disorders, or malignancies; or familial. It may affect the nerves, skin, tongue, joints, heart, liver, spleen, kidneys and adrenal glands.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C2868</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Amyloidosis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100064">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Artery Graft</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A vessel segment attached to a coronary artery to facilitate myocardial perfusion.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100064</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Artery Graft</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C62749">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Whole Blood Transfusion</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The injection of whole blood or a blood component directly into the bloodstream.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C62749</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Whole Blood Transfusion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99551">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Non-system Delay</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A patient condition that delays a procedure.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99551</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Patient Condition Delay</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C3114">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Substance Allergy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A local or general reaction of an organism following contact with a specific allergen to which it has been previously exposed and to which it has become sensitized.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C3114</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hypersensitivity</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99547">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Life Expectancy of an Individual</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Estimate of future survival of subject.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99547</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Life Expectancy of an Individual</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50577">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Heart Failure</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inability of the heart to pump blood at an adequate rate to meet tissue metabolic requirements. Clinical symptoms of heart failure include: unusual dyspnea on light exertion, recurrent dyspnea occurring in the supine position, fluid retention; or rales, jugular venous distension, pulmonary edema on physical exam, or pulmonary edema on chest x-ray presumed to be cardiac dysfunction.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50577</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Heart Failure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99531">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Primary Cause of Death</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The first significant abnormal event which ultimately led to death.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99531</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Primary Cause of Death</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99541">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Pacemaker Undersensing</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Failure of pacemaker to detect appropriate cardiac depolarizations.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99541</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Pacemaker Undersensing</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84742">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Great Vessels Transposition</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transposition of Great Vessels</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transposition of the great vessels is a congenital heart defect in which the two main arteries leaving the heart are reversed (transposed).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84742</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transposition of Great Vessels</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101250">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peripheral Nerve Injury</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sensory or motor loss of peripheral nerve function due to a traumatic event.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101250</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peripheral Nerve Injury</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C2985">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diabetes Mellitus</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C2985</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diabetes Mellitus</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100084">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Diagnostic Procedure</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Procedure to evaluate the structure and/or function of the heart.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100084</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Diagnostic Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C25676">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Severity</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The degree of something undesirable e.g. pain or weather; also, strictness.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C25676</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Severity</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100075">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Non-Invasive Stress Testing</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Procedures intended to evaluate cardiac function without insertion of intravascular equipment into the central circulation.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100075</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Non-Invasive Cardiac Stress Test</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101230">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Procedure Urgency Status</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The degree of urgency in which a medical procedure must be performed.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101230</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Triage Status</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C3390">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Undetermined Stroke</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An acute episode of focal or global neurological dysfunction caused by presumed brain, spinal cord, or retinal vascular injury as a result of hemorrhage or infarction but with insufficient information to allow categorization as ischemic or hemorrhagic.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C3390</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cerebrovascular Accident</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102703">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reason for Treatment Interruption</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The reason the drug or therapy was temporarily ceased.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102703</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reason for Treatment Interruption</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99536">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemodynamic Instability</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A state of hypoperfusion that does not support normal organ perfusion or function. It can include periods of reduced, unstable, or abnormal blood pressure with near syncope, or episodes of syncope.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99536</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemodynamic Instability</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80463">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Sinus/Left Ventricular Lead</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The wire which allows a pacemaker or defibrillator to stimulate the left ventricle, often positioned in the coronary sinus.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80463</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventricular Lead</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101244">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tobacco Counseling</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A process by which a health professional provides education, recommendations, or interventions to help clients stop using tobacco products.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101244</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tobacco Cessation Counseling</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C34995">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sarcoidosis</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An idiopathic inflammatory disorder characterized by the formation of non-necrotizing epithelioid granulomas which contain giant cells. It usually affects the lungs, lymph nodes, liver, eyes, and skin. Cardiac involvement is also possible.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C34995</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sarcoidosis</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C34449">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hypertrophic Cardiomyopathy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A condition in which the myocardium is hypertrophied without an obvious cause. The hypertrophy is generally asymmetric and may be associated with obstruction of the ventricular outflow tract.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C34449</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hypertrophic Cardiomyopathy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101238">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lead Function</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An indicator to describe whether the electrical lead device is performing as intended.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101238</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Lead Function Indicator</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50726">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Regurgitation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Flow in the opposite direction from normal, as the casting up of undigested food or gas from the stomach, or the backward flowing of blood into the heart, or between the chambers of the heart when a valve is incompetent.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50726</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Regurgitation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C3108">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HIV Infection</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any state accompanied by evidence of human immunodeficiency virus in the body (positive test for HIV genome, cDNA, proteins, antigens, or antibodies).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C3108</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HIV Infection</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99516">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Home Oxygen Therapy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Treatment in which a storage tank of oxygen or a machine called a compressor is used at home to give oxygen to people for the treatment of chronic lung disease.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99516</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Home Oxygen Therapy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84473">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Atrial Septal Defect</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A congenital disorder characterized by the presence of a defect (opening) in the septum that separates the two atria of the heart.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84473</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Atrial Septal Defect</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84571">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arrhythmogenic Right Ventricular Dysplasia</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A rare genetic disorder characterized by cardiomyopathy affecting the right ventricle. The heart tissue is replaced by fibrous and adipose tissues. It is characterized by ventricular arrhythmia and right ventricular dysfunction. It is a cause of sudden death.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84571</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arrhythmogenic Right Ventricular Dysplasia</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C26884">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sleep Apnea</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cessation of breathing for short periods during sleep. It is classified as obstructive, central, or mixed obstructive-central.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C26884</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sleep Apnea</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100059">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Post-Procedure</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A time period after the procedure.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100059</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Post-Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99544">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Ventricular Non-Compaction Syndrome</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is an uncommon congenital abnormality where the left ventricular myocardium fails to compact during embryonic development, leading to cardiomyopathy with a variable degree of ventricular dysfunction. There is genetic heterogeneity and phenotypic variability. Characteristically, there are typically deep trabeculations in the non-compacted area, with varying proportions of the LV myocardium compacted. LV non-compaction is associated with rhythm abnormalities including Wolff-Parkinson-White syndrome, conduction defects, and ventricular tachyarrhythmias.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99544</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Ventricular Non-Compaction Syndrome</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101247">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Appropriate Treatment</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Correct activity that produces an effect, or that is intended to alter the course of a disease in a patient or population. This is a general term that encompasses the medical, social, behavioral, and environmental acts that can have preventive, therapeutic, or palliative effects.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101247</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Appropriate Treatment</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99542">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Common Cardiac Ventricle</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Common ventricle is an umbrella term used to describe several very different complex congenital heart defects that share the same problem: the heart has only one functional ventricle (anatomically right or left or indeterminate) supplying the systemic circulation. These defects include tricuspid atresia, hypoplastic left or right heart syndrome, double outlet right ventricle, double inlet left ventricle, and other forms of single ventricle defects.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99542</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Common Ventricle Disorder</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80503">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Atrial Arrhythmia</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal heart beat resulting from a pathologic process in the cardiac atria.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80503</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Atrial Arrhythmia</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102702">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reason for Treatment</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The reason the treatment was administered.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102702</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reason for Treatment</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99539">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mechanical Circulatory Support Placement Timing</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A description of when a mechanical circulatory support device was placed.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99539</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mechanical Circulatory Support Placement Timing</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C18226">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Disease Outcome</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A measurable result or effect of treatment on a disease. Examples of outcomes include decreased pain, reduced tumor size, or worsening of disease.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C18226</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Disease Outcome</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100083">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Artery Perforation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dissection that extends through the full thickness of the arterial wall.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100083</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Artery Perforation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99709">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Significant Arterial Dissection</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dissection that impairs flow. These include Type C (a persisting contrast medium extravasations in the presence of ischemia), Type D (a spiral filling defect with delayed but complete distal flow) , Type E (persistent filling defect with delayed antegrade flow) and Type F (filling defect with impaired flow and total occlusion).</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99709</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Significant Arterial Dissection</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101237">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Upper Limit of Vulnerability for Induction of Ventricular Fibrillation</cts:cdiscSubmissionValue>
+    <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Upper Limit of Vulnerability</cts:cdiscSynonyms>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stimulus strength above which electrical stimulation from a cardiac device cannot induce ventricular fibrillation even when the stimulus occurs during the vulnerable period of the cardiac cycle.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101237</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Upper Limit of Vulnerability for Induction of Ventricular Fibrillation</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100062">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic Total Coronary Artery Occlusion</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pro-longed complete obstruction of the coronary artery.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100062</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic Total Coronary Artery Occlusion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C102721">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Treatment Failure Reason</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The reason the drug or therapy was unsuccessful in treating the condition.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C102721</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Treatment Failure Reason</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80407">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stress Echocardiography</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A procedure that uses high-frequency sound waves (ultrasound) to create an image of the heart under conditions such as exercise, pharmacologic agents or pacing intended to elicit signs and symptoms of myocardial ischemia.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80407</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stress Echocardiography</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C26732">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Artery Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C26732</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Artery Disease</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C95802">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ischemic Cerebrovascular Accident</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ischemic stroke is defined as an acute episode of focal cerebral, spinal, or retinal dysfunction caused by infarction of central nervous system tissue.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C95802</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ischemic Cerebrovascular Accident</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C98541">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic Lung Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A persistent non-neoplastic disorder of the lungs. Representative examples include: chronic obstructive pulmonary disease, chronic bronchitis, emphysema, pulmonary fibrosis, pneumoconiosis, asbestosis, atelectasis, radiation induced pneumonitis, and radiation fibrosis.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C98541</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chronic Lung Disorder</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50479">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Arrest</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac arrest is the non-fatal, sudden cessation of cardiac activity so that the victim subject/patient becomes unresponsive, with no normal breathing and no signs of circulation. Cardiac arrest should be used to signify an event as described above that is reversed, usually by CPR, and/or defibrillation or cardioversion, or cardiac pacing.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50479</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Arrest</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C50579">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hematoma</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A localized collection of blood, usually clotted, in an organ, space, or tissue, due to a break in the wall of a blood vessel.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C50579</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hematoma</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C85540">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Susceptibility Test</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A test done to determine whether the growth of specific bacteria is inhibited by a specific drug.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C85540</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microbial Susceptibility Test</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C38006">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pneumothorax</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal presence of air in the pleural cavity.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C38006</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pneumothorax</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100058">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pre-Procedure</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A time period prior to the procedure.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100058</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pre-Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99543">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal Intraventricular Conduction</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An atypical passage of electrical impulses through the cardiac ventricles. This includes fascicular blocks, bundle branch blocks, non-specific conduction delays and ventricular pacing.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99543</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal Intraventricular Conduction</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99545">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Primary Valvular Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Primary valvular heart disease is defined by heart disease that is primarily due to a valvular defect or abnormality. Valve disease that is felt to be significant but does not fulfill the definition for primary valvular heat disease is considered contributory valvular heart disease.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99545</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Primary Valvular Disorder</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101246">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lead Perforation</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Penetration of a lead through an anatomical structure such as systemic vein, coronary vein, or the myocardium.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101246</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Perforation due to Lead</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C892">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smokeless Tobacco</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tobacco that is not smoked but used in another form such as chewing tobacco or snuff.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C892</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smokeless Tobacco</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C99538">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Structural Heart Abnormalities</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An anatomic deformity of the heart, structures within the heart, ventricles or great vessels.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C99538</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Structural Heart Abnormality</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100077">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Luminal Carotid Thrombus</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A blood clot (thrombus) in the lumen of the carotid artery.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100077</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Luminal Carotid Thrombus</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80430">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Therapeutic Procedure</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A therapeutic procedure to treat pathologic structural or functional disorders of the heart.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80430</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiac Therapeutic Procedure</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C16588">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fluoroscopy</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examination of the tissues and deep structures of the body by x-ray, using the fluoroscope, a device that produces an image when x-rays strike a fluorescent screen.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C16588</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fluoroscopy</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C84629">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chagas Disease</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A parasitic infection caused by Trypanosoma cruzi and transmitted by the reduviid bug. It is characterized by an acute and chronic phase; in the acute phase patients may have fever, malaise, and swelling at the site of the insect bite. In the chronic phase patients develop hepatosplenomegaly, lymphadenopathy, cardiomyopathy and arrhythmias.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C84629</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chagas Disease</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C101236">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defibrillation Threshold</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The lowest energy where a defibrillator device terminates an arrhythmia in a particular subject.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C101236</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Defibrillation Threshold</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100082">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Guidewire Across Lesion</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A performance measure of procedural success during a percutaneous coronary intervention when a guidewire can be deployed across a coronary artery lesion.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100082</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Guidewire Across Lesion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C100063">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Lesion</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pathologic material in a vessel that obstructs myocardial perfusion.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C100063</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coronary Vessel Lesion</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C101836.C80492">
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Main Coronary Artery Stenosis Percentage</cts:cdiscSubmissionValue>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Percent luminal narrowing of the left main coronary artery, at the point of maximal stenosis of the left main coronary artery.</cts:cdiscDefinition>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C80492</cts:nciCode>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Left Main Coronary Artery Stenosis, Percentage</cts:nciPreferredTerm>
+    <mms:inValueDomain rdf:resource="#C101836"/>
+  </mms:PermissibleValue>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

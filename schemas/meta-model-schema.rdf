@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://rdf.cdisc.org/mms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://rdf.cdisc.org/mms">
+  <owl:Ontology rdf:about="">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The common CDISC Meta Model Schema defines a set of generic meta-model resources that provides a common language and infrastructure to describe the CDISC operational standards.</skos:definition>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NCI EVS</dc:creator>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CDISC Common Meta Model Schema</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:ID="DataCollectionField">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="DataElementContext"/>
+    </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Collection Field</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A data collection field is a data element in the context of a data collection form and may add context dependent properties such as optional or required.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="ValueDomain">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Value Domain</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A value domain is a collection of permissible values. A value domain provides representation, but has no implication as to what data element concept the values are associated with, nor what the values mean.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="AdministeredItem"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Domain">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Context"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Domain</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of related data elements.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="Column">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DataElementContext"/>
+    </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Column</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A column is a data element in the context of a dataset and may add context dependent properties such as the ordinal number within the dataset.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="Dataset">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dataset</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Context"/>
+    </rdfs:subClassOf>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of dataset variables, e.g. SDTM IG Adverse Event domain.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="#AdministeredItem">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Administered Item</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any resource for which administrative information is recorded in an administration record.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="DataElement">
+    <rdfs:subClassOf rdf:resource="#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Unit of data that is considered in context to be indivisible.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="Model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Model</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Context"/>
+    </rdfs:subClassOf>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Top-level context for all model elements, e.g. SDTM 3.1.2.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="PermissibleValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Permissible Value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#AdministeredItem"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A permissible value is a designation, binding of signs (value) to a corresponding value meaning.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="#Context">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="#AdministeredItem"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Each administered item is named and defined within one or more contexts. A context defines the scope within which the subject data has meaning. A context may be a business domain, an information subject area, an information system, a database, file, data model, standard document, or any other environment determined by the owner of the registry. Each context is itself managed as an administered item within the registry and is given a name and a definition.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="DataCollectionForm">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Collection Form</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of data collection fields.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="DatasetContext">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dataset Context</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group related data sets, e.g. Events Observation Class.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="EnumeratedValueDomain">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A Value Domain that is specified by a list of all its Permissible Values.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enumerated Value Domain</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="#ValueDomain"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DomainContext">
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Domain Context</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group related domains.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:ID="Classifier">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A classifier defines a characteristic that can be used to organize a set of administered items into a discrete family of subsets.</skos:definition>
+    <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SDTM classifies variables to be either required, or expected, or permissible.</skos:example>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Classifier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#AdministeredItem"/>
+  </owl:Class>
+  <owl:Class rdf:ID="VariableGrouping">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Variable Grouping</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subClassOf rdf:resource="#Context"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context to group a set of data elements, e.g. SDTM Timing Variables.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="#DataElementContext">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A data element context maps a data element to a context and describes context dependent properties of that data element.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#DataElement"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="dataElement">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The data element that a data element context refers to.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element</rdfs:label>
+    <rdfs:domain rdf:resource="#DataElementContext"/>
+    <rdfs:range rdf:resource="#DataElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="subsetOf">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Identifies the parent enumerated value domain of which this enumerated value domain is a subset of.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="#EnumeratedValueDomain"/>
+    <rdfs:range rdf:resource="#EnumeratedValueDomain"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Parent Value Domain</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="context">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The context of an administered item.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context</rdfs:label>
+    <rdfs:domain rdf:resource="#AdministeredItem"/>
+    <rdfs:range rdf:resource="#Context"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="broader">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a data element to another data element that is more general.</skos:definition>
+    <rdfs:domain rdf:resource="#DataElement"/>
+    <rdfs:range rdf:resource="#DataElement"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Broader</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="dataElementValueDomain">
+    <rdfs:range rdf:resource="#ValueDomain"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The value domain of a data element.</skos:definition>
+    <rdfs:domain rdf:resource="#DataElement"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Value Domain</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="inValueDomain">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Value Domain</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="#PermissibleValue"/>
+    <rdfs:range rdf:resource="#EnumeratedValueDomain"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The enumerated value domain to which a permissible value belongs.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="dataElementType">
+    <rdfs:domain rdf:resource="#DataElement"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The type of a data element, i.e. the values it can range over. The actual value space may be further restricted by the specification of a value domain.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anySimpleType"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="identifier">
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The identifier of an administered item.</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Identifier</rdfs:label>
+    <rdfs:domain rdf:resource="#AdministeredItem"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ordinal">
+    <rdfs:domain rdf:resource="#AdministeredItem"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ordinal</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The ordinal of an administered item within a list of items.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="dataElementDescription">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The descriptive text documenting a data element.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Description</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#DataElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="contextDescription">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context Description</rdfs:label>
+    <rdfs:domain rdf:resource="#Context"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The descriptive text documenting a context.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="contextName">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The name of a context that uniquely identifies it within the registry.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Context"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="dataElementName">
+    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A distinction must be made between the unique URI identifying a data element as a resource within the ontology and the name of a data element used to identify it within a context.</skos:note>
+    <rdfs:domain rdf:resource="#DataElement"/>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The name of a data element that uniquely identifies it within a context.</skos:definition>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="dataElementLabel">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Short descriptive label of a data element.</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data Element Label</rdfs:label>
+    <rdfs:domain rdf:resource="#DataElement"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="contextLabel">
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Short descriptive label of a context.</skos:definition>
+    <rdfs:domain rdf:resource="#Context"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Context Label</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:mms="http://rdf.cdisc.org/mms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://rdf.cdisc.org/adam-terminology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cts="http://rdf.cdisc.org/ct/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://rdf.cdisc.org/adam-terminology">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/ct/schema"/>
+    <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>
+  </owl:Ontology>
+  <mms:PermissibleValue rdf:ID="C81226.C81215">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C81226">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Time Imputation Flag: Indicates the level of imputation reflected in a time value.</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC ADaM Time Imputation Flag Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C81226</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Time Imputation Flag</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >TIMEFL</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Time Imputation Flag</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Seconds Imputed</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81215</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Seconds Imputed: Seconds are imputed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >S</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81226.C81213">
+    <mms:inValueDomain rdf:resource="#C81226"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hours Minutes Seconds Imputed</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81213</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hours Imputed: Entire time (hours, minutes and seconds) is imputed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >H</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81200">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C81224">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Derivation Type: Analysis value derivation method.</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC ADaM Derivation Type Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C81224</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Derivation Type</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >DTYPE</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Derivation Type</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Screening Observation Carried Forward Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81200</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Screening Observation Carried Forward: A data imputation technique which populates missing values with the subject's nonmissing screening observation.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SOCF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81204">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mean of Other Group Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81204</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mean of Other Group: A data imputation technique which populates missing values with the mean value from a comparator or reference group.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MOTH</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81206">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Worst Observed Value in a Group Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81206</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Worst Observed Value in a Group: A data imputation technique which populates missing values with the worst value observed in a group of subjects.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WOV</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81208">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Interpolation Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81208</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Interpolation: A method of imputation involving a missing value that is between known values and is estimated by a function of those known values.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INTERP</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C82867">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Minimum Value Derivation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C82867</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Minimum: A data derivation technique which calculates a subject's minimum value over a defined set of records.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MINIMUM</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81223.C81211">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C81223">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Date Imputation Flag: Indicates the level of imputation reflected in a date value.</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC ADaM Date Imputation Flag Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C81223</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Date Imputation Flag</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >DATEFL</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Date Imputation Flag</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Month Day Imputed</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81211</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Month Imputed: Month and day are imputed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >M</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C53331">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Maximum Likelihood Estimation</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C53331</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Maximum Likelihood: A data imputation technique which populates missing values with estimates that maximize the probability of observing what has in fact been observed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ML</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81199">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Worst Observation Carried Forward Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81199</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Worst Observation Carried Forward: A data imputation technique which populates missing values with the subject's worst-case nonmissing value.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WOCF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C92226">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Best Observation Carried Forward Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C92226</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Best Observation Carried Forward: A data imputation technique which populates missing values with the subject's best-case nonmissing value.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BOCF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81209">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Average of Value Derivation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81209</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Average: A data derivation technique which calculates a subject's average value over a defined set of records.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AVERAGE</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81226.C81214">
+    <mms:inValueDomain rdf:resource="#C81226"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Minutes Seconds Imputed</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81214</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Minutes Imputed: Minutes and seconds are imputed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >M</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81225.C81197">
+    <mms:inValueDomain>
+      <mms:EnumeratedValueDomain rdf:ID="C81225">
+        <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Parameter Type: Indicates whether the parameter is derived as a function of one or more other parameters.</cts:cdiscDefinition>
+        <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CDISC ADaM Parameter Type Terminology</cts:nciPreferredTerm>
+        <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C81225</cts:nciCode>
+        <cts:cdiscSynonyms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Parameter Type</cts:cdiscSynonyms>
+        <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >PARAMTYP</cts:cdiscSubmissionValue>
+        <cts:codelistName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Parameter Type</cts:codelistName>
+        <cts:isExtensibleCodelist rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</cts:isExtensibleCodelist>
+      </mms:EnumeratedValueDomain>
+    </mms:inValueDomain>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Derived Flag</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81197</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Derived: Indicates that a parameter is derived as a function of one or more other parameters.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DERIVED</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81203">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Worst Case Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81203</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Worst Case: A data imputation technique which populates missing values with the worst possible outcome.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WC</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81201">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Baseline Observation Carried Forward Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81201</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Baseline Observation Carried Forward: A data imputation technique which populates missing values with the subject's nonmissing baseline observation.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BLOCF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C82868">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Maximum Value Derivation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C82868</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Maximum: A data derivation technique which calculates a subject's maximum value over a defined set of records.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MAXIMUM</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81207">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mean Observed Value in a Group Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81207</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mean Observed Value in a Group: A data imputation technique which populates missing values with the mean value observed in a group of subjects.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MOV</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81205">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Penultimate Observation Carried Forward Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81205</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Penultimate Observation Carried Forward: A data imputation technique which populates missing values with the subject's next-to-last nonmissing value.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >POCF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81223.C81212">
+    <mms:inValueDomain rdf:resource="#C81223"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Day Imputed</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81212</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Day Imputed: Day is imputed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >D</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81223.C81210">
+    <mms:inValueDomain rdf:resource="#C81223"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Year Month Day Imputed</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81210</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Year Imputed: Entire date (year, month and day) is imputed.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Y</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C81198">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Last Observation Carried Forward Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C81198</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Last Observation Carried Forward: A data imputation technique which populates missing values with the subject's previous nonmissing value.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >LOCF</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C82866">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Endpoint Value Derivation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C82866</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Endpoint: A data derivation technique which calculates a subject's analysis end point value.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ENDPOINT</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+  <mms:PermissibleValue rdf:ID="C81224.C92225">
+    <mms:inValueDomain rdf:resource="#C81224"/>
+    <cts:nciPreferredTerm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Best Case Imputation Technique</cts:nciPreferredTerm>
+    <cts:nciCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C92225</cts:nciCode>
+    <cts:cdiscDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Best Case: A data imputation technique which populates missing values with the best possible outcome.</cts:cdiscDefinition>
+    <cts:cdiscSubmissionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BC</cts:cdiscSubmissionValue>
+  </mms:PermissibleValue>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
