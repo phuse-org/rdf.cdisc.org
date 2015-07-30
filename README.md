@@ -98,7 +98,7 @@ Project Status
 
 30.07.2015
 
-The CDISC Foundational Standards in RDF haven been complemented by a Reference Guide and a User Guide. The complete package has completed CDISC Publich Review as of 30.07.2015. Currently the RDF files are available from the GitHub repository, whereas the guides can be downloaded from the CDISC web site. For more information and access to the guides, please refer to the CDISC web site http://www.cdisc.org.
+The CDISC Foundational Standards in RDF haven been complemented by a Reference Guide and a User Guide. The complete package has completed CDISC Publich Review as of 30.07.2015. Currently the RDF files are available from the GitHub repository, whereas the guides can be downloaded from the CDISC web site. For more information and access to the guides, please refer to the CDISC web site http://www.cdisc.org/rdf.
 
 30.07.2015
 
