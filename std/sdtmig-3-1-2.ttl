@@ -2,7 +2,6 @@
 # imports: http://rdf.cdisc.org/sdtm-terminology
 # imports: http://rdf.cdisc.org/std/sdtm-1-2
 
-# c14n-version: 3
 @prefix cdiscs: <http://rdf.cdisc.org/std/schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mms: <http://rdf.cdisc.org/mms#> .
@@ -14,6 +13,7 @@
 @prefix sdtmig-3-1-2: <http://rdf.cdisc.org/std/sdtmig-3-1-2#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 <http://rdf.cdisc.org/std/sdtmig-3-1-2>
   rdf:type owl:Ontology ;
   dc:creator "FDA/PhUSE CSS Semantic Technology Project"^^xsd:string ;
@@ -106,7 +106,7 @@
   rdf:type cdiscs:Assumption ;
   mms:ordinal "12"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.AE> ;
-  cdiscs:assumptionText "d. When adverse events are collected with the recording of free text, a record may be entered into the sponsor's data management system to indicate .no adverse events. for a specific subject. For these subjects, do not include a record in the AE submission dataset to indicate that there were no events. Records should be included in the submission AE dataset only for adverse events that have actually occurred."^^xsd:string ;
+  cdiscs:assumptionText "d. When adverse events are collected with the recording of free text, a record may be entered into the sponsor's data management system to indicate \"no adverse events\" for a specific subject. For these subjects, do not include a record in the AE submission dataset to indicate that there were no events. Records should be included in the submission AE dataset only for adverse events that have actually occurred."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.AE.004> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.AE.005.001>
@@ -123,6 +123,7 @@
   mms:ordinal "14"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.AE> ;
   cdiscs:assumptionText "b. Additional timing variables (such as AEDTC) may be used when appropriate."^^xsd:string ;
+  cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.AE.005> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.AE.006.001>
   rdf:type cdiscs:Assumption ;
@@ -340,7 +341,7 @@ CESTAT is NOT DONE"""^^xsd:string ;
   rdf:type cdiscs:Assumption ;
   mms:ordinal "1"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.CO> ;
-  cdiscs:assumptionText "The Comments special-purpose domain provides a solution for submitting free-text comments related to data in one or more SDTM domains (as described in 393HSection 8.5) or collected on a separate CRF page dedicated to comments. Comments are generally not responses to specific questions; instead, comments usually consist of voluntary, free-text or unsolicited observations."^^xsd:string ;
+  cdiscs:assumptionText "The Comments special-purpose domain provides a solution for submitting free-text comments related to data in one or more SDTM domains (as described in Section 8.5) or collected on a separate CRF page dedicated to comments. Comments are generally not responses to specific questions; instead, comments usually consist of voluntary, free-text or unsolicited observations."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.CO.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.CO.000.002.001>
@@ -387,7 +388,7 @@ CESTAT is NOT DONE"""^^xsd:string ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.CO.IDVAR> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.CO.IDVARVAL> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.CO> ;
-  cdiscs:assumptionText "Additional information about how to relate comments to parent SDTM records is provided in 395HSection 8.5."^^xsd:string ;
+  cdiscs:assumptionText "Additional information about how to relate comments to parent SDTM records is provided in Section 8.5."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.CO.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.CO.000.005>
@@ -688,9 +689,9 @@ SUPPDS QVAL=WITHDREW CONSENT"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.EG.000.004>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "4"^^xsd:positiveInteger ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Finding.--NRIND> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Finding.--ORNRHI> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Finding.--ORNRLO> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.LB.LBNRIND> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.LB.LBORNRHI> ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.LB.LBORNRLO> ;
   cdiscs:assumptionText "EGNRIND can be added to indicate where a result falls with respect to reference range defined by EGORNRLO and EGORNRHI. Examples: HIGH, LOW. Clinical significance would be represented as described in Section 4.1.5.5 as a record in SUPPEG with a QNAM of EGCLSIG (see also ECG Example 1 below)."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.EG.000> ;
 .
@@ -792,7 +793,7 @@ SUPPDS QVAL=WITHDREW CONSENT"""^^xsd:string ;
   rdf:type cdiscs:Assumption ;
   mms:ordinal "1"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.IE> ;
-  cdiscs:assumptionText "IE Definition: CRF data that captures inclusion and exclusion criteria exceptions per subject. All inclusion or exclusion criteria that are violated, should be stored here, even if a sponsor has granted a waiver or if the subject was admitted by mistake. In cases where a CRF may allow a response of .Not Applicable. and this is checked, no criteria were violated, so these records would not be in IE."^^xsd:string ;
+  cdiscs:assumptionText "IE Definition: CRF data that captures inclusion and exclusion criteria exceptions per subject. All inclusion or exclusion criteria that are violated, should be stored here, even if a sponsor has granted a waiver or if the subject was admitted by mistake. In cases where a CRF may allow a response of \"Not Applicable\" and this is checked, no criteria were violated, so these records would not be in IE."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.IE.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.IE.000.002>
@@ -854,6 +855,7 @@ SUPPDS QVAL=WITHDREW CONSENT"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.LB.000.004>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "4"^^xsd:positiveInteger ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.LB.LBDTC> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.LB.LBENDTC> ;
   cdiscs:assumptionText "For lab tests where the specimen is collected over time, i.e., 24-hour urine collection, the start date/time of the collection goes into LBDTC and the end date/time of collection goes into LBENDTC. See Assumption 4.1.4.8."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.LB.000> ;
@@ -1001,7 +1003,7 @@ ii. Examples of MHCAT could include \"General Medical History\" (see above assum
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.MH.MHOCCUR> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.MH.MHPRESP> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.MH.MHTERM> ;
-  cdiscs:assumptionText "a. Information on medical history is generally collected in two different ways, either by recording free text or using a pre-specified list of terms. The solicitation of information on specific medical history events may affect the frequency at which they are reported; therefore, the fact that a specific medical history event was solicited may be of interest to reviewers. MHPRESP and MHOCCUR are used together to indicate whether the condition in MHTERM was pre-specified and whether it occurred, respectively. A value of .Y. in MHPRESP indicates that the term was pre-specified."^^xsd:string ;
+  cdiscs:assumptionText "a. Information on medical history is generally collected in two different ways, either by recording free text or using a pre-specified list of terms. The solicitation of information on specific medical history events may affect the frequency at which they are reported; therefore, the fact that a specific medical history event was solicited may be of interest to reviewers. MHPRESP and MHOCCUR are used together to indicate whether the condition in MHTERM was pre-specified and whether it occurred, respectively. A value of \"Y\" in MHPRESP indicates that the term was pre-specified."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.MH.004> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.MH.004.002>
@@ -1050,7 +1052,7 @@ MHSTAT is NOT DONE"""^^xsd:string ;
   rdf:type cdiscs:Assumption ;
   mms:ordinal "14"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.MH> ;
-  cdiscs:assumptionText "e. When medical history events are collected with the recording of free text, a record may be entered into the data management system to indicate .no medical history. for a specific subject or pre-specified body system category (e.g., Gastrointestinal). For these subjects or categories within subject, do not include a record in the MH dataset to indicate that there were no events."^^xsd:string ;
+  cdiscs:assumptionText "e. When medical history events are collected with the recording of free text, a record may be entered into the data management system to indicate \"no medical history\" for a specific subject or pre-specified body system category (e.g., Gastrointestinal). For these subjects or categories within subject, do not include a record in the MH dataset to indicate that there were no events."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.MH.004> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.MH.005.001>
@@ -1180,7 +1182,7 @@ MHSTAT is NOT DONE"""^^xsd:string ;
   mms:ordinal "1"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.QS.QSCAT> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.QS> ;
-  cdiscs:assumptionText "QS Definition: A written or electronic survey instrument comprised of a series of questions, designed to measure a specific item or set of items. Questionnaires are research instruments that usually have a documented method of administration, a standard format for data collection, and documented methods for scoring, analysis, and interpretation of results. A questionnaire is often analyzed by applying a numeric scoring system to question responses, where each question response is assigned a specific numeric .score. that can be totaled to give an overall score (and possibly sectional sub-scores). Questionnaire data may include, but are not limited to subject reported outcomes and validated or non-validated questionnaires. The QS domain is not intended for use in submitting a set of questions grouped on the CRF for convenience of data capture. Some diaries are vehicles for collecting data for a validated questionnaire while others may simply facilitate capture of routine study data. When objective numeric data with result Qualifiers are collected in a questionnaire or diary format, the sponsor should consider whether this data actually belongs in a separate (new or existing) domain. For example, if the subject records the number of caffeinated beverages consumed each day in a diary, this information might be more appropriate for the Substance Use domain. The names of the questionnaires should be described under the variable QSCAT in the questionnaire domain. These could be either abbreviations or longer names, at the sponsor's discretion until controlled terminology is developed. For example, Alzheimer's Disease Assessment Scale (ADAS), SF-36 Health Survey (SF36), Positive and Negative Syndrome Scale (PANSS)."^^xsd:string ;
+  cdiscs:assumptionText "QS Definition: A written or electronic survey instrument comprised of a series of questions, designed to measure a specific item or set of items. Questionnaires are research instruments that usually have a documented method of administration, a standard format for data collection, and documented methods for scoring, analysis, and interpretation of results. A questionnaire is often analyzed by applying a numeric scoring system to question responses, where each question response is assigned a specific numeric \"score\" that can be totaled to give an overall score (and possibly sectional sub-scores). Questionnaire data may include, but are not limited to subject reported outcomes and validated or non-validated questionnaires. The QS domain is not intended for use in submitting a set of questions grouped on the CRF for convenience of data capture. Some diaries are vehicles for collecting data for a validated questionnaire while others may simply facilitate capture of routine study data. When objective numeric data with result Qualifiers are collected in a questionnaire or diary format, the sponsor should consider whether this data actually belongs in a separate (new or existing) domain. For example, if the subject records the number of caffeinated beverages consumed each day in a diary, this information might be more appropriate for the Substance Use domain. The names of the questionnaires should be described under the variable QSCAT in the questionnaire domain. These could be either abbreviations or longer names, at the sponsor's discretion until controlled terminology is developed. For example, Alzheimer's Disease Assessment Scale (ADAS), SF-36 Health Survey (SF36), Positive and Negative Syndrome Scale (PANSS)."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.QS.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.QS.000.002>
@@ -1320,7 +1322,6 @@ MHSTAT is NOT DONE"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SE.000.011>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "11"^^xsd:positiveInteger ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.SE.SEENDTC> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.SE.SESTDTC> ;
   cdiscs:assumptionText "Note that SESTDTC is required, although --STDTC is not required in any other subject-level dataset. The purpose of the dataset is to record the Elements a subject actually passed through. We assume that if it is known that a subject passed through a particular Element, then there must be some information on when it started, even if that information is imprecise. Thus, SESTDTC may not be null, although some records may not have all the components (e.g., year, month, day, hour, minute) of the date/time value collected."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SE.000> ;
@@ -1336,21 +1337,21 @@ MHSTAT is NOT DONE"""^^xsd:string ;
   rdf:type cdiscs:Assumption ;
   mms:ordinal "13"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SE> ;
-  cdiscs:assumptionText "Additional timing variables, the purpose of --DTC and --DY in other domains with start and end dates (Event and Intervention Domains) is to record the date and study day on which data was collected. The starts and ends of elements are generally .derived. in the sense that they are a secondary use of data collected elsewhere, and it is not generally useful to know when those date/times were recorded."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: The purpose of --DTC and --DY in other domains with start and end dates (Event and Intervention Domains) is to record the date and study day on which data was collected. The starts and ends of elements are generally \"derived\" in the sense that they are a secondary use of data collected elsewhere, and it is not generally useful to know when those date/times were recorded."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SE.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SE.000.013.002>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "14"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SE> ;
-  cdiscs:assumptionText "Additional timing variables, --DUR could be added only if the duration of an element was collected, not derived."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: --DUR could be added only if the duration of an element was collected, not derived."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SE.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SE.000.013.003>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "15"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SE> ;
-  cdiscs:assumptionText "Additional timing variables, it would be inappropriate to add the variables that support time points (--TPT, --TPTNUM, --ELTM, --TPTREF, and --RFTDTC), since the topic of this dataset is Elements."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: It would be inappropriate to add the variables that support time points (--TPT, --TPTNUM, --ELTM, --TPTREF, and --RFTDTC), since the topic of this dataset is Elements."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SE.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SU.001.001>
@@ -1480,8 +1481,8 @@ MHSTAT is NOT DONE"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SV.000.006>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "6"^^xsd:positiveInteger ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.SV.SVENDTC> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.SV.SVENDY> ;
-  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.SV.SVSTDTC> ;
   cdiscs:assumptionText "If SVENDY is included, it is the actual day corresponding to SVENDTC."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
@@ -1519,42 +1520,42 @@ MHSTAT is NOT DONE"""^^xsd:string ;
   rdf:type cdiscs:Assumption ;
   mms:ordinal "11"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV> ;
-  cdiscs:assumptionText "Additional timing variables, if TAETORD and/or EPOCH are added, then the values must be those at the start of the visit."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: If TAETORD and/or EPOCH are added, then the values must be those at the start of the visit."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SV.000.011.002>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "12"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV> ;
-  cdiscs:assumptionText "Additional timing variables, the purpose of --DTC and --DY in other domains with start and end dates (Event and Intervention Domains) is to record the data on which data was collected. It seems unnecessary to record the date on which the start and end of a visit were recorded."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: The purpose of --DTC and --DY in other domains with start and end dates (Event and Intervention Domains) is to record the data on which data was collected. It seems unnecessary to record the date on which the start and end of a visit were recorded."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SV.000.011.003>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "13"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV> ;
-  cdiscs:assumptionText "Additional timing variables, --DUR could be added if the duration of a visit was collected."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: --DUR could be added if the duration of a visit was collected."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SV.000.011.004>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "14"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV> ;
-  cdiscs:assumptionText "Additional timing variables, it would be inappropriate to add the variables that support time points (--TPT, --TPTNUM, --ELTM, --TPTREF, and --RFTDTC), since the topic of this dataset is visits."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: It would be inappropriate to add the variables that support time points (--TPT, --TPTNUM, --ELTM, --TPTREF, and --RFTDTC), since the topic of this dataset is visits."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SV.000.011.005>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "15"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV> ;
-  cdiscs:assumptionText "Additional timing variables, --STRF and --ENRF could be used to say whether a visit started and ended before, during, or after the study reference period, although this seems unnecessary."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: --STRF and --ENRF could be used to say whether a visit started and ended before, during, or after the study reference period, although this seems unnecessary."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.SV.000.011.006>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "16"^^xsd:positiveInteger ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV> ;
-  cdiscs:assumptionText "Additional timing variables, --STRTPT, --STTPT, --ENRTPT, and --ENTPT could be used to say that a visit started or ended before or after particular dates, although this seems unnecessary."^^xsd:string ;
+  cdiscs:assumptionText "Additional timing variables: --STRTPT, --STTPT, --ENRTPT, and --ENTPT could be used to say that a visit started or ended before or after particular dates, although this seems unnecessary."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.SV.000> ;
 .
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.TA.000.001>
@@ -1689,6 +1690,7 @@ MHSTAT is NOT DONE"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.TE.000.008>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "8"^^xsd:positiveInteger ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.TE.ELEMENT> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.TE.TESTRL> ;
   cdiscs:assumptionText "TESTRL should be expressed without referring to Arm. If the Element appears in more than one Arm in the Trial Arms dataset, then the Element description (ELEMENT) must not refer to any Arms."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.TE.000> ;
@@ -1696,6 +1698,7 @@ MHSTAT is NOT DONE"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Assumption.TE.000.009>
   rdf:type cdiscs:Assumption ;
   mms:ordinal "9"^^xsd:positiveInteger ;
+  cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.TE.ELEMENT> ;
   cdiscs:about <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.TE.TESTRL> ;
   cdiscs:assumptionText "TESTRL should be expressed without referring to Epoch. If the Element appears in more than one Epoch in the Trial Arms dataset, then the Element description (ELEMENT) must not refer to any Epochs."^^xsd:string ;
   cdiscs:partOfSection <http://rdf.cdisc.org/std/sdtmig-3-1-2#Section.TE.000> ;
@@ -4614,6 +4617,7 @@ SUBJECT NOT WITHDRAWN AS PER PROTOCOL, SELECTION CRITERIA NOT MET, EXCLUDED CONC
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Column.DV.EPOCH>
   rdf:type mms:Column ;
   mms:context <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.DV> ;
+  mms:dataElement <http://rdf.cdisc.org/std/sdtm-1-2#DataElement.Timing.EPOCH> ;
   mms:dataElementDescription "Epoch associated with the start date/time of the deviation. Examples: TREATMENT PHASE, SCREENING, and FOLLOW-UP."^^xsd:string ;
   mms:dataElementLabel "Epoch"^^xsd:string ;
   mms:dataElementName "EPOCH"^^xsd:string ;
@@ -12311,7 +12315,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.AE>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:EventsObservationClass ;
-  mms:contextLabel "Adverse Events"^^rdf:XMLLiteral ;
+  mms:contextLabel "Adverse Events"^^xsd:string ;
   mms:contextName "AE"^^xsd:string ;
   mms:ordinal "8"^^xsd:positiveInteger ;
   cdiscs:datasetCode "AE"^^xsd:string ;
@@ -12320,7 +12324,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.CE>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:EventsObservationClass ;
-  mms:contextLabel "Clinical Events"^^rdf:XMLLiteral ;
+  mms:contextLabel "Clinical Events"^^xsd:string ;
   mms:contextName "CE"^^xsd:string ;
   mms:ordinal "12"^^xsd:positiveInteger ;
   cdiscs:datasetCode "CE"^^xsd:string ;
@@ -12329,7 +12333,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.CM>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:InterventionsObservationClass ;
-  mms:contextLabel "Concomitant Medications"^^rdf:XMLLiteral ;
+  mms:contextLabel "Concomitant Medications"^^xsd:string ;
   mms:contextName "CM"^^xsd:string ;
   mms:ordinal "5"^^xsd:positiveInteger ;
   cdiscs:datasetCode "CM"^^xsd:string ;
@@ -12338,7 +12342,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.CO>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:SpecialPurposeDomain ;
-  mms:contextLabel "Comments"^^rdf:XMLLiteral ;
+  mms:contextLabel "Comments"^^xsd:string ;
   mms:contextName "CO"^^xsd:string ;
   mms:ordinal "2"^^xsd:positiveInteger ;
   cdiscs:datasetCode "CO"^^xsd:string ;
@@ -12347,7 +12351,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.DA>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Drug Accountability"^^rdf:XMLLiteral ;
+  mms:contextLabel "Drug Accountability"^^xsd:string ;
   mms:contextName "DA"^^xsd:string ;
   mms:ordinal "20"^^xsd:positiveInteger ;
   cdiscs:datasetCode "DA"^^xsd:string ;
@@ -12356,7 +12360,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.DM>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:SpecialPurposeDomain ;
-  mms:contextLabel "Demographics"^^rdf:XMLLiteral ;
+  mms:contextLabel "Demographics"^^xsd:string ;
   mms:contextName "DM"^^xsd:string ;
   mms:ordinal "1"^^xsd:positiveInteger ;
   cdiscs:datasetCode "DM"^^xsd:string ;
@@ -12365,7 +12369,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.DS>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:EventsObservationClass ;
-  mms:contextLabel "Disposition"^^rdf:XMLLiteral ;
+  mms:contextLabel "Disposition"^^xsd:string ;
   mms:contextName "DS"^^xsd:string ;
   mms:ordinal "9"^^xsd:positiveInteger ;
   cdiscs:datasetCode "DS"^^xsd:string ;
@@ -12374,7 +12378,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.DV>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:EventsObservationClass ;
-  mms:contextLabel "Protocol Deviations"^^rdf:XMLLiteral ;
+  mms:contextLabel "Protocol Deviations"^^xsd:string ;
   mms:contextName "DV"^^xsd:string ;
   mms:ordinal "11"^^xsd:positiveInteger ;
   cdiscs:datasetCode "DV"^^xsd:string ;
@@ -12383,7 +12387,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.EG>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "ECG Test Results"^^rdf:XMLLiteral ;
+  mms:contextLabel "ECG Test Results"^^xsd:string ;
   mms:contextName "EG"^^xsd:string ;
   mms:ordinal "13"^^xsd:positiveInteger ;
   cdiscs:datasetCode "EG"^^xsd:string ;
@@ -12392,7 +12396,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.EX>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:InterventionsObservationClass ;
-  mms:contextLabel "Exposure"^^rdf:XMLLiteral ;
+  mms:contextLabel "Exposure"^^xsd:string ;
   mms:contextName "EX"^^xsd:string ;
   mms:ordinal "6"^^xsd:positiveInteger ;
   cdiscs:datasetCode "EX"^^xsd:string ;
@@ -12401,7 +12405,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.FA>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsAbout ;
-  mms:contextLabel "Findings About"^^rdf:XMLLiteral ;
+  mms:contextLabel "Findings About"^^xsd:string ;
   mms:contextName "FA"^^xsd:string ;
   mms:ordinal "25"^^xsd:positiveInteger ;
   cdiscs:datasetCode "FA"^^xsd:string ;
@@ -12410,7 +12414,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.IE>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Inclusion/Exclusion Criterion Not Met"^^rdf:XMLLiteral ;
+  mms:contextLabel "Inclusion/Exclusion Criterion Not Met"^^xsd:string ;
   mms:contextName "IE"^^xsd:string ;
   mms:ordinal "14"^^xsd:positiveInteger ;
   cdiscs:datasetCode "IE"^^xsd:string ;
@@ -12419,7 +12423,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.LB>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Laboratory Test Results"^^rdf:XMLLiteral ;
+  mms:contextLabel "Laboratory Test Results"^^xsd:string ;
   mms:contextName "LB"^^xsd:string ;
   mms:ordinal "15"^^xsd:positiveInteger ;
   cdiscs:datasetCode "LB"^^xsd:string ;
@@ -12428,7 +12432,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.MB>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Microbiology Specimen"^^rdf:XMLLiteral ;
+  mms:contextLabel "Microbiology Specimen"^^xsd:string ;
   mms:contextName "MB"^^xsd:string ;
   mms:ordinal "21"^^xsd:positiveInteger ;
   cdiscs:datasetCode "MB"^^xsd:string ;
@@ -12437,7 +12441,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.MH>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:EventsObservationClass ;
-  mms:contextLabel "Medical History"^^rdf:XMLLiteral ;
+  mms:contextLabel "Medical History"^^xsd:string ;
   mms:contextName "MH"^^xsd:string ;
   mms:ordinal "10"^^xsd:positiveInteger ;
   cdiscs:datasetCode "MH"^^xsd:string ;
@@ -12446,7 +12450,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.MS>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Microbiology Susceptibility Test"^^rdf:XMLLiteral ;
+  mms:contextLabel "Microbiology Susceptibility Test"^^xsd:string ;
   mms:contextName "MS"^^xsd:string ;
   mms:ordinal "22"^^xsd:positiveInteger ;
   cdiscs:datasetCode "MS"^^xsd:string ;
@@ -12455,7 +12459,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.PC>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "PK Concentrations"^^rdf:XMLLiteral ;
+  mms:contextLabel "PK Concentrations"^^xsd:string ;
   mms:contextName "PC"^^xsd:string ;
   mms:ordinal "23"^^xsd:positiveInteger ;
   cdiscs:datasetCode "PC"^^xsd:string ;
@@ -12464,7 +12468,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.PE>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Physical Examination"^^rdf:XMLLiteral ;
+  mms:contextLabel "Physical Examination"^^xsd:string ;
   mms:contextName "PE"^^xsd:string ;
   mms:ordinal "16"^^xsd:positiveInteger ;
   cdiscs:datasetCode "PE"^^xsd:string ;
@@ -12473,7 +12477,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.PP>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "PK Parameters"^^rdf:XMLLiteral ;
+  mms:contextLabel "PK Parameters"^^xsd:string ;
   mms:contextName "PP"^^xsd:string ;
   mms:ordinal "24"^^xsd:positiveInteger ;
   cdiscs:datasetCode "PP"^^xsd:string ;
@@ -12482,7 +12486,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.QS>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Questionnaires"^^rdf:XMLLiteral ;
+  mms:contextLabel "Questionnaires"^^xsd:string ;
   mms:contextName "QS"^^xsd:string ;
   mms:ordinal "17"^^xsd:positiveInteger ;
   cdiscs:datasetCode "QS"^^xsd:string ;
@@ -12491,7 +12495,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.RELREC>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:RelationshipDataset ;
-  mms:contextLabel "Related Records"^^rdf:XMLLiteral ;
+  mms:contextLabel "Related Records"^^xsd:string ;
   mms:contextName "RELREC"^^xsd:string ;
   mms:ordinal "31"^^xsd:positiveInteger ;
   cdiscs:datasetStructure "One record per related record, group of records or dataset"^^xsd:string ;
@@ -12499,7 +12503,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SC>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Subject Characteristics"^^rdf:XMLLiteral ;
+  mms:contextLabel "Subject Characteristics"^^xsd:string ;
   mms:contextName "SC"^^xsd:string ;
   mms:ordinal "18"^^xsd:positiveInteger ;
   cdiscs:datasetCode "SC"^^xsd:string ;
@@ -12508,7 +12512,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SE>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:SpecialPurposeDomain ;
-  mms:contextLabel "Subject Elements"^^rdf:XMLLiteral ;
+  mms:contextLabel "Subject Elements"^^xsd:string ;
   mms:contextName "SE"^^xsd:string ;
   mms:ordinal "3"^^xsd:positiveInteger ;
   cdiscs:datasetCode "SE"^^xsd:string ;
@@ -12517,7 +12521,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SU>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:InterventionsObservationClass ;
-  mms:contextLabel "Substance Use"^^rdf:XMLLiteral ;
+  mms:contextLabel "Substance Use"^^xsd:string ;
   mms:contextName "SU"^^xsd:string ;
   mms:ordinal "7"^^xsd:positiveInteger ;
   cdiscs:datasetCode "SU"^^xsd:string ;
@@ -12526,7 +12530,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SUPPQUAL>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:RelationshipDataset ;
-  mms:contextLabel "Supplemental Qualifiers"^^rdf:XMLLiteral ;
+  mms:contextLabel "Supplemental Qualifiers"^^xsd:string ;
   mms:contextName "SUPPQUAL"^^xsd:string ;
   mms:ordinal "32"^^xsd:positiveInteger ;
   cdiscs:datasetStructure "One record per IDVAR, IDVARVAL, and QNAM value per subject"^^xsd:string ;
@@ -12534,7 +12538,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.SV>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:SpecialPurposeDomain ;
-  mms:contextLabel "Subject Visits"^^rdf:XMLLiteral ;
+  mms:contextLabel "Subject Visits"^^xsd:string ;
   mms:contextName "SV"^^xsd:string ;
   mms:ordinal "4"^^xsd:positiveInteger ;
   cdiscs:datasetCode "SV"^^xsd:string ;
@@ -12543,7 +12547,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.TA>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:TrialDesignModel ;
-  mms:contextLabel "Trial Arms"^^rdf:XMLLiteral ;
+  mms:contextLabel "Trial Arms"^^xsd:string ;
   mms:contextName "TA"^^xsd:string ;
   mms:ordinal "26"^^xsd:positiveInteger ;
   cdiscs:datasetCode "TA"^^xsd:string ;
@@ -12552,7 +12556,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.TE>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:TrialDesignModel ;
-  mms:contextLabel "Trial Elements"^^rdf:XMLLiteral ;
+  mms:contextLabel "Trial Elements"^^xsd:string ;
   mms:contextName "TE"^^xsd:string ;
   mms:ordinal "27"^^xsd:positiveInteger ;
   cdiscs:datasetCode "TE"^^xsd:string ;
@@ -12561,7 +12565,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.TI>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:TrialDesignModel ;
-  mms:contextLabel "Trial Inclusion/Exclusion Criteria"^^rdf:XMLLiteral ;
+  mms:contextLabel "Trial Inclusion/Exclusion Criteria"^^xsd:string ;
   mms:contextName "TI"^^xsd:string ;
   mms:ordinal "29"^^xsd:positiveInteger ;
   cdiscs:datasetCode "TI"^^xsd:string ;
@@ -12570,7 +12574,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.TS>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:TrialDesignModel ;
-  mms:contextLabel "Trial Summary"^^rdf:XMLLiteral ;
+  mms:contextLabel "Trial Summary"^^xsd:string ;
   mms:contextName "TS"^^xsd:string ;
   mms:ordinal "30"^^xsd:positiveInteger ;
   cdiscs:datasetCode "TS"^^xsd:string ;
@@ -12579,7 +12583,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.TV>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:TrialDesignModel ;
-  mms:contextLabel "Trial Visits"^^rdf:XMLLiteral ;
+  mms:contextLabel "Trial Visits"^^xsd:string ;
   mms:contextName "TV"^^xsd:string ;
   mms:ordinal "28"^^xsd:positiveInteger ;
   cdiscs:datasetCode "TV"^^xsd:string ;
@@ -12588,7 +12592,7 @@ SDTMIG 4.1.4.3, SDTMIG 4.1.4.10"""^^xsd:string ;
 <http://rdf.cdisc.org/std/sdtmig-3-1-2#Dataset.VS>
   rdf:type mms:Dataset ;
   mms:context sdtmig-3-1-2:FindingsObservationClass ;
-  mms:contextLabel "Vital Signs"^^rdf:XMLLiteral ;
+  mms:contextLabel "Vital Signs"^^xsd:string ;
   mms:contextName "VS"^^xsd:string ;
   mms:ordinal "19"^^xsd:positiveInteger ;
   cdiscs:datasetCode "VS"^^xsd:string ;

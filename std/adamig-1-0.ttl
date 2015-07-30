@@ -3340,7 +3340,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Analysis relative day not directly characterizing AVAL and/or AVALC."^^xsd:string ;
   mms:dataElementLabel "Relative Day of ..."^^xsd:string ;
-  mms:dataElementName "_ADY"^^xsd:string ;
+  mms:dataElementName "*ADY"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "54"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3351,7 +3351,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Analysis date not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "Date of ..."^^xsd:string ;
-  mms:dataElementName "_DT"^^xsd:string ;
+  mms:dataElementName "*DT"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "51"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3362,7 +3362,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "The level of imputation of *DT based on the source SDTM DTC variable. See General Timing Variable Convention #6."^^xsd:string ;
   mms:dataElementLabel "Date Imputation Qual of ..."^^xsd:string ;
-  mms:dataElementName "_DTF"^^xsd:string ;
+  mms:dataElementName "*DTF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:dataElementValueDomain adamct:C81223 ;
   mms:ordinal "55"^^xsd:positiveInteger ;
@@ -3375,7 +3375,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Analysis date/time not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "Date/Time of ..."^^xsd:string ;
-  mms:dataElementName "_DTM"^^xsd:string ;
+  mms:dataElementName "*DTM"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "53"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3386,7 +3386,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Ending analysis date not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "End Date of ..."^^xsd:string ;
-  mms:dataElementName "_EDT"^^xsd:string ;
+  mms:dataElementName "*EDT"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "63"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3397,7 +3397,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "The level of imputation of *EDT based on the source SDTM DTC variable. See General Timing Variable Convention #6."^^xsd:string ;
   mms:dataElementLabel "End Date Imputation Flag of ..."^^xsd:string ;
-  mms:dataElementName "_EDTF"^^xsd:string ;
+  mms:dataElementName "*EDTF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:dataElementValueDomain adamct:C81223 ;
   mms:ordinal "67"^^xsd:positiveInteger ;
@@ -3410,7 +3410,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Ending analysis date/time not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "End Date/Time of ..."^^xsd:string ;
-  mms:dataElementName "_EDTM"^^xsd:string ;
+  mms:dataElementName "*EDTM"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "65"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3421,7 +3421,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Ending analysis relative day not directly characterizing AVAL and/or AVALC."^^xsd:string ;
   mms:dataElementLabel "Relative End Day of ..."^^xsd:string ;
-  mms:dataElementName "_EDY"^^xsd:string ;
+  mms:dataElementName "*EDY"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "66"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3432,7 +3432,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Ending analysis time not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "End Time of ..."^^xsd:string ;
-  mms:dataElementName "_ETM"^^xsd:string ;
+  mms:dataElementName "*ETM"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "64"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3443,7 +3443,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "The level of imputation of *ETM based on the source SDTM DTC variable. See General Timing Variable Convention #7."^^xsd:string ;
   mms:dataElementLabel "End Time Imputation Flag of ..."^^xsd:string ;
-  mms:dataElementName "_ETMF"^^xsd:string ;
+  mms:dataElementName "*ETMF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:dataElementValueDomain adamct:C81226 ;
   mms:ordinal "68"^^xsd:positiveInteger ;
@@ -3456,7 +3456,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Starting analysis date not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "Start Date of ..."^^xsd:string ;
-  mms:dataElementName "_SDT"^^xsd:string ;
+  mms:dataElementName "*SDT"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "57"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3467,7 +3467,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "The level of imputation of *SDT based on the source SDTM DTC variable. See General Timing Variable Convention #6."^^xsd:string ;
   mms:dataElementLabel "Start Date Imputation Flag of ..."^^xsd:string ;
-  mms:dataElementName "_SDTF"^^xsd:string ;
+  mms:dataElementName "*SDTF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:dataElementValueDomain adamct:C81223 ;
   mms:ordinal "61"^^xsd:positiveInteger ;
@@ -3480,7 +3480,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Starting analysis date/time not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "Start Date/Time of ..."^^xsd:string ;
-  mms:dataElementName "_SDTM"^^xsd:string ;
+  mms:dataElementName "*SDTM"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "59"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3491,7 +3491,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Starting analysis relative day not directly characterizing AVAL and/or AVALC."^^xsd:string ;
   mms:dataElementLabel "Relative Start Day of ..."^^xsd:string ;
-  mms:dataElementName "_SDY"^^xsd:string ;
+  mms:dataElementName "*SDY"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "60"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3502,7 +3502,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Starting analysis time not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "Start Time of ..."^^xsd:string ;
-  mms:dataElementName "_STM"^^xsd:string ;
+  mms:dataElementName "*STM"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "58"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3513,7 +3513,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "The level of imputation of *STM based on the source SDTM DTC variable. See General Timing Variable Convention #7."^^xsd:string ;
   mms:dataElementLabel "Start Time Imputation Qual of ..."^^xsd:string ;
-  mms:dataElementName "_STMF"^^xsd:string ;
+  mms:dataElementName "*STMF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:dataElementValueDomain adamct:C81226 ;
   mms:ordinal "62"^^xsd:positiveInteger ;
@@ -3526,7 +3526,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "Analysis time not directly characterizing AVAL and/or AVALC in numeric format."^^xsd:string ;
   mms:dataElementLabel "Time of ..."^^xsd:string ;
-  mms:dataElementName "_TM"^^xsd:string ;
+  mms:dataElementName "*TM"^^xsd:string ;
   mms:dataElementType "xsd:integer"^^xsd:anySimpleType ;
   mms:ordinal "52"^^xsd:positiveInteger ;
   cdiscs:dataElementCompliance <http://rdf.cdisc.org/std/adamig-1-0#Classifier.PermissibleVariable> ;
@@ -3537,7 +3537,7 @@
   mms:context <http://rdf.cdisc.org/std/adamig-1-0#BDS.TimingVariables> ;
   mms:dataElementDescription "The level of imputation of *TM based on the source SDTM DTC variable. See General Timing Variable Convention #7."^^xsd:string ;
   mms:dataElementLabel "Time Imputation Flag of ..."^^xsd:string ;
-  mms:dataElementName "_TMF"^^xsd:string ;
+  mms:dataElementName "*TMF"^^xsd:string ;
   mms:dataElementType "xsd:string"^^xsd:anySimpleType ;
   mms:dataElementValueDomain adamct:C81226 ;
   mms:ordinal "56"^^xsd:positiveInteger ;
