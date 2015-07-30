@@ -96,9 +96,13 @@ The ADAE dataset is currently part of the class ADAE, but the ADAE documentation
 Project Status
 --------------
 
-30.07.2015. The CDISC Foundational Standards in RDF haven been complemented by a Reference Guide and a User Guide. The complete package has completed CDISC Publich Review as of 30.07.2015. Currently the RDF files are available from the GitHub repository, whereas the guides can be downloaded from the CDISC web site. For more information and access to the guides, please refer to the CDISC web site http://www.cdisc.org.
+30.07.2015
 
-30.07.2015. Work has started within CDISC to create an RDF export facility from the CDISC SHARE metadata repository. The goal is to create the CDISC Foundational Standards in RDF directly from the SHARE repository and to publish future CDISC standards in RDF as these standards become available in SHARE. As the focus now moves to a SHARE RDF export, we maintain a code freeze for the GitHub repository.
+The CDISC Foundational Standards in RDF haven been complemented by a Reference Guide and a User Guide. The complete package has completed CDISC Publich Review as of 30.07.2015. Currently the RDF files are available from the GitHub repository, whereas the guides can be downloaded from the CDISC web site. For more information and access to the guides, please refer to the CDISC web site http://www.cdisc.org.
+
+30.07.2015
+
+Work has started within CDISC to create an RDF export facility from the CDISC SHARE metadata repository. The goal is to create the CDISC Foundational Standards in RDF directly from the SHARE repository and to publish future CDISC standards in RDF as these standards become available in SHARE. As the focus now moves to a SHARE RDF export, we maintain a code freeze for the GitHub repository.
 
 
 Contact
