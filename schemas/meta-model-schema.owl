@@ -228,7 +228,7 @@
     >The type of a data element, i.e. the values it can range over. The actual value space may be further restricted by the specification of a value domain.</skos:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Data Element Type</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anySimpleType"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="identifier">
     <rdfs:isDefinedBy rdf:resource=""/>

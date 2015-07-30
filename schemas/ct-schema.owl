@@ -11,7 +11,7 @@
   xml:base="http://rdf.cdisc.org/ct/schema">
   <owl:Ontology rdf:about="">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >SDTM Terminology Schema</rdfs:label>
+    >CDISC Terminology Schema</rdfs:label>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >NCI EVS</dc:creator>
     <owl:imports rdf:resource="http://rdf.cdisc.org/mms"/>

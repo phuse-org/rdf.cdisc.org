@@ -3,7 +3,7 @@ rdf.cdisc.org
 
 FDA/PhUSE Semantic Technology Project
 
-Representing Existing CDISC Standards in RDF
+Representing CDISC Foundational Standards in RDF
 
 
 Introduction
@@ -18,7 +18,7 @@ The FDA/PhUSE Semantic Technology project investigates how formal semantic stand
   - ADaM 2.1 and ADaM Implementation Guide 1.0
   - Controlled Terminology
   
-Today, CDISC publishes these standards in a paper based format and partly in Excel, which makes it difficult to consistently represent and process this information. The RDF representation addresses both issues by providing at the same time a formal model, a machine readable representation, and an exchange format. Accordingly, we have decided not to reproduce a lot of paper based documentation. This document provides only a few pointers, other than that the RDF models are self-describing and we therefore encourage you to use an ontology editor and explore the RDF datasets this way.
+Today, CDISC publishes these standards in a paper based format and partly in Excel, which makes it difficult to consistently represent and process this information. The RDF representation addresses both issues by providing at the same time a formal model, a machine readable representation, and an exchange format.
 
 The main goal of this project is to represent the existing CDISC standards in RDF, not to remodel the standards, even when sometimes certain deficits became obvious. This is a conscious decision since the ownership of the standards lies within CDISC and any changes to the standards should be addressed directly by CDISC.
 
@@ -59,17 +59,17 @@ Known Issues
 
 -- File Formats --
 
-The terminology and schema files are written in RDF/XML since this is the format the NCI currently uses. The CDISC standards in RDF are written in Turtle, which is a more popular format. In the future we would like to provide a distribution for both formats.
+The terminology and schema files are written in RDF/XML since this is the format the NCI currently uses. The files in this distribution are provided with both the .owl and .rdf file extensions due to requirements of some ontology editors. The CDISC standards in RDF are written in Turtle, which is a more popular format. In the future we would like to provide a distribution for both formats.
 
 -- Meta Model Schema --
 
-The following changes to the Meta Model Schema will need to be coordinated with the NCI who currently uses this schema to publish the CDISC controlled terminology.
+The following changes to the Meta Model Schema imply differences to the schema used by the NCI to publish the CDISC controlled terminology. It is expected that these differences will be aligned in the future.
 
 The use of mms:broader has been replaced by the new mms:dataElement object property, which relates a Data Element Context to its Data Element. The Meta Model Schema still contains the mms:broader object property, but it is expected to be removed at a later date.
 
-The range of mms:dataElementType has been changed from xsd:QName to xsd:anySimpleType to avoid warnings from ontology editors. This is currently the only difference with the NCI version, and it is expected that the NCI version will be updated at a later time.
+The range of mms:dataElementType has been changed from xsd:QName to xsd:string to avoid warnings from ontology editors.
 
-The following classes have been added to the CDISC Schema and are expected to move into the Meta Model Schema at a later date. For any standard importing the CDISC Schema, nothing will change once these classes are moved since they already use the correct namespace prefix.
+The following classes have been moved from the CDISC Schema to the Meta Model Schema. This change is backward compatible for any standard importing the CDISC Schema.
 
   - mms:DataCollectionForm
   - mms:Domain
@@ -78,7 +78,7 @@ The following classes have been added to the CDISC Schema and are expected to mo
   - mms:DataCollectionField
   - mms:Column
 
-The ontology rdfs:label of the CT schema currently reads "SDTM Terminology Schema". This needs to be changed to "CDISC Terminology Schema" and will be fed back to the NCI.
+The ontology rdfs:label of the CT schema has been changed from "SDTM Terminology Schema" to "CDISC Terminology Schema".
 
 -- SEND Implementation Guide --
 
@@ -96,7 +96,9 @@ The ADAE dataset is currently part of the class ADAE, but the ADAE documentation
 Project Status
 --------------
 
-Please consider this an incubator project. The team will continue working on addressing known issues, removing any known errors, and create further additions. The team will also actively seek for CDISC to take ownership of the RDF files and channel them through a formal CDISC publich review.
+30.07.2015. The CDISC Foundational Standards in RDF haven been complemented by a Reference Guide and a User Guide. The complete package has completed CDISC Publich Review as of 30.07.2015. Currently the RDF files are available from the GitHub repository, whereas the guides can be downloaded from the CDISC web site. For more information and access to the guides, please refer to the CDISC web site http://www.cdisc.org.
+
+30.07.2015. Work has started within CDISC to create an RDF export facility from the CDISC SHARE metadata repository. The goal is to create the CDISC Foundational Standards in RDF directly from the SHARE repository and to publish future CDISC standards in RDF as these standards become available in SHARE. As the focus now moves to a SHARE RDF export, we maintain a code freeze for the GitHub repository.
 
 
 Contact
